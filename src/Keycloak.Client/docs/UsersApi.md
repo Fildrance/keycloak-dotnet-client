@@ -1,0 +1,2212 @@
+# IO.Swagger.Api.UsersApi
+
+All URIs are relative to *https://keycloak.example.com/admin/realms*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**DeleteConsent**](UsersApi.md#deleteconsent) | **DELETE** /{realm}/users/{id}/consents/{client} | 
+[**DeleteCredential**](UsersApi.md#deletecredential) | **DELETE** /{realm}/users/{id}/credentials/{credentialId} | 
+[**DeleteFederatedIdentity**](UsersApi.md#deletefederatedidentity) | **DELETE** /{realm}/users/{id}/federated-identity/{provider} | 
+[**DeleteUserByRealmById**](UsersApi.md#deleteuserbyrealmbyid) | **DELETE** /{realm}/users/{id} | 
+[**DeleteUserGroup**](UsersApi.md#deleteusergroup) | **DELETE** /{realm}/users/{id}/groups/{groupId} | 
+[**GetConfiguredUserStorageCredentialTypes**](UsersApi.md#getconfigureduserstoragecredentialtypes) | **GET** /{realm}/users/{id}/configured-user-storage-credential-types | 
+[**GetConsents**](UsersApi.md#getconsents) | **GET** /{realm}/users/{id}/consents | 
+[**GetCredentials**](UsersApi.md#getcredentials) | **GET** /{realm}/users/{id}/credentials | 
+[**GetFederatedIdentity**](UsersApi.md#getfederatedidentity) | **GET** /{realm}/users/{id}/federated-identity | 
+[**GetMetadata**](UsersApi.md#getmetadata) | **GET** /{realm}/users/profile/metadata | 
+[**GetOfflineSession**](UsersApi.md#getofflinesession) | **GET** /{realm}/users/{id}/offline-sessions/{clientUuid} | 
+[**GetProfile**](UsersApi.md#getprofile) | **GET** /{realm}/users/profile | 
+[**GetSessions**](UsersApi.md#getsessions) | **GET** /{realm}/users/{id}/sessions | 
+[**GetUserByRealmById**](UsersApi.md#getuserbyrealmbyid) | **GET** /{realm}/users/{id} | 
+[**GetUserGroups**](UsersApi.md#getusergroups) | **GET** /{realm}/users/{id}/groups | 
+[**GetUserGroupsCount**](UsersApi.md#getusergroupscount) | **GET** /{realm}/users/{id}/groups/count | 
+[**GetUsersByRealm**](UsersApi.md#getusersbyrealm) | **GET** /{realm}/users | 
+[**GetUsersCount**](UsersApi.md#getuserscount) | **GET** /{realm}/users/count | 
+[**PostFederatedIdentity**](UsersApi.md#postfederatedidentity) | **POST** /{realm}/users/{id}/federated-identity/{provider} | 
+[**PostImpersonation**](UsersApi.md#postimpersonation) | **POST** /{realm}/users/{id}/impersonation | 
+[**PostLogout**](UsersApi.md#postlogout) | **POST** /{realm}/users/{id}/logout | 
+[**PostMoveAfter**](UsersApi.md#postmoveafter) | **POST** /{realm}/users/{id}/credentials/{credentialId}/moveAfter/{newPreviousCredentialId} | 
+[**PostMoveToFirst**](UsersApi.md#postmovetofirst) | **POST** /{realm}/users/{id}/credentials/{credentialId}/moveToFirst | 
+[**PostUsers**](UsersApi.md#postusers) | **POST** /{realm}/users | 
+[**PutDisableCredentialTypes**](UsersApi.md#putdisablecredentialtypes) | **PUT** /{realm}/users/{id}/disable-credential-types | 
+[**PutExecuteActionsEmail**](UsersApi.md#putexecuteactionsemail) | **PUT** /{realm}/users/{id}/execute-actions-email | 
+[**PutProfile**](UsersApi.md#putprofile) | **PUT** /{realm}/users/profile | 
+[**PutResetPassword**](UsersApi.md#putresetpassword) | **PUT** /{realm}/users/{id}/reset-password | 
+[**PutResetPasswordEmail**](UsersApi.md#putresetpasswordemail) | **PUT** /{realm}/users/{id}/reset-password-email | 
+[**PutSendVerifyEmail**](UsersApi.md#putsendverifyemail) | **PUT** /{realm}/users/{id}/send-verify-email | 
+[**PutUser**](UsersApi.md#putuser) | **PUT** /{realm}/users/{id} | 
+[**PutUserGroup**](UsersApi.md#putusergroup) | **PUT** /{realm}/users/{id}/groups/{groupId} | 
+[**PutUserLabel**](UsersApi.md#putuserlabel) | **PUT** /{realm}/users/{id}/credentials/{credentialId}/userLabel | 
+
+<a name="deleteconsent"></a>
+# **DeleteConsent**
+> void DeleteConsent (string realm, string id, string _client)
+
+
+
+Revoke consent and offline tokens for particular client from user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class DeleteConsentExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var _client = _client_example;  // string | Client id
+
+            try
+            {
+                apiInstance.DeleteConsent(realm, id, _client);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteConsent: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **_client** | **string**| Client id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletecredential"></a>
+# **DeleteCredential**
+> void DeleteCredential (string realm, string id, string credentialId)
+
+
+
+Remove a credential for a user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class DeleteCredentialExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var credentialId = credentialId_example;  // string | 
+
+            try
+            {
+                apiInstance.DeleteCredential(realm, id, credentialId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteCredential: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **credentialId** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletefederatedidentity"></a>
+# **DeleteFederatedIdentity**
+> void DeleteFederatedIdentity (string realm, string id, string provider)
+
+
+
+Remove a social login provider from user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class DeleteFederatedIdentityExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var provider = provider_example;  // string | Social login provider id
+
+            try
+            {
+                apiInstance.DeleteFederatedIdentity(realm, id, provider);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteFederatedIdentity: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **provider** | **string**| Social login provider id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteuserbyrealmbyid"></a>
+# **DeleteUserByRealmById**
+> void DeleteUserByRealmById (string realm, string id)
+
+
+
+Delete the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class DeleteUserByRealmByIdExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                apiInstance.DeleteUserByRealmById(realm, id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteUserByRealmById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteusergroup"></a>
+# **DeleteUserGroup**
+> void DeleteUserGroup (string realm, string id, string groupId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class DeleteUserGroupExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var groupId = groupId_example;  // string | 
+
+            try
+            {
+                apiInstance.DeleteUserGroup(realm, id, groupId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.DeleteUserGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **groupId** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getconfigureduserstoragecredentialtypes"></a>
+# **GetConfiguredUserStorageCredentialTypes**
+> List<string> GetConfiguredUserStorageCredentialTypes (string realm, string id)
+
+
+
+Return credential types, which are provided by the user storage where user is stored.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetConfiguredUserStorageCredentialTypesExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                List&lt;string&gt; result = apiInstance.GetConfiguredUserStorageCredentialTypes(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetConfiguredUserStorageCredentialTypes: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+**List<string>**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getconsents"></a>
+# **GetConsents**
+> List<Object> GetConsents (string realm, string id)
+
+
+
+Get consents granted by the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetConsentsExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                List&lt;Object&gt; result = apiInstance.GetConsents(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetConsents: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+**List<Object>**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getcredentials"></a>
+# **GetCredentials**
+> List<CredentialRepresentation> GetCredentials (string realm, string id)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetCredentialsExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                List&lt;CredentialRepresentation&gt; result = apiInstance.GetCredentials(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetCredentials: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+[**List<CredentialRepresentation>**](CredentialRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getfederatedidentity"></a>
+# **GetFederatedIdentity**
+> List<FederatedIdentityRepresentation> GetFederatedIdentity (string realm, string id)
+
+
+
+Get social logins associated with the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetFederatedIdentityExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                List&lt;FederatedIdentityRepresentation&gt; result = apiInstance.GetFederatedIdentity(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetFederatedIdentity: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+[**List<FederatedIdentityRepresentation>**](FederatedIdentityRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getmetadata"></a>
+# **GetMetadata**
+> UserProfileMetadata GetMetadata (string realm)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetMetadataExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+
+            try
+            {
+                UserProfileMetadata result = apiInstance.GetMetadata(realm);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetMetadata: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+
+### Return type
+
+[**UserProfileMetadata**](UserProfileMetadata.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getofflinesession"></a>
+# **GetOfflineSession**
+> List<UserSessionRepresentation> GetOfflineSession (string realm, string id, string clientUuid)
+
+
+
+Get offline sessions associated with the user and client
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetOfflineSessionExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var clientUuid = clientUuid_example;  // string | 
+
+            try
+            {
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetOfflineSession(realm, id, clientUuid);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetOfflineSession: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **clientUuid** | **string**|  | 
+
+### Return type
+
+[**List<UserSessionRepresentation>**](UserSessionRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getprofile"></a>
+# **GetProfile**
+> UPConfig GetProfile (string realm)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetProfileExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+
+            try
+            {
+                UPConfig result = apiInstance.GetProfile(realm);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetProfile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+
+### Return type
+
+[**UPConfig**](UPConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getsessions"></a>
+# **GetSessions**
+> List<UserSessionRepresentation> GetSessions (string realm, string id)
+
+
+
+Get sessions associated with the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetSessionsExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetSessions(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetSessions: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+[**List<UserSessionRepresentation>**](UserSessionRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getuserbyrealmbyid"></a>
+# **GetUserByRealmById**
+> UserRepresentation GetUserByRealmById (string realm, string id, string userProfileMetadata)
+
+
+
+Get representation of the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetUserByRealmByIdExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var userProfileMetadata = userProfileMetadata_example;  // string | Indicates if the user profile metadata should be added to the response (optional) 
+
+            try
+            {
+                UserRepresentation result = apiInstance.GetUserByRealmById(realm, id, userProfileMetadata);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUserByRealmById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **userProfileMetadata** | **string**| Indicates if the user profile metadata should be added to the response | [optional] 
+
+### Return type
+
+[**UserRepresentation**](UserRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getusergroups"></a>
+# **GetUserGroups**
+> List<GroupRepresentation> GetUserGroups (string realm, string id, string briefRepresentation, string first, string max, string search)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetUserGroupsExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
+            var first = first_example;  // string |  (optional) 
+            var max = max_example;  // string |  (optional) 
+            var search = search_example;  // string |  (optional) 
+
+            try
+            {
+                List&lt;GroupRepresentation&gt; result = apiInstance.GetUserGroups(realm, id, briefRepresentation, first, max, search);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUserGroups: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **briefRepresentation** | **string**|  | [optional] 
+ **first** | **string**|  | [optional] 
+ **max** | **string**|  | [optional] 
+ **search** | **string**|  | [optional] 
+
+### Return type
+
+[**List<GroupRepresentation>**](GroupRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getusergroupscount"></a>
+# **GetUserGroupsCount**
+> Dictionary<string, long?> GetUserGroupsCount (string realm, string id, string search)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetUserGroupsCountExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var search = search_example;  // string |  (optional) 
+
+            try
+            {
+                Dictionary&lt;string, long?&gt; result = apiInstance.GetUserGroupsCount(realm, id, search);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUserGroupsCount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **search** | **string**|  | [optional] 
+
+### Return type
+
+**Dictionary<string, long?>**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getusersbyrealm"></a>
+# **GetUsersByRealm**
+> List<UserRepresentation> GetUsersByRealm (string realm, string briefRepresentation, string email, string emailVerified, string enabled, string exact, string first, string firstName, string idpAlias, string idpUserId, string lastName, string max, string q, string search, string username)
+
+
+
+Get users Returns a stream of users, filtered according to query parameters.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetUsersByRealmExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var briefRepresentation = briefRepresentation_example;  // string | Boolean which defines whether brief representations are returned (default: false) (optional) 
+            var email = email_example;  // string | A String contained in email, or the complete email, if param &quot;exact&quot; is true (optional) 
+            var emailVerified = emailVerified_example;  // string | whether the email has been verified (optional) 
+            var enabled = enabled_example;  // string | Boolean representing if user is enabled or not (optional) 
+            var exact = exact_example;  // string | Boolean which defines whether the params &quot;last&quot;, &quot;first&quot;, &quot;email&quot; and &quot;username&quot; must match exactly (optional) 
+            var first = first_example;  // string | Pagination offset (optional) 
+            var firstName = firstName_example;  // string | A String contained in firstName, or the complete firstName, if param &quot;exact&quot; is true (optional) 
+            var idpAlias = idpAlias_example;  // string | The alias of an Identity Provider linked to the user (optional) 
+            var idpUserId = idpUserId_example;  // string | The userId at an Identity Provider linked to the user (optional) 
+            var lastName = lastName_example;  // string | A String contained in lastName, or the complete lastName, if param &quot;exact&quot; is true (optional) 
+            var max = max_example;  // string | Maximum results size (defaults to 100) (optional) 
+            var q = q_example;  // string | A query to search for custom attributes, in the format 'key1:value2 key2:value2' (optional) 
+            var search = search_example;  // string | A String contained in username, first or last name, or email. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &quot;foo&quot; for exact search. (optional) 
+            var username = username_example;  // string | A String contained in username, or the complete username, if param &quot;exact&quot; is true (optional) 
+
+            try
+            {
+                List&lt;UserRepresentation&gt; result = apiInstance.GetUsersByRealm(realm, briefRepresentation, email, emailVerified, enabled, exact, first, firstName, idpAlias, idpUserId, lastName, max, q, search, username);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUsersByRealm: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **briefRepresentation** | **string**| Boolean which defines whether brief representations are returned (default: false) | [optional] 
+ **email** | **string**| A String contained in email, or the complete email, if param &amp;quot;exact&amp;quot; is true | [optional] 
+ **emailVerified** | **string**| whether the email has been verified | [optional] 
+ **enabled** | **string**| Boolean representing if user is enabled or not | [optional] 
+ **exact** | **string**| Boolean which defines whether the params &amp;quot;last&amp;quot;, &amp;quot;first&amp;quot;, &amp;quot;email&amp;quot; and &amp;quot;username&amp;quot; must match exactly | [optional] 
+ **first** | **string**| Pagination offset | [optional] 
+ **firstName** | **string**| A String contained in firstName, or the complete firstName, if param &amp;quot;exact&amp;quot; is true | [optional] 
+ **idpAlias** | **string**| The alias of an Identity Provider linked to the user | [optional] 
+ **idpUserId** | **string**| The userId at an Identity Provider linked to the user | [optional] 
+ **lastName** | **string**| A String contained in lastName, or the complete lastName, if param &amp;quot;exact&amp;quot; is true | [optional] 
+ **max** | **string**| Maximum results size (defaults to 100) | [optional] 
+ **q** | **string**| A query to search for custom attributes, in the format &#x27;key1:value2 key2:value2&#x27; | [optional] 
+ **search** | **string**| A String contained in username, first or last name, or email. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &amp;quot;foo&amp;quot; for exact search. | [optional] 
+ **username** | **string**| A String contained in username, or the complete username, if param &amp;quot;exact&amp;quot; is true | [optional] 
+
+### Return type
+
+[**List<UserRepresentation>**](UserRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getuserscount"></a>
+# **GetUsersCount**
+> int? GetUsersCount (string realm, string email, string emailVerified, string enabled, string firstName, string lastName, string q, string search, string username)
+
+
+
+Returns the number of users that match the given criteria.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetUsersCountExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var email = email_example;  // string | email filter (optional) 
+            var emailVerified = emailVerified_example;  // string |  (optional) 
+            var enabled = enabled_example;  // string | Boolean representing if user is enabled or not (optional) 
+            var firstName = firstName_example;  // string | first name filter (optional) 
+            var lastName = lastName_example;  // string | last name filter (optional) 
+            var q = q_example;  // string |  (optional) 
+            var search = search_example;  // string | arbitrary search string for all the fields below. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &quot;foo&quot; for exact search. (optional) 
+            var username = username_example;  // string | username filter (optional) 
+
+            try
+            {
+                int? result = apiInstance.GetUsersCount(realm, email, emailVerified, enabled, firstName, lastName, q, search, username);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.GetUsersCount: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **email** | **string**| email filter | [optional] 
+ **emailVerified** | **string**|  | [optional] 
+ **enabled** | **string**| Boolean representing if user is enabled or not | [optional] 
+ **firstName** | **string**| first name filter | [optional] 
+ **lastName** | **string**| last name filter | [optional] 
+ **q** | **string**|  | [optional] 
+ **search** | **string**| arbitrary search string for all the fields below. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &amp;quot;foo&amp;quot; for exact search. | [optional] 
+ **username** | **string**| username filter | [optional] 
+
+### Return type
+
+**int?**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postfederatedidentity"></a>
+# **PostFederatedIdentity**
+> void PostFederatedIdentity (string realm, string id, string provider)
+
+
+
+Add a social login provider to the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostFederatedIdentityExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var provider = provider_example;  // string | Social login provider id
+
+            try
+            {
+                apiInstance.PostFederatedIdentity(realm, id, provider);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostFederatedIdentity: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **provider** | **string**| Social login provider id | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postimpersonation"></a>
+# **PostImpersonation**
+> Dictionary<string, Object> PostImpersonation (string realm, string id)
+
+
+
+Impersonate the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostImpersonationExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                Dictionary&lt;string, Object&gt; result = apiInstance.PostImpersonation(realm, id);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostImpersonation: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+**Dictionary<string, Object>**
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postlogout"></a>
+# **PostLogout**
+> void PostLogout (string realm, string id)
+
+
+
+Remove all user sessions associated with the user Also send notification to all clients that have an admin URL to invalidate the sessions for the particular user.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostLogoutExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+
+            try
+            {
+                apiInstance.PostLogout(realm, id);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostLogout: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postmoveafter"></a>
+# **PostMoveAfter**
+> void PostMoveAfter (string realm, string id, string credentialId, string newPreviousCredentialId)
+
+
+
+Move a credential to a position behind another credential
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostMoveAfterExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var credentialId = credentialId_example;  // string | The credential to move
+            var newPreviousCredentialId = newPreviousCredentialId_example;  // string | The credential that will be the previous element in the list. If set to null, the moved credential will be the first element in the list.
+
+            try
+            {
+                apiInstance.PostMoveAfter(realm, id, credentialId, newPreviousCredentialId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostMoveAfter: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **credentialId** | **string**| The credential to move | 
+ **newPreviousCredentialId** | **string**| The credential that will be the previous element in the list. If set to null, the moved credential will be the first element in the list. | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postmovetofirst"></a>
+# **PostMoveToFirst**
+> void PostMoveToFirst (string realm, string id, string credentialId)
+
+
+
+Move a credential to a first position in the credentials list of the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostMoveToFirstExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var credentialId = credentialId_example;  // string | The credential to move
+
+            try
+            {
+                apiInstance.PostMoveToFirst(realm, id, credentialId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostMoveToFirst: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **credentialId** | **string**| The credential to move | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postusers"></a>
+# **PostUsers**
+> void PostUsers (string realm, UserRepresentation body)
+
+
+
+Create a new user Username must be unique.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PostUsersExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
+
+            try
+            {
+                apiInstance.PostUsers(realm, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PostUsers: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **body** | [**UserRepresentation**](UserRepresentation.md)| UserRepresentation | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putdisablecredentialtypes"></a>
+# **PutDisableCredentialTypes**
+> void PutDisableCredentialTypes (string realm, string id, string body)
+
+
+
+Disable all credentials for a user of a specific type
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutDisableCredentialTypesExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var body = new string(); // string | [string] (optional) 
+
+            try
+            {
+                apiInstance.PutDisableCredentialTypes(realm, id, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutDisableCredentialTypes: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **body** | [**string**](string.md)| [string] | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putexecuteactionsemail"></a>
+# **PutExecuteActionsEmail**
+> void PutExecuteActionsEmail (string realm, string id, string body, string clientId, string lifespan, string redirectUri)
+
+
+
+Send an email to the user with a link they can click to execute particular actions.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutExecuteActionsEmailExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var body = new string(); // string | [string] (optional) 
+            var clientId = clientId_example;  // string | Client id (optional) 
+            var lifespan = lifespan_example;  // string | Number of seconds after which the generated token expires (optional) 
+            var redirectUri = redirectUri_example;  // string | Redirect uri (optional) 
+
+            try
+            {
+                apiInstance.PutExecuteActionsEmail(realm, id, body, clientId, lifespan, redirectUri);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutExecuteActionsEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **body** | [**string**](string.md)| [string] | [optional] 
+ **clientId** | **string**| Client id | [optional] 
+ **lifespan** | **string**| Number of seconds after which the generated token expires | [optional] 
+ **redirectUri** | **string**| Redirect uri | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putprofile"></a>
+# **PutProfile**
+> UPConfig PutProfile (string realm, UPConfig body)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutProfileExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var body = new UPConfig(); // UPConfig | UPConfig (optional) 
+
+            try
+            {
+                UPConfig result = apiInstance.PutProfile(realm, body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutProfile: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **body** | [**UPConfig**](UPConfig.md)| UPConfig | [optional] 
+
+### Return type
+
+[**UPConfig**](UPConfig.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putresetpassword"></a>
+# **PutResetPassword**
+> void PutResetPassword (string realm, string id, CredentialRepresentation body)
+
+
+
+Set up a new password for the user.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutResetPasswordExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var body = new CredentialRepresentation(); // CredentialRepresentation | CredentialRepresentation (optional) 
+
+            try
+            {
+                apiInstance.PutResetPassword(realm, id, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutResetPassword: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **body** | [**CredentialRepresentation**](CredentialRepresentation.md)| CredentialRepresentation | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putresetpasswordemail"></a>
+# **PutResetPasswordEmail**
+> void PutResetPasswordEmail (string realm, string id, string clientId, string redirectUri)
+
+
+
+Send an email to the user with a link they can click to reset their password.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutResetPasswordEmailExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var clientId = clientId_example;  // string | client id (optional) 
+            var redirectUri = redirectUri_example;  // string | redirect uri (optional) 
+
+            try
+            {
+                apiInstance.PutResetPasswordEmail(realm, id, clientId, redirectUri);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutResetPasswordEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **clientId** | **string**| client id | [optional] 
+ **redirectUri** | **string**| redirect uri | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putsendverifyemail"></a>
+# **PutSendVerifyEmail**
+> void PutSendVerifyEmail (string realm, string id, string clientId, string redirectUri)
+
+
+
+Send an email-verification email to the user An email contains a link the user can click to verify their email address.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutSendVerifyEmailExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var clientId = clientId_example;  // string | Client id (optional) 
+            var redirectUri = redirectUri_example;  // string | Redirect uri (optional) 
+
+            try
+            {
+                apiInstance.PutSendVerifyEmail(realm, id, clientId, redirectUri);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutSendVerifyEmail: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **clientId** | **string**| Client id | [optional] 
+ **redirectUri** | **string**| Redirect uri | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putuser"></a>
+# **PutUser**
+> void PutUser (string realm, string id, UserRepresentation body)
+
+
+
+Update the user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutUserExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
+
+            try
+            {
+                apiInstance.PutUser(realm, id, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutUser: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **body** | [**UserRepresentation**](UserRepresentation.md)| UserRepresentation | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putusergroup"></a>
+# **PutUserGroup**
+> void PutUserGroup (string realm, string id, string groupId)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutUserGroupExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var groupId = groupId_example;  // string | 
+
+            try
+            {
+                apiInstance.PutUserGroup(realm, id, groupId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutUserGroup: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **groupId** | **string**|  | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="putuserlabel"></a>
+# **PutUserLabel**
+> void PutUserLabel (string realm, string id, string credentialId, string body)
+
+
+
+Update a credential label for a user
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class PutUserLabelExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new UsersApi();
+            var realm = realm_example;  // string | realm name (not id!)
+            var id = id_example;  // string | 
+            var credentialId = credentialId_example;  // string | 
+            var body = new string(); // string | [string] (optional) 
+
+            try
+            {
+                apiInstance.PutUserLabel(realm, id, credentialId, body);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling UsersApi.PutUserLabel: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **id** | **string**|  | 
+ **credentialId** | **string**|  | 
+ **body** | [**string**](string.md)| [string] | [optional] 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+

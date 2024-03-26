@@ -1,0 +1,46 @@
+# IO.Swagger.Model.IDToken
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**Jti** | **string** |  | [optional] 
+**Exp** | **long?** |  | [optional] 
+**Nbf** | **long?** |  | [optional] 
+**Iat** | **long?** |  | [optional] 
+**Iss** | **string** |  | [optional] 
+**Sub** | **string** |  | [optional] 
+**Typ** | **string** |  | [optional] 
+**Azp** | **string** |  | [optional] 
+**OtherClaims** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
+**Nonce** | **string** |  | [optional] 
+**AuthTime** | **long?** |  | [optional] 
+**SessionState** | **string** |  | [optional] 
+**AtHash** | **string** |  | [optional] 
+**CHash** | **string** |  | [optional] 
+**Name** | **string** |  | [optional] 
+**GivenName** | **string** |  | [optional] 
+**FamilyName** | **string** |  | [optional] 
+**MiddleName** | **string** |  | [optional] 
+**Nickname** | **string** |  | [optional] 
+**PreferredUsername** | **string** |  | [optional] 
+**Profile** | **string** |  | [optional] 
+**Picture** | **string** |  | [optional] 
+**Website** | **string** |  | [optional] 
+**Email** | **string** |  | [optional] 
+**EmailVerified** | **bool?** |  | [optional] 
+**Gender** | **string** |  | [optional] 
+**Birthdate** | **string** |  | [optional] 
+**Zoneinfo** | **string** |  | [optional] 
+**Locale** | **string** |  | [optional] 
+**PhoneNumber** | **string** |  | [optional] 
+**PhoneNumberVerified** | **bool?** |  | [optional] 
+**Address** | [**AddressClaimSet**](AddressClaimSet.md) |  | [optional] 
+**UpdatedAt** | **long?** |  | [optional] 
+**ClaimsLocales** | **string** |  | [optional] 
+**Acr** | **string** |  | [optional] 
+**SHash** | **string** |  | [optional] 
+**AuthTime** | **int?** |  | [optional] 
+**Sid** | **string** |  | [optional] 
+
+[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+

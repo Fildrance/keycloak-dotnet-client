@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34701.34
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keycloak.Client", "Keycloak.Client\Keycloak.Client.csproj", "{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6DEC7DF0-EDD1-4F30-8F13-97B513F37F9F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2BF83774-8DF6-44A0-B7CA-CFBBEBCEF636}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\generate-client.bat = ..\build\generate-client.bat
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{BEC2B163-E7E1-4542-9CF7-864C09AE1EDA} = {6DEC7DF0-EDD1-4F30-8F13-97B513F37F9F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5DC0278-CCCC-438A-987C-1249E522C1F4}
+	EndGlobalSection
+EndGlobal

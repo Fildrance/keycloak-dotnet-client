@@ -1,0 +1,68 @@
+# IO.Swagger.Api.KeyApi
+
+All URIs are relative to *https://keycloak.example.com/admin/realms*
+
+Method | HTTP request | Description
+------------- | ------------- | -------------
+[**GetKeys**](KeyApi.md#getkeys) | **GET** /{realm}/keys | 
+
+<a name="getkeys"></a>
+# **GetKeys**
+> KeysMetadataRepresentation GetKeys (string realm)
+
+
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using IO.Swagger.Api;
+using IO.Swagger.Client;
+using IO.Swagger.Model;
+
+namespace Example
+{
+    public class GetKeysExample
+    {
+        public void main()
+        {
+
+
+            var apiInstance = new KeyApi();
+            var realm = realm_example;  // string | realm name (not id!)
+
+            try
+            {
+                KeysMetadataRepresentation result = apiInstance.GetKeys(realm);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling KeyApi.GetKeys: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+
+### Return type
+
+[**KeysMetadataRepresentation**](KeysMetadataRepresentation.md)
+
+### Authorization
+
+[access_token](../README.md#access_token)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
