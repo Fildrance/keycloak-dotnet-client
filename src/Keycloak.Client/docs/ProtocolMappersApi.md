@@ -4,31 +4,32 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteClientProtocolMappersModel**](ProtocolMappersApi.md#deleteclientprotocolmappersmodel) | **DELETE** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
-[**DeleteClientScopeProtocolMappersModel**](ProtocolMappersApi.md#deleteclientscopeprotocolmappersmodel) | **DELETE** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
-[**DeleteClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#deleteclienttemplateprotocolmappersmodel) | **DELETE** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
-[**GetClientProtocolMappersModel**](ProtocolMappersApi.md#getclientprotocolmappersmodel) | **GET** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
-[**GetClientProtocolMappersModels**](ProtocolMappersApi.md#getclientprotocolmappersmodels) | **GET** /{realm}/clients/{id}/protocol-mappers/models | 
-[**GetClientProtocolMappersProtocol**](ProtocolMappersApi.md#getclientprotocolmappersprotocol) | **GET** /{realm}/clients/{id}/protocol-mappers/protocol/{protocol} | 
-[**GetClientScopeProtocolMappersModel**](ProtocolMappersApi.md#getclientscopeprotocolmappersmodel) | **GET** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
-[**GetClientScopeProtocolMappersModels**](ProtocolMappersApi.md#getclientscopeprotocolmappersmodels) | **GET** /{realm}/client-scopes/{id}/protocol-mappers/models | 
-[**GetClientScopeProtocolMappersProtocol**](ProtocolMappersApi.md#getclientscopeprotocolmappersprotocol) | **GET** /{realm}/client-scopes/{id}/protocol-mappers/protocol/{protocol} | 
-[**GetClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#getclienttemplateprotocolmappersmodel) | **GET** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
-[**GetClientTemplateProtocolMappersModels**](ProtocolMappersApi.md#getclienttemplateprotocolmappersmodels) | **GET** /{realm}/client-templates/{id}/protocol-mappers/models | 
-[**GetClientTemplateProtocolMappersProtocol**](ProtocolMappersApi.md#getclienttemplateprotocolmappersprotocol) | **GET** /{realm}/client-templates/{id}/protocol-mappers/protocol/{protocol} | 
-[**PostClientProtocolMappersAddModels**](ProtocolMappersApi.md#postclientprotocolmappersaddmodels) | **POST** /{realm}/clients/{id}/protocol-mappers/add-models | 
-[**PostClientProtocolMappersModels**](ProtocolMappersApi.md#postclientprotocolmappersmodels) | **POST** /{realm}/clients/{id}/protocol-mappers/models | 
-[**PostClientScopeProtocolMappersAddModels**](ProtocolMappersApi.md#postclientscopeprotocolmappersaddmodels) | **POST** /{realm}/client-scopes/{id}/protocol-mappers/add-models | 
-[**PostClientScopeProtocolMappersModels**](ProtocolMappersApi.md#postclientscopeprotocolmappersmodels) | **POST** /{realm}/client-scopes/{id}/protocol-mappers/models | 
-[**PostClientTemplateProtocolMappersAddModels**](ProtocolMappersApi.md#postclienttemplateprotocolmappersaddmodels) | **POST** /{realm}/client-templates/{id}/protocol-mappers/add-models | 
-[**PostClientTemplateProtocolMappersModels**](ProtocolMappersApi.md#postclienttemplateprotocolmappersmodels) | **POST** /{realm}/client-templates/{id}/protocol-mappers/models | 
-[**PutClientProtocolMappersModel**](ProtocolMappersApi.md#putclientprotocolmappersmodel) | **PUT** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
-[**PutClientScopeProtocolMappersModel**](ProtocolMappersApi.md#putclientscopeprotocolmappersmodel) | **PUT** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
-[**PutClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#putclienttemplateprotocolmappersmodel) | **PUT** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
+[**DeleteClientProtocolMappersModel**](ProtocolMappersApi.md#deleteclientprotocolmappersmodel) | **Delete** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
+[**DeleteClientScopeProtocolMappersModel**](ProtocolMappersApi.md#deleteclientscopeprotocolmappersmodel) | **Delete** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
+[**DeleteClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#deleteclienttemplateprotocolmappersmodel) | **Delete** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
+[**GetClientProtocolMappersModel**](ProtocolMappersApi.md#getclientprotocolmappersmodel) | **Get** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
+[**GetClientProtocolMappersModels**](ProtocolMappersApi.md#getclientprotocolmappersmodels) | **Get** /{realm}/clients/{id}/protocol-mappers/models | 
+[**GetClientProtocolMappersProtocol**](ProtocolMappersApi.md#getclientprotocolmappersprotocol) | **Get** /{realm}/clients/{id}/protocol-mappers/protocol/{protocol} | 
+[**GetClientScopeProtocolMappersModel**](ProtocolMappersApi.md#getclientscopeprotocolmappersmodel) | **Get** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
+[**GetClientScopeProtocolMappersModels**](ProtocolMappersApi.md#getclientscopeprotocolmappersmodels) | **Get** /{realm}/client-scopes/{id}/protocol-mappers/models | 
+[**GetClientScopeProtocolMappersProtocol**](ProtocolMappersApi.md#getclientscopeprotocolmappersprotocol) | **Get** /{realm}/client-scopes/{id}/protocol-mappers/protocol/{protocol} | 
+[**GetClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#getclienttemplateprotocolmappersmodel) | **Get** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
+[**GetClientTemplateProtocolMappersModels**](ProtocolMappersApi.md#getclienttemplateprotocolmappersmodels) | **Get** /{realm}/client-templates/{id}/protocol-mappers/models | 
+[**GetClientTemplateProtocolMappersProtocol**](ProtocolMappersApi.md#getclienttemplateprotocolmappersprotocol) | **Get** /{realm}/client-templates/{id}/protocol-mappers/protocol/{protocol} | 
+[**PostClientProtocolMappersAddModels**](ProtocolMappersApi.md#postclientprotocolmappersaddmodels) | **Post** /{realm}/clients/{id}/protocol-mappers/add-models | 
+[**PostClientProtocolMappersModels**](ProtocolMappersApi.md#postclientprotocolmappersmodels) | **Post** /{realm}/clients/{id}/protocol-mappers/models | 
+[**PostClientScopeProtocolMappersAddModels**](ProtocolMappersApi.md#postclientscopeprotocolmappersaddmodels) | **Post** /{realm}/client-scopes/{id}/protocol-mappers/add-models | 
+[**PostClientScopeProtocolMappersModels**](ProtocolMappersApi.md#postclientscopeprotocolmappersmodels) | **Post** /{realm}/client-scopes/{id}/protocol-mappers/models | 
+[**PostClientTemplateProtocolMappersAddModels**](ProtocolMappersApi.md#postclienttemplateprotocolmappersaddmodels) | **Post** /{realm}/client-templates/{id}/protocol-mappers/add-models | 
+[**PostClientTemplateProtocolMappersModels**](ProtocolMappersApi.md#postclienttemplateprotocolmappersmodels) | **Post** /{realm}/client-templates/{id}/protocol-mappers/models | 
+[**PutClientProtocolMappersModel**](ProtocolMappersApi.md#putclientprotocolmappersmodel) | **Put** /{realm}/clients/{id1}/protocol-mappers/models/{id2} | 
+[**PutClientScopeProtocolMappersModel**](ProtocolMappersApi.md#putclientscopeprotocolmappersmodel) | **Put** /{realm}/client-scopes/{id1}/protocol-mappers/models/{id2} | 
+[**PutClientTemplateProtocolMappersModel**](ProtocolMappersApi.md#putclienttemplateprotocolmappersmodel) | **Put** /{realm}/client-templates/{id1}/protocol-mappers/models/{id2} | 
+
 
 <a name="deleteclientprotocolmappersmodel"></a>
 # **DeleteClientProtocolMappersModel**
-> void DeleteClientProtocolMappersModel (string realm, string id1, string id2)
+> void DeleteClientProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -48,16 +49,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientProtocolMappersModel(realm, id1, id2);
+                apiInstance.DeleteClientProtocolMappersModel(realm, id1, id2, ct);
             }
             catch (Exception e)
             {
@@ -75,6 +77,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -93,7 +96,7 @@ void (empty response body)
 
 <a name="deleteclientscopeprotocolmappersmodel"></a>
 # **DeleteClientScopeProtocolMappersModel**
-> void DeleteClientScopeProtocolMappersModel (string realm, string id1, string id2)
+> void DeleteClientScopeProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -113,16 +116,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScopeProtocolMappersModel(realm, id1, id2);
+                apiInstance.DeleteClientScopeProtocolMappersModel(realm, id1, id2, ct);
             }
             catch (Exception e)
             {
@@ -140,6 +144,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -158,7 +163,7 @@ void (empty response body)
 
 <a name="deleteclienttemplateprotocolmappersmodel"></a>
 # **DeleteClientTemplateProtocolMappersModel**
-> void DeleteClientTemplateProtocolMappersModel (string realm, string id1, string id2)
+> void DeleteClientTemplateProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -178,16 +183,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientTemplateProtocolMappersModel(realm, id1, id2);
+                apiInstance.DeleteClientTemplateProtocolMappersModel(realm, id1, id2, ct);
             }
             catch (Exception e)
             {
@@ -205,6 +211,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -223,7 +230,7 @@ void (empty response body)
 
 <a name="getclientprotocolmappersmodel"></a>
 # **GetClientProtocolMappersModel**
-> ProtocolMapperRepresentation GetClientProtocolMappersModel (string realm, string id1, string id2)
+> ProtocolMapperRepresentation GetClientProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -243,16 +250,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ProtocolMapperRepresentation result = apiInstance.GetClientProtocolMappersModel(realm, id1, id2);
+                ProtocolMapperRepresentation result = apiInstance.GetClientProtocolMappersModel(realm, id1, id2, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -271,6 +279,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -289,7 +298,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientprotocolmappersmodels"></a>
 # **GetClientProtocolMappersModels**
-> List<ProtocolMapperRepresentation> GetClientProtocolMappersModels (string realm, string id)
+> List<ProtocolMapperRepresentation> GetClientProtocolMappersModels (string realm, string id, CancellationToken ct)
 
 
 
@@ -309,15 +318,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientProtocolMappersModels(realm, id);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientProtocolMappersModels(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -335,6 +345,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -353,7 +364,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientprotocolmappersprotocol"></a>
 # **GetClientProtocolMappersProtocol**
-> List<ProtocolMapperRepresentation> GetClientProtocolMappersProtocol (string realm, string id, string protocol)
+> List<ProtocolMapperRepresentation> GetClientProtocolMappersProtocol (string realm, string id, string protocol, CancellationToken ct)
 
 
 
@@ -373,16 +384,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientProtocolMappersProtocol(realm, id, protocol);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientProtocolMappersProtocol(realm, id, protocol, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -401,6 +413,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **protocol** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -419,7 +432,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopeprotocolmappersmodel"></a>
 # **GetClientScopeProtocolMappersModel**
-> ProtocolMapperRepresentation GetClientScopeProtocolMappersModel (string realm, string id1, string id2)
+> ProtocolMapperRepresentation GetClientScopeProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -439,16 +452,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ProtocolMapperRepresentation result = apiInstance.GetClientScopeProtocolMappersModel(realm, id1, id2);
+                ProtocolMapperRepresentation result = apiInstance.GetClientScopeProtocolMappersModel(realm, id1, id2, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -467,6 +481,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -485,7 +500,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopeprotocolmappersmodels"></a>
 # **GetClientScopeProtocolMappersModels**
-> List<ProtocolMapperRepresentation> GetClientScopeProtocolMappersModels (string realm, string id)
+> List<ProtocolMapperRepresentation> GetClientScopeProtocolMappersModels (string realm, string id, CancellationToken ct)
 
 
 
@@ -505,15 +520,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientScopeProtocolMappersModels(realm, id);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientScopeProtocolMappersModels(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -531,6 +547,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -549,7 +566,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopeprotocolmappersprotocol"></a>
 # **GetClientScopeProtocolMappersProtocol**
-> List<ProtocolMapperRepresentation> GetClientScopeProtocolMappersProtocol (string realm, string id, string protocol)
+> List<ProtocolMapperRepresentation> GetClientScopeProtocolMappersProtocol (string realm, string id, string protocol, CancellationToken ct)
 
 
 
@@ -569,16 +586,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientScopeProtocolMappersProtocol(realm, id, protocol);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientScopeProtocolMappersProtocol(realm, id, protocol, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -597,6 +615,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **protocol** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -615,7 +634,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplateprotocolmappersmodel"></a>
 # **GetClientTemplateProtocolMappersModel**
-> ProtocolMapperRepresentation GetClientTemplateProtocolMappersModel (string realm, string id1, string id2)
+> ProtocolMapperRepresentation GetClientTemplateProtocolMappersModel (string realm, string id1, string id2, CancellationToken ct)
 
 
 
@@ -635,16 +654,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ProtocolMapperRepresentation result = apiInstance.GetClientTemplateProtocolMappersModel(realm, id1, id2);
+                ProtocolMapperRepresentation result = apiInstance.GetClientTemplateProtocolMappersModel(realm, id1, id2, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -663,6 +683,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id1** | **string**|  | 
  **id2** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -681,7 +702,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplateprotocolmappersmodels"></a>
 # **GetClientTemplateProtocolMappersModels**
-> List<ProtocolMapperRepresentation> GetClientTemplateProtocolMappersModels (string realm, string id)
+> List<ProtocolMapperRepresentation> GetClientTemplateProtocolMappersModels (string realm, string id, CancellationToken ct)
 
 
 
@@ -701,15 +722,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientTemplateProtocolMappersModels(realm, id);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientTemplateProtocolMappersModels(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -727,6 +749,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -745,7 +768,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplateprotocolmappersprotocol"></a>
 # **GetClientTemplateProtocolMappersProtocol**
-> List<ProtocolMapperRepresentation> GetClientTemplateProtocolMappersProtocol (string realm, string id, string protocol)
+> List<ProtocolMapperRepresentation> GetClientTemplateProtocolMappersProtocol (string realm, string id, string protocol, CancellationToken ct)
 
 
 
@@ -765,16 +788,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientTemplateProtocolMappersProtocol(realm, id, protocol);
+                List&lt;ProtocolMapperRepresentation&gt; result = apiInstance.GetClientTemplateProtocolMappersProtocol(realm, id, protocol, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -793,6 +817,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **protocol** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -811,7 +836,7 @@ Name | Type | Description  | Notes
 
 <a name="postclientprotocolmappersaddmodels"></a>
 # **PostClientProtocolMappersAddModels**
-> void PostClientProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -831,16 +856,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientProtocolMappersAddModels(realm, id, body);
+                apiInstance.PostClientProtocolMappersAddModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -858,6 +884,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -876,7 +903,7 @@ void (empty response body)
 
 <a name="postclientprotocolmappersmodels"></a>
 # **PostClientProtocolMappersModels**
-> void PostClientProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -896,16 +923,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientProtocolMappersModels(realm, id, body);
+                apiInstance.PostClientProtocolMappersModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -923,6 +951,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -941,7 +970,7 @@ void (empty response body)
 
 <a name="postclientscopeprotocolmappersaddmodels"></a>
 # **PostClientScopeProtocolMappersAddModels**
-> void PostClientScopeProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientScopeProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -961,16 +990,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeProtocolMappersAddModels(realm, id, body);
+                apiInstance.PostClientScopeProtocolMappersAddModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -988,6 +1018,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1006,7 +1037,7 @@ void (empty response body)
 
 <a name="postclientscopeprotocolmappersmodels"></a>
 # **PostClientScopeProtocolMappersModels**
-> void PostClientScopeProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientScopeProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1026,16 +1057,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeProtocolMappersModels(realm, id, body);
+                apiInstance.PostClientScopeProtocolMappersModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1053,6 +1085,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1071,7 +1104,7 @@ void (empty response body)
 
 <a name="postclienttemplateprotocolmappersaddmodels"></a>
 # **PostClientTemplateProtocolMappersAddModels**
-> void PostClientTemplateProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientTemplateProtocolMappersAddModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1091,16 +1124,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientTemplateProtocolMappersAddModels(realm, id, body);
+                apiInstance.PostClientTemplateProtocolMappersAddModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1118,6 +1152,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1136,7 +1171,7 @@ void (empty response body)
 
 <a name="postclienttemplateprotocolmappersmodels"></a>
 # **PostClientTemplateProtocolMappersModels**
-> void PostClientTemplateProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body)
+> void PostClientTemplateProtocolMappersModels (string realm, string id, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1156,16 +1191,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientTemplateProtocolMappersModels(realm, id, body);
+                apiInstance.PostClientTemplateProtocolMappersModels(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1183,6 +1219,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1201,7 +1238,7 @@ void (empty response body)
 
 <a name="putclientprotocolmappersmodel"></a>
 # **PutClientProtocolMappersModel**
-> void PutClientProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body)
+> void PutClientProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1221,17 +1258,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClientProtocolMappersModel(realm, id1, id2, body);
+                apiInstance.PutClientProtocolMappersModel(realm, id1, id2, body, ct);
             }
             catch (Exception e)
             {
@@ -1250,6 +1288,7 @@ Name | Type | Description  | Notes
  **id1** | **string**|  | 
  **id2** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1268,7 +1307,7 @@ void (empty response body)
 
 <a name="putclientscopeprotocolmappersmodel"></a>
 # **PutClientScopeProtocolMappersModel**
-> void PutClientScopeProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body)
+> void PutClientScopeProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1288,17 +1327,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClientScopeProtocolMappersModel(realm, id1, id2, body);
+                apiInstance.PutClientScopeProtocolMappersModel(realm, id1, id2, body, ct);
             }
             catch (Exception e)
             {
@@ -1317,6 +1357,7 @@ Name | Type | Description  | Notes
  **id1** | **string**|  | 
  **id2** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1335,7 +1376,7 @@ void (empty response body)
 
 <a name="putclienttemplateprotocolmappersmodel"></a>
 # **PutClientTemplateProtocolMappersModel**
-> void PutClientTemplateProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body)
+> void PutClientTemplateProtocolMappersModel (string realm, string id1, string id2, ProtocolMapperRepresentation body, CancellationToken ct)
 
 
 
@@ -1355,17 +1396,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ProtocolMappersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClientTemplateProtocolMappersModel(realm, id1, id2, body);
+                apiInstance.PutClientTemplateProtocolMappersModel(realm, id1, id2, body, ct);
             }
             catch (Exception e)
             {
@@ -1384,6 +1426,7 @@ Name | Type | Description  | Notes
  **id1** | **string**|  | 
  **id2** | **string**|  | 
  **body** | [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)| ProtocolMapperRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

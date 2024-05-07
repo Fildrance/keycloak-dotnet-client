@@ -4,45 +4,46 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteConfig**](AuthenticationManagementApi.md#deleteconfig) | **DELETE** /{realm}/authentication/config/{id} | 
-[**DeleteExecution**](AuthenticationManagementApi.md#deleteexecution) | **DELETE** /{realm}/authentication/executions/{executionId} | 
-[**DeleteFlow**](AuthenticationManagementApi.md#deleteflow) | **DELETE** /{realm}/authentication/flows/{id} | 
-[**DeleteRequiredAction**](AuthenticationManagementApi.md#deleterequiredaction) | **DELETE** /{realm}/authentication/required-actions/{alias} | 
-[**GetAuthenticationConfig**](AuthenticationManagementApi.md#getauthenticationconfig) | **GET** /{realm}/authentication/config/{id} | 
-[**GetAuthenticatorProviders**](AuthenticationManagementApi.md#getauthenticatorproviders) | **GET** /{realm}/authentication/authenticator-providers | 
-[**GetClientAuthenticatorProviders**](AuthenticationManagementApi.md#getclientauthenticatorproviders) | **GET** /{realm}/authentication/client-authenticator-providers | 
-[**GetConfigDescription**](AuthenticationManagementApi.md#getconfigdescription) | **GET** /{realm}/authentication/config-description/{providerId} | 
-[**GetExecution**](AuthenticationManagementApi.md#getexecution) | **GET** /{realm}/authentication/executions/{executionId} | 
-[**GetExecutionConfig**](AuthenticationManagementApi.md#getexecutionconfig) | **GET** /{realm}/authentication/executions/{executionId}/config/{id} | 
-[**GetExecutions**](AuthenticationManagementApi.md#getexecutions) | **GET** /{realm}/authentication/flows/{flowAlias}/executions | 
-[**GetFlow**](AuthenticationManagementApi.md#getflow) | **GET** /{realm}/authentication/flows/{id} | 
-[**GetFlows**](AuthenticationManagementApi.md#getflows) | **GET** /{realm}/authentication/flows | 
-[**GetFormActionProviders**](AuthenticationManagementApi.md#getformactionproviders) | **GET** /{realm}/authentication/form-action-providers | 
-[**GetFormProviders**](AuthenticationManagementApi.md#getformproviders) | **GET** /{realm}/authentication/form-providers | 
-[**GetPerClientConfigDescription**](AuthenticationManagementApi.md#getperclientconfigdescription) | **GET** /{realm}/authentication/per-client-config-description | 
-[**GetRequiredAction**](AuthenticationManagementApi.md#getrequiredaction) | **GET** /{realm}/authentication/required-actions/{alias} | 
-[**GetRequiredActions**](AuthenticationManagementApi.md#getrequiredactions) | **GET** /{realm}/authentication/required-actions | 
-[**GetUnregisteredRequiredActions**](AuthenticationManagementApi.md#getunregisteredrequiredactions) | **GET** /{realm}/authentication/unregistered-required-actions | 
-[**PostAuthenticationConfig**](AuthenticationManagementApi.md#postauthenticationconfig) | **POST** /{realm}/authentication/config | 
-[**PostCopy**](AuthenticationManagementApi.md#postcopy) | **POST** /{realm}/authentication/flows/{flowAlias}/copy | 
-[**PostExecution**](AuthenticationManagementApi.md#postexecution) | **POST** /{realm}/authentication/flows/{flowAlias}/executions/execution | 
-[**PostExecutionConfig**](AuthenticationManagementApi.md#postexecutionconfig) | **POST** /{realm}/authentication/executions/{executionId}/config | 
-[**PostExecutionLowerPriority**](AuthenticationManagementApi.md#postexecutionlowerpriority) | **POST** /{realm}/authentication/executions/{executionId}/lower-priority | 
-[**PostExecutionRaisePriority**](AuthenticationManagementApi.md#postexecutionraisepriority) | **POST** /{realm}/authentication/executions/{executionId}/raise-priority | 
-[**PostExecutions**](AuthenticationManagementApi.md#postexecutions) | **POST** /{realm}/authentication/executions | 
-[**PostFlow**](AuthenticationManagementApi.md#postflow) | **POST** /{realm}/authentication/flows/{flowAlias}/executions/flow | 
-[**PostFlows**](AuthenticationManagementApi.md#postflows) | **POST** /{realm}/authentication/flows | 
-[**PostRegisterRequiredAction**](AuthenticationManagementApi.md#postregisterrequiredaction) | **POST** /{realm}/authentication/register-required-action | 
-[**PostRequiredActionLowerPriority**](AuthenticationManagementApi.md#postrequiredactionlowerpriority) | **POST** /{realm}/authentication/required-actions/{alias}/lower-priority | 
-[**PostRequiredActionRaisePriority**](AuthenticationManagementApi.md#postrequiredactionraisepriority) | **POST** /{realm}/authentication/required-actions/{alias}/raise-priority | 
-[**PutAuthenticationConfig**](AuthenticationManagementApi.md#putauthenticationconfig) | **PUT** /{realm}/authentication/config/{id} | 
-[**PutExecutions**](AuthenticationManagementApi.md#putexecutions) | **PUT** /{realm}/authentication/flows/{flowAlias}/executions | 
-[**PutFlow**](AuthenticationManagementApi.md#putflow) | **PUT** /{realm}/authentication/flows/{id} | 
-[**PutRequiredAction**](AuthenticationManagementApi.md#putrequiredaction) | **PUT** /{realm}/authentication/required-actions/{alias} | 
+[**DeleteConfig**](AuthenticationManagementApi.md#deleteconfig) | **Delete** /{realm}/authentication/config/{id} | 
+[**DeleteExecution**](AuthenticationManagementApi.md#deleteexecution) | **Delete** /{realm}/authentication/executions/{executionId} | 
+[**DeleteFlow**](AuthenticationManagementApi.md#deleteflow) | **Delete** /{realm}/authentication/flows/{id} | 
+[**DeleteRequiredAction**](AuthenticationManagementApi.md#deleterequiredaction) | **Delete** /{realm}/authentication/required-actions/{alias} | 
+[**GetAuthenticationConfig**](AuthenticationManagementApi.md#getauthenticationconfig) | **Get** /{realm}/authentication/config/{id} | 
+[**GetAuthenticatorProviders**](AuthenticationManagementApi.md#getauthenticatorproviders) | **Get** /{realm}/authentication/authenticator-providers | 
+[**GetClientAuthenticatorProviders**](AuthenticationManagementApi.md#getclientauthenticatorproviders) | **Get** /{realm}/authentication/client-authenticator-providers | 
+[**GetConfigDescription**](AuthenticationManagementApi.md#getconfigdescription) | **Get** /{realm}/authentication/config-description/{providerId} | 
+[**GetExecution**](AuthenticationManagementApi.md#getexecution) | **Get** /{realm}/authentication/executions/{executionId} | 
+[**GetExecutionConfig**](AuthenticationManagementApi.md#getexecutionconfig) | **Get** /{realm}/authentication/executions/{executionId}/config/{id} | 
+[**GetExecutions**](AuthenticationManagementApi.md#getexecutions) | **Get** /{realm}/authentication/flows/{flowAlias}/executions | 
+[**GetFlow**](AuthenticationManagementApi.md#getflow) | **Get** /{realm}/authentication/flows/{id} | 
+[**GetFlows**](AuthenticationManagementApi.md#getflows) | **Get** /{realm}/authentication/flows | 
+[**GetFormActionProviders**](AuthenticationManagementApi.md#getformactionproviders) | **Get** /{realm}/authentication/form-action-providers | 
+[**GetFormProviders**](AuthenticationManagementApi.md#getformproviders) | **Get** /{realm}/authentication/form-providers | 
+[**GetPerClientConfigDescription**](AuthenticationManagementApi.md#getperclientconfigdescription) | **Get** /{realm}/authentication/per-client-config-description | 
+[**GetRequiredAction**](AuthenticationManagementApi.md#getrequiredaction) | **Get** /{realm}/authentication/required-actions/{alias} | 
+[**GetRequiredActions**](AuthenticationManagementApi.md#getrequiredactions) | **Get** /{realm}/authentication/required-actions | 
+[**GetUnregisteredRequiredActions**](AuthenticationManagementApi.md#getunregisteredrequiredactions) | **Get** /{realm}/authentication/unregistered-required-actions | 
+[**PostAuthenticationConfig**](AuthenticationManagementApi.md#postauthenticationconfig) | **Post** /{realm}/authentication/config | 
+[**PostCopy**](AuthenticationManagementApi.md#postcopy) | **Post** /{realm}/authentication/flows/{flowAlias}/copy | 
+[**PostExecution**](AuthenticationManagementApi.md#postexecution) | **Post** /{realm}/authentication/flows/{flowAlias}/executions/execution | 
+[**PostExecutionConfig**](AuthenticationManagementApi.md#postexecutionconfig) | **Post** /{realm}/authentication/executions/{executionId}/config | 
+[**PostExecutionLowerPriority**](AuthenticationManagementApi.md#postexecutionlowerpriority) | **Post** /{realm}/authentication/executions/{executionId}/lower-priority | 
+[**PostExecutionRaisePriority**](AuthenticationManagementApi.md#postexecutionraisepriority) | **Post** /{realm}/authentication/executions/{executionId}/raise-priority | 
+[**PostExecutions**](AuthenticationManagementApi.md#postexecutions) | **Post** /{realm}/authentication/executions | 
+[**PostFlow**](AuthenticationManagementApi.md#postflow) | **Post** /{realm}/authentication/flows/{flowAlias}/executions/flow | 
+[**PostFlows**](AuthenticationManagementApi.md#postflows) | **Post** /{realm}/authentication/flows | 
+[**PostRegisterRequiredAction**](AuthenticationManagementApi.md#postregisterrequiredaction) | **Post** /{realm}/authentication/register-required-action | 
+[**PostRequiredActionLowerPriority**](AuthenticationManagementApi.md#postrequiredactionlowerpriority) | **Post** /{realm}/authentication/required-actions/{alias}/lower-priority | 
+[**PostRequiredActionRaisePriority**](AuthenticationManagementApi.md#postrequiredactionraisepriority) | **Post** /{realm}/authentication/required-actions/{alias}/raise-priority | 
+[**PutAuthenticationConfig**](AuthenticationManagementApi.md#putauthenticationconfig) | **Put** /{realm}/authentication/config/{id} | 
+[**PutExecutions**](AuthenticationManagementApi.md#putexecutions) | **Put** /{realm}/authentication/flows/{flowAlias}/executions | 
+[**PutFlow**](AuthenticationManagementApi.md#putflow) | **Put** /{realm}/authentication/flows/{id} | 
+[**PutRequiredAction**](AuthenticationManagementApi.md#putrequiredaction) | **Put** /{realm}/authentication/required-actions/{alias} | 
+
 
 <a name="deleteconfig"></a>
 # **DeleteConfig**
-> void DeleteConfig (string realm, string id)
+> void DeleteConfig (string realm, string id, CancellationToken ct)
 
 
 
@@ -62,15 +63,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteConfig(realm, id);
+                apiInstance.DeleteConfig(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -87,6 +89,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**| Configuration id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -105,7 +108,7 @@ void (empty response body)
 
 <a name="deleteexecution"></a>
 # **DeleteExecution**
-> void DeleteExecution (string realm, string executionId)
+> void DeleteExecution (string realm, string executionId, CancellationToken ct)
 
 
 
@@ -125,15 +128,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteExecution(realm, executionId);
+                apiInstance.DeleteExecution(realm, executionId, ct);
             }
             catch (Exception e)
             {
@@ -150,6 +154,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -168,7 +173,7 @@ void (empty response body)
 
 <a name="deleteflow"></a>
 # **DeleteFlow**
-> void DeleteFlow (string realm, string id)
+> void DeleteFlow (string realm, string id, CancellationToken ct)
 
 
 
@@ -188,15 +193,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteFlow(realm, id);
+                apiInstance.DeleteFlow(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -213,6 +219,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -231,7 +238,7 @@ void (empty response body)
 
 <a name="deleterequiredaction"></a>
 # **DeleteRequiredAction**
-> void DeleteRequiredAction (string realm, string alias)
+> void DeleteRequiredAction (string realm, string alias, CancellationToken ct)
 
 
 
@@ -251,15 +258,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteRequiredAction(realm, alias);
+                apiInstance.DeleteRequiredAction(realm, alias, ct);
             }
             catch (Exception e)
             {
@@ -276,6 +284,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **alias** | **string**| Alias of required action | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -294,7 +303,7 @@ void (empty response body)
 
 <a name="getauthenticationconfig"></a>
 # **GetAuthenticationConfig**
-> AuthenticatorConfigRepresentation GetAuthenticationConfig (string realm, string id)
+> AuthenticatorConfigRepresentation GetAuthenticationConfig (string realm, string id, CancellationToken ct)
 
 
 
@@ -314,15 +323,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                AuthenticatorConfigRepresentation result = apiInstance.GetAuthenticationConfig(realm, id);
+                AuthenticatorConfigRepresentation result = apiInstance.GetAuthenticationConfig(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -340,6 +350,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**| Configuration id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -358,7 +369,7 @@ Name | Type | Description  | Notes
 
 <a name="getauthenticatorproviders"></a>
 # **GetAuthenticatorProviders**
-> List<Object> GetAuthenticatorProviders (string realm)
+> List<Object> GetAuthenticatorProviders (string realm, CancellationToken ct)
 
 
 
@@ -378,14 +389,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;Object&gt; result = apiInstance.GetAuthenticatorProviders(realm);
+                List&lt;Object&gt; result = apiInstance.GetAuthenticatorProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -402,6 +414,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -420,7 +433,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientauthenticatorproviders"></a>
 # **GetClientAuthenticatorProviders**
-> List<Object> GetClientAuthenticatorProviders (string realm)
+> List<Object> GetClientAuthenticatorProviders (string realm, CancellationToken ct)
 
 
 
@@ -440,14 +453,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;Object&gt; result = apiInstance.GetClientAuthenticatorProviders(realm);
+                List&lt;Object&gt; result = apiInstance.GetClientAuthenticatorProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -464,6 +478,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -482,7 +497,7 @@ Name | Type | Description  | Notes
 
 <a name="getconfigdescription"></a>
 # **GetConfigDescription**
-> AuthenticatorConfigInfoRepresentation GetConfigDescription (string realm, string providerId)
+> AuthenticatorConfigInfoRepresentation GetConfigDescription (string realm, string providerId, CancellationToken ct)
 
 
 
@@ -502,15 +517,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var providerId = providerId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                AuthenticatorConfigInfoRepresentation result = apiInstance.GetConfigDescription(realm, providerId);
+                AuthenticatorConfigInfoRepresentation result = apiInstance.GetConfigDescription(realm, providerId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -528,6 +544,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **providerId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -546,7 +563,7 @@ Name | Type | Description  | Notes
 
 <a name="getexecution"></a>
 # **GetExecution**
-> void GetExecution (string realm, string executionId)
+> void GetExecution (string realm, string executionId, CancellationToken ct)
 
 
 
@@ -566,15 +583,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.GetExecution(realm, executionId);
+                apiInstance.GetExecution(realm, executionId, ct);
             }
             catch (Exception e)
             {
@@ -591,6 +609,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -609,7 +628,7 @@ void (empty response body)
 
 <a name="getexecutionconfig"></a>
 # **GetExecutionConfig**
-> AuthenticatorConfigRepresentation GetExecutionConfig (string realm, string executionId, string id)
+> AuthenticatorConfigRepresentation GetExecutionConfig (string realm, string executionId, string id, CancellationToken ct)
 
 
 
@@ -629,16 +648,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var id = id_example;  // string | Configuration id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                AuthenticatorConfigRepresentation result = apiInstance.GetExecutionConfig(realm, executionId, id);
+                AuthenticatorConfigRepresentation result = apiInstance.GetExecutionConfig(realm, executionId, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -657,6 +677,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**| Execution id | 
  **id** | **string**| Configuration id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -675,7 +696,7 @@ Name | Type | Description  | Notes
 
 <a name="getexecutions"></a>
 # **GetExecutions**
-> void GetExecutions (string realm, string flowAlias)
+> void GetExecutions (string realm, string flowAlias, CancellationToken ct)
 
 
 
@@ -695,15 +716,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Flow alias
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.GetExecutions(realm, flowAlias);
+                apiInstance.GetExecutions(realm, flowAlias, ct);
             }
             catch (Exception e)
             {
@@ -720,6 +742,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **flowAlias** | **string**| Flow alias | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -738,7 +761,7 @@ void (empty response body)
 
 <a name="getflow"></a>
 # **GetFlow**
-> AuthenticationFlowRepresentation GetFlow (string realm, string id)
+> AuthenticationFlowRepresentation GetFlow (string realm, string id, CancellationToken ct)
 
 
 
@@ -758,15 +781,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                AuthenticationFlowRepresentation result = apiInstance.GetFlow(realm, id);
+                AuthenticationFlowRepresentation result = apiInstance.GetFlow(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -784,6 +808,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -802,7 +827,7 @@ Name | Type | Description  | Notes
 
 <a name="getflows"></a>
 # **GetFlows**
-> List<AuthenticationFlowRepresentation> GetFlows (string realm)
+> List<AuthenticationFlowRepresentation> GetFlows (string realm, CancellationToken ct)
 
 
 
@@ -822,14 +847,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;AuthenticationFlowRepresentation&gt; result = apiInstance.GetFlows(realm);
+                List&lt;AuthenticationFlowRepresentation&gt; result = apiInstance.GetFlows(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -846,6 +872,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -864,7 +891,7 @@ Name | Type | Description  | Notes
 
 <a name="getformactionproviders"></a>
 # **GetFormActionProviders**
-> List<Object> GetFormActionProviders (string realm)
+> List<Object> GetFormActionProviders (string realm, CancellationToken ct)
 
 
 
@@ -884,14 +911,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;Object&gt; result = apiInstance.GetFormActionProviders(realm);
+                List&lt;Object&gt; result = apiInstance.GetFormActionProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -908,6 +936,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -926,7 +955,7 @@ Name | Type | Description  | Notes
 
 <a name="getformproviders"></a>
 # **GetFormProviders**
-> List<Object> GetFormProviders (string realm)
+> List<Object> GetFormProviders (string realm, CancellationToken ct)
 
 
 
@@ -946,14 +975,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;Object&gt; result = apiInstance.GetFormProviders(realm);
+                List&lt;Object&gt; result = apiInstance.GetFormProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -970,6 +1000,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -988,7 +1019,7 @@ Name | Type | Description  | Notes
 
 <a name="getperclientconfigdescription"></a>
 # **GetPerClientConfigDescription**
-> Dictionary<string, ConfigPropertyRepresentation> GetPerClientConfigDescription (string realm)
+> Dictionary<string, ConfigPropertyRepresentation> GetPerClientConfigDescription (string realm, CancellationToken ct)
 
 
 
@@ -1008,14 +1039,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, ConfigPropertyRepresentation&gt; result = apiInstance.GetPerClientConfigDescription(realm);
+                Dictionary&lt;string, ConfigPropertyRepresentation&gt; result = apiInstance.GetPerClientConfigDescription(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1032,6 +1064,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1050,7 +1083,7 @@ Name | Type | Description  | Notes
 
 <a name="getrequiredaction"></a>
 # **GetRequiredAction**
-> RequiredActionProviderRepresentation GetRequiredAction (string realm, string alias)
+> RequiredActionProviderRepresentation GetRequiredAction (string realm, string alias, CancellationToken ct)
 
 
 
@@ -1070,15 +1103,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                RequiredActionProviderRepresentation result = apiInstance.GetRequiredAction(realm, alias);
+                RequiredActionProviderRepresentation result = apiInstance.GetRequiredAction(realm, alias, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1096,6 +1130,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **alias** | **string**| Alias of required action | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1114,7 +1149,7 @@ Name | Type | Description  | Notes
 
 <a name="getrequiredactions"></a>
 # **GetRequiredActions**
-> List<RequiredActionProviderRepresentation> GetRequiredActions (string realm)
+> List<RequiredActionProviderRepresentation> GetRequiredActions (string realm, CancellationToken ct)
 
 
 
@@ -1134,14 +1169,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RequiredActionProviderRepresentation&gt; result = apiInstance.GetRequiredActions(realm);
+                List&lt;RequiredActionProviderRepresentation&gt; result = apiInstance.GetRequiredActions(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1158,6 +1194,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1176,7 +1213,7 @@ Name | Type | Description  | Notes
 
 <a name="getunregisteredrequiredactions"></a>
 # **GetUnregisteredRequiredActions**
-> List<string> GetUnregisteredRequiredActions (string realm)
+> List<string> GetUnregisteredRequiredActions (string realm, CancellationToken ct)
 
 
 
@@ -1196,14 +1233,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetUnregisteredRequiredActions(realm);
+                List&lt;string&gt; result = apiInstance.GetUnregisteredRequiredActions(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1220,6 +1258,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1238,7 +1277,7 @@ Name | Type | Description  | Notes
 
 <a name="postauthenticationconfig"></a>
 # **PostAuthenticationConfig**
-> void PostAuthenticationConfig (string realm, AuthenticatorConfigRepresentation body)
+> void PostAuthenticationConfig (string realm, AuthenticatorConfigRepresentation body, CancellationToken ct)
 
 
 
@@ -1258,15 +1297,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostAuthenticationConfig(realm, body);
+                apiInstance.PostAuthenticationConfig(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1283,6 +1323,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**AuthenticatorConfigRepresentation**](AuthenticatorConfigRepresentation.md)| AuthenticatorConfigRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1301,7 +1342,7 @@ void (empty response body)
 
 <a name="postcopy"></a>
 # **PostCopy**
-> void PostCopy (string realm, string flowAlias, string body)
+> void PostCopy (string realm, string flowAlias, string body, CancellationToken ct)
 
 
 
@@ -1321,16 +1362,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | name of the existing authentication flow
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostCopy(realm, flowAlias, body);
+                apiInstance.PostCopy(realm, flowAlias, body, ct);
             }
             catch (Exception e)
             {
@@ -1348,6 +1390,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **flowAlias** | **string**| name of the existing authentication flow | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1366,7 +1409,7 @@ void (empty response body)
 
 <a name="postexecution"></a>
 # **PostExecution**
-> void PostExecution (string realm, string flowAlias, string body)
+> void PostExecution (string realm, string flowAlias, string body, CancellationToken ct)
 
 
 
@@ -1386,16 +1429,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Alias of parent flow
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostExecution(realm, flowAlias, body);
+                apiInstance.PostExecution(realm, flowAlias, body, ct);
             }
             catch (Exception e)
             {
@@ -1413,6 +1457,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **flowAlias** | **string**| Alias of parent flow | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1431,7 +1476,7 @@ void (empty response body)
 
 <a name="postexecutionconfig"></a>
 # **PostExecutionConfig**
-> void PostExecutionConfig (string realm, string executionId, AuthenticatorConfigRepresentation body)
+> void PostExecutionConfig (string realm, string executionId, AuthenticatorConfigRepresentation body, CancellationToken ct)
 
 
 
@@ -1451,16 +1496,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostExecutionConfig(realm, executionId, body);
+                apiInstance.PostExecutionConfig(realm, executionId, body, ct);
             }
             catch (Exception e)
             {
@@ -1478,6 +1524,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**| Execution id | 
  **body** | [**AuthenticatorConfigRepresentation**](AuthenticatorConfigRepresentation.md)| AuthenticatorConfigRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1496,7 +1543,7 @@ void (empty response body)
 
 <a name="postexecutionlowerpriority"></a>
 # **PostExecutionLowerPriority**
-> void PostExecutionLowerPriority (string realm, string executionId)
+> void PostExecutionLowerPriority (string realm, string executionId, CancellationToken ct)
 
 
 
@@ -1516,15 +1563,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostExecutionLowerPriority(realm, executionId);
+                apiInstance.PostExecutionLowerPriority(realm, executionId, ct);
             }
             catch (Exception e)
             {
@@ -1541,6 +1589,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**| Execution id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1559,7 +1608,7 @@ void (empty response body)
 
 <a name="postexecutionraisepriority"></a>
 # **PostExecutionRaisePriority**
-> void PostExecutionRaisePriority (string realm, string executionId)
+> void PostExecutionRaisePriority (string realm, string executionId, CancellationToken ct)
 
 
 
@@ -1579,15 +1628,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostExecutionRaisePriority(realm, executionId);
+                apiInstance.PostExecutionRaisePriority(realm, executionId, ct);
             }
             catch (Exception e)
             {
@@ -1604,6 +1654,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **executionId** | **string**| Execution id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1622,7 +1673,7 @@ void (empty response body)
 
 <a name="postexecutions"></a>
 # **PostExecutions**
-> void PostExecutions (string realm, AuthenticationExecutionRepresentation body)
+> void PostExecutions (string realm, AuthenticationExecutionRepresentation body, CancellationToken ct)
 
 
 
@@ -1642,15 +1693,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticationExecutionRepresentation(); // AuthenticationExecutionRepresentation | AuthenticationExecutionRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostExecutions(realm, body);
+                apiInstance.PostExecutions(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1667,6 +1719,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**AuthenticationExecutionRepresentation**](AuthenticationExecutionRepresentation.md)| AuthenticationExecutionRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1685,7 +1738,7 @@ void (empty response body)
 
 <a name="postflow"></a>
 # **PostFlow**
-> void PostFlow (string realm, string flowAlias, string body)
+> void PostFlow (string realm, string flowAlias, string body, CancellationToken ct)
 
 
 
@@ -1705,16 +1758,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Alias of parent authentication flow
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostFlow(realm, flowAlias, body);
+                apiInstance.PostFlow(realm, flowAlias, body, ct);
             }
             catch (Exception e)
             {
@@ -1732,6 +1786,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **flowAlias** | **string**| Alias of parent authentication flow | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1750,7 +1805,7 @@ void (empty response body)
 
 <a name="postflows"></a>
 # **PostFlows**
-> void PostFlows (string realm, AuthenticationFlowRepresentation body)
+> void PostFlows (string realm, AuthenticationFlowRepresentation body, CancellationToken ct)
 
 
 
@@ -1770,15 +1825,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticationFlowRepresentation(); // AuthenticationFlowRepresentation | AuthenticationFlowRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostFlows(realm, body);
+                apiInstance.PostFlows(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1795,6 +1851,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**AuthenticationFlowRepresentation**](AuthenticationFlowRepresentation.md)| AuthenticationFlowRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1813,7 +1870,7 @@ void (empty response body)
 
 <a name="postregisterrequiredaction"></a>
 # **PostRegisterRequiredAction**
-> void PostRegisterRequiredAction (string realm, string body)
+> void PostRegisterRequiredAction (string realm, string body, CancellationToken ct)
 
 
 
@@ -1833,15 +1890,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostRegisterRequiredAction(realm, body);
+                apiInstance.PostRegisterRequiredAction(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1858,6 +1916,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1876,7 +1935,7 @@ void (empty response body)
 
 <a name="postrequiredactionlowerpriority"></a>
 # **PostRequiredActionLowerPriority**
-> void PostRequiredActionLowerPriority (string realm, string alias)
+> void PostRequiredActionLowerPriority (string realm, string alias, CancellationToken ct)
 
 
 
@@ -1896,15 +1955,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostRequiredActionLowerPriority(realm, alias);
+                apiInstance.PostRequiredActionLowerPriority(realm, alias, ct);
             }
             catch (Exception e)
             {
@@ -1921,6 +1981,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **alias** | **string**| Alias of required action | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1939,7 +2000,7 @@ void (empty response body)
 
 <a name="postrequiredactionraisepriority"></a>
 # **PostRequiredActionRaisePriority**
-> void PostRequiredActionRaisePriority (string realm, string alias)
+> void PostRequiredActionRaisePriority (string realm, string alias, CancellationToken ct)
 
 
 
@@ -1959,15 +2020,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostRequiredActionRaisePriority(realm, alias);
+                apiInstance.PostRequiredActionRaisePriority(realm, alias, ct);
             }
             catch (Exception e)
             {
@@ -1984,6 +2046,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **alias** | **string**| Alias of required action | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2002,7 +2065,7 @@ void (empty response body)
 
 <a name="putauthenticationconfig"></a>
 # **PutAuthenticationConfig**
-> void PutAuthenticationConfig (string realm, string id, AuthenticatorConfigRepresentation body)
+> void PutAuthenticationConfig (string realm, string id, AuthenticatorConfigRepresentation body, CancellationToken ct)
 
 
 
@@ -2022,16 +2085,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutAuthenticationConfig(realm, id, body);
+                apiInstance.PutAuthenticationConfig(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2049,6 +2113,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**| Configuration id | 
  **body** | [**AuthenticatorConfigRepresentation**](AuthenticatorConfigRepresentation.md)| AuthenticatorConfigRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2067,7 +2132,7 @@ void (empty response body)
 
 <a name="putexecutions"></a>
 # **PutExecutions**
-> void PutExecutions (string realm, string flowAlias, AuthenticationExecutionInfoRepresentation body)
+> void PutExecutions (string realm, string flowAlias, AuthenticationExecutionInfoRepresentation body, CancellationToken ct)
 
 
 
@@ -2087,16 +2152,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Flow alias
             var body = new AuthenticationExecutionInfoRepresentation(); // AuthenticationExecutionInfoRepresentation | AuthenticationExecutionInfoRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutExecutions(realm, flowAlias, body);
+                apiInstance.PutExecutions(realm, flowAlias, body, ct);
             }
             catch (Exception e)
             {
@@ -2114,6 +2180,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **flowAlias** | **string**| Flow alias | 
  **body** | [**AuthenticationExecutionInfoRepresentation**](AuthenticationExecutionInfoRepresentation.md)| AuthenticationExecutionInfoRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2132,7 +2199,7 @@ void (empty response body)
 
 <a name="putflow"></a>
 # **PutFlow**
-> void PutFlow (string realm, string id, AuthenticationFlowRepresentation body)
+> void PutFlow (string realm, string id, AuthenticationFlowRepresentation body, CancellationToken ct)
 
 
 
@@ -2152,16 +2219,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new AuthenticationFlowRepresentation(); // AuthenticationFlowRepresentation | AuthenticationFlowRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutFlow(realm, id, body);
+                apiInstance.PutFlow(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2179,6 +2247,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**AuthenticationFlowRepresentation**](AuthenticationFlowRepresentation.md)| AuthenticationFlowRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2197,7 +2266,7 @@ void (empty response body)
 
 <a name="putrequiredaction"></a>
 # **PutRequiredAction**
-> void PutRequiredAction (string realm, string alias, RequiredActionProviderRepresentation body)
+> void PutRequiredAction (string realm, string alias, RequiredActionProviderRepresentation body, CancellationToken ct)
 
 
 
@@ -2217,16 +2286,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AuthenticationManagementApi();
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var body = new RequiredActionProviderRepresentation(); // RequiredActionProviderRepresentation | RequiredActionProviderRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutRequiredAction(realm, alias, body);
+                apiInstance.PutRequiredAction(realm, alias, body, ct);
             }
             catch (Exception e)
             {
@@ -2244,6 +2314,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **alias** | **string**| Alias of required action | 
  **body** | [**RequiredActionProviderRepresentation**](RequiredActionProviderRepresentation.md)| RequiredActionProviderRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

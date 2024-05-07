@@ -4,20 +4,21 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteRolesById**](RolesByIDApi.md#deleterolesbyid) | **DELETE** /{realm}/roles-by-id/{role-id} | 
-[**DeleteRolesByIdComposites**](RolesByIDApi.md#deleterolesbyidcomposites) | **DELETE** /{realm}/roles-by-id/{role-id}/composites | 
-[**GetRolesById**](RolesByIDApi.md#getrolesbyid) | **GET** /{realm}/roles-by-id/{role-id} | 
-[**GetRolesByIdComposites**](RolesByIDApi.md#getrolesbyidcomposites) | **GET** /{realm}/roles-by-id/{role-id}/composites | 
-[**GetRolesByIdCompositesClient**](RolesByIDApi.md#getrolesbyidcompositesclient) | **GET** /{realm}/roles-by-id/{role-id}/composites/clients/{clientUuid} | 
-[**GetRolesByIdCompositesRealm**](RolesByIDApi.md#getrolesbyidcompositesrealm) | **GET** /{realm}/roles-by-id/{role-id}/composites/realm | 
-[**GetRolesByIdManagementPermissions**](RolesByIDApi.md#getrolesbyidmanagementpermissions) | **GET** /{realm}/roles-by-id/{role-id}/management/permissions | 
-[**PostRolesByIdComposites**](RolesByIDApi.md#postrolesbyidcomposites) | **POST** /{realm}/roles-by-id/{role-id}/composites | 
-[**PutRolesById**](RolesByIDApi.md#putrolesbyid) | **PUT** /{realm}/roles-by-id/{role-id} | 
-[**PutRolesByIdManagementPermissions**](RolesByIDApi.md#putrolesbyidmanagementpermissions) | **PUT** /{realm}/roles-by-id/{role-id}/management/permissions | 
+[**DeleteRolesById**](RolesByIDApi.md#deleterolesbyid) | **Delete** /{realm}/roles-by-id/{role-id} | 
+[**DeleteRolesByIdComposites**](RolesByIDApi.md#deleterolesbyidcomposites) | **Delete** /{realm}/roles-by-id/{role-id}/composites | 
+[**GetRolesById**](RolesByIDApi.md#getrolesbyid) | **Get** /{realm}/roles-by-id/{role-id} | 
+[**GetRolesByIdComposites**](RolesByIDApi.md#getrolesbyidcomposites) | **Get** /{realm}/roles-by-id/{role-id}/composites | 
+[**GetRolesByIdCompositesClient**](RolesByIDApi.md#getrolesbyidcompositesclient) | **Get** /{realm}/roles-by-id/{role-id}/composites/clients/{clientUuid} | 
+[**GetRolesByIdCompositesRealm**](RolesByIDApi.md#getrolesbyidcompositesrealm) | **Get** /{realm}/roles-by-id/{role-id}/composites/realm | 
+[**GetRolesByIdManagementPermissions**](RolesByIDApi.md#getrolesbyidmanagementpermissions) | **Get** /{realm}/roles-by-id/{role-id}/management/permissions | 
+[**PostRolesByIdComposites**](RolesByIDApi.md#postrolesbyidcomposites) | **Post** /{realm}/roles-by-id/{role-id}/composites | 
+[**PutRolesById**](RolesByIDApi.md#putrolesbyid) | **Put** /{realm}/roles-by-id/{role-id} | 
+[**PutRolesByIdManagementPermissions**](RolesByIDApi.md#putrolesbyidmanagementpermissions) | **Put** /{realm}/roles-by-id/{role-id}/management/permissions | 
+
 
 <a name="deleterolesbyid"></a>
 # **DeleteRolesById**
-> void DeleteRolesById (string realm, string roleId)
+> void DeleteRolesById (string realm, string roleId, CancellationToken ct)
 
 
 
@@ -37,15 +38,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | id of role
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteRolesById(realm, roleId);
+                apiInstance.DeleteRolesById(realm, roleId, ct);
             }
             catch (Exception e)
             {
@@ -62,6 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**| id of role | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -80,7 +83,7 @@ void (empty response body)
 
 <a name="deleterolesbyidcomposites"></a>
 # **DeleteRolesByIdComposites**
-> void DeleteRolesByIdComposites (string realm, string roleId, RoleRepresentation body)
+> void DeleteRolesByIdComposites (string realm, string roleId, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -100,16 +103,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteRolesByIdComposites(realm, roleId, body);
+                apiInstance.DeleteRolesByIdComposites(realm, roleId, body, ct);
             }
             catch (Exception e)
             {
@@ -127,6 +131,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -145,7 +150,7 @@ void (empty response body)
 
 <a name="getrolesbyid"></a>
 # **GetRolesById**
-> RoleRepresentation GetRolesById (string realm, string roleId)
+> RoleRepresentation GetRolesById (string realm, string roleId, CancellationToken ct)
 
 
 
@@ -165,15 +170,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | id of role
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                RoleRepresentation result = apiInstance.GetRolesById(realm, roleId);
+                RoleRepresentation result = apiInstance.GetRolesById(realm, roleId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -191,6 +197,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**| id of role | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -209,7 +216,7 @@ Name | Type | Description  | Notes
 
 <a name="getrolesbyidcomposites"></a>
 # **GetRolesByIdComposites**
-> List<RoleRepresentation> GetRolesByIdComposites (string realm, string roleId, string first, string max, string search)
+> List<RoleRepresentation> GetRolesByIdComposites (string realm, string roleId, string first, string max, string search, CancellationToken ct)
 
 
 
@@ -229,7 +236,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -237,10 +244,11 @@ namespace Example
             var first = first_example;  // string |  (optional) 
             var max = max_example;  // string |  (optional) 
             var search = search_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdComposites(realm, roleId, first, max, search);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdComposites(realm, roleId, first, max, search, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -261,6 +269,7 @@ Name | Type | Description  | Notes
  **first** | **string**|  | [optional] 
  **max** | **string**|  | [optional] 
  **search** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -279,7 +288,7 @@ Name | Type | Description  | Notes
 
 <a name="getrolesbyidcompositesclient"></a>
 # **GetRolesByIdCompositesClient**
-> List<RoleRepresentation> GetRolesByIdCompositesClient (string realm, string roleId, string clientUuid)
+> List<RoleRepresentation> GetRolesByIdCompositesClient (string realm, string roleId, string clientUuid, CancellationToken ct)
 
 
 
@@ -299,16 +308,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
             var clientUuid = clientUuid_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdCompositesClient(realm, roleId, clientUuid);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdCompositesClient(realm, roleId, clientUuid, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -327,6 +337,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
  **clientUuid** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -345,7 +356,7 @@ Name | Type | Description  | Notes
 
 <a name="getrolesbyidcompositesrealm"></a>
 # **GetRolesByIdCompositesRealm**
-> List<RoleRepresentation> GetRolesByIdCompositesRealm (string realm, string roleId)
+> List<RoleRepresentation> GetRolesByIdCompositesRealm (string realm, string roleId, CancellationToken ct)
 
 
 
@@ -365,15 +376,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdCompositesRealm(realm, roleId);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetRolesByIdCompositesRealm(realm, roleId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -391,6 +403,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -409,7 +422,7 @@ Name | Type | Description  | Notes
 
 <a name="getrolesbyidmanagementpermissions"></a>
 # **GetRolesByIdManagementPermissions**
-> ManagementPermissionReference GetRolesByIdManagementPermissions (string realm, string roleId)
+> ManagementPermissionReference GetRolesByIdManagementPermissions (string realm, string roleId, CancellationToken ct)
 
 
 
@@ -429,15 +442,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.GetRolesByIdManagementPermissions(realm, roleId);
+                ManagementPermissionReference result = apiInstance.GetRolesByIdManagementPermissions(realm, roleId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -455,6 +469,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -473,7 +488,7 @@ Name | Type | Description  | Notes
 
 <a name="postrolesbyidcomposites"></a>
 # **PostRolesByIdComposites**
-> void PostRolesByIdComposites (string realm, string roleId, RoleRepresentation body)
+> void PostRolesByIdComposites (string realm, string roleId, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -493,16 +508,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostRolesByIdComposites(realm, roleId, body);
+                apiInstance.PostRolesByIdComposites(realm, roleId, body, ct);
             }
             catch (Exception e)
             {
@@ -520,6 +536,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -538,7 +555,7 @@ void (empty response body)
 
 <a name="putrolesbyid"></a>
 # **PutRolesById**
-> void PutRolesById (string realm, string roleId, RoleRepresentation body)
+> void PutRolesById (string realm, string roleId, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -558,16 +575,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | id of role
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutRolesById(realm, roleId, body);
+                apiInstance.PutRolesById(realm, roleId, body, ct);
             }
             catch (Exception e)
             {
@@ -585,6 +603,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**| id of role | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -603,7 +622,7 @@ void (empty response body)
 
 <a name="putrolesbyidmanagementpermissions"></a>
 # **PutRolesByIdManagementPermissions**
-> ManagementPermissionReference PutRolesByIdManagementPermissions (string realm, string roleId, ManagementPermissionReference body)
+> ManagementPermissionReference PutRolesByIdManagementPermissions (string realm, string roleId, ManagementPermissionReference body, CancellationToken ct)
 
 
 
@@ -623,16 +642,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RolesByIDApi();
             var realm = realm_example;  // string | realm name (not id!)
             var roleId = roleId_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.PutRolesByIdManagementPermissions(realm, roleId, body);
+                ManagementPermissionReference result = apiInstance.PutRolesByIdManagementPermissions(realm, roleId, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -651,6 +671,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **roleId** | **string**|  | 
  **body** | [**ManagementPermissionReference**](ManagementPermissionReference.md)| ManagementPermissionReference | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

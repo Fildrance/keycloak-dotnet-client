@@ -4,16 +4,17 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteComponent**](ComponentApi.md#deletecomponent) | **DELETE** /{realm}/components/{id} | 
-[**GetComponent**](ComponentApi.md#getcomponent) | **GET** /{realm}/components/{id} | 
-[**GetComponents**](ComponentApi.md#getcomponents) | **GET** /{realm}/components | 
-[**GetSubComponentTypes**](ComponentApi.md#getsubcomponenttypes) | **GET** /{realm}/components/{id}/sub-component-types | 
-[**PostComponents**](ComponentApi.md#postcomponents) | **POST** /{realm}/components | 
-[**PutComponent**](ComponentApi.md#putcomponent) | **PUT** /{realm}/components/{id} | 
+[**DeleteComponent**](ComponentApi.md#deletecomponent) | **Delete** /{realm}/components/{id} | 
+[**GetComponent**](ComponentApi.md#getcomponent) | **Get** /{realm}/components/{id} | 
+[**GetComponents**](ComponentApi.md#getcomponents) | **Get** /{realm}/components | 
+[**GetSubComponentTypes**](ComponentApi.md#getsubcomponenttypes) | **Get** /{realm}/components/{id}/sub-component-types | 
+[**PostComponents**](ComponentApi.md#postcomponents) | **Post** /{realm}/components | 
+[**PutComponent**](ComponentApi.md#putcomponent) | **Put** /{realm}/components/{id} | 
+
 
 <a name="deletecomponent"></a>
 # **DeleteComponent**
-> void DeleteComponent (string realm, string id)
+> void DeleteComponent (string realm, string id, CancellationToken ct)
 
 
 
@@ -31,15 +32,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteComponent(realm, id);
+                apiInstance.DeleteComponent(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -56,6 +58,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -74,7 +77,7 @@ void (empty response body)
 
 <a name="getcomponent"></a>
 # **GetComponent**
-> ComponentRepresentation GetComponent (string realm, string id)
+> ComponentRepresentation GetComponent (string realm, string id, CancellationToken ct)
 
 
 
@@ -92,15 +95,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ComponentRepresentation result = apiInstance.GetComponent(realm, id);
+                ComponentRepresentation result = apiInstance.GetComponent(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -118,6 +122,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -136,7 +141,7 @@ Name | Type | Description  | Notes
 
 <a name="getcomponents"></a>
 # **GetComponents**
-> List<ComponentRepresentation> GetComponents (string realm, string name, string parent, string type)
+> List<ComponentRepresentation> GetComponents (string realm, string name, string parent, string type, CancellationToken ct)
 
 
 
@@ -154,17 +159,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var name = name_example;  // string |  (optional) 
             var parent = parent_example;  // string |  (optional) 
             var type = type_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ComponentRepresentation&gt; result = apiInstance.GetComponents(realm, name, parent, type);
+                List&lt;ComponentRepresentation&gt; result = apiInstance.GetComponents(realm, name, parent, type, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -184,6 +190,7 @@ Name | Type | Description  | Notes
  **name** | **string**|  | [optional] 
  **parent** | **string**|  | [optional] 
  **type** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -202,7 +209,7 @@ Name | Type | Description  | Notes
 
 <a name="getsubcomponenttypes"></a>
 # **GetSubComponentTypes**
-> List<ComponentTypeRepresentation> GetSubComponentTypes (string realm, string id, string type)
+> List<ComponentTypeRepresentation> GetSubComponentTypes (string realm, string id, string type, CancellationToken ct)
 
 
 
@@ -222,16 +229,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var type = type_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetSubComponentTypes(realm, id, type);
+                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetSubComponentTypes(realm, id, type, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -250,6 +258,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **type** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -268,7 +277,7 @@ Name | Type | Description  | Notes
 
 <a name="postcomponents"></a>
 # **PostComponents**
-> void PostComponents (string realm, ComponentRepresentation body)
+> void PostComponents (string realm, ComponentRepresentation body, CancellationToken ct)
 
 
 
@@ -286,15 +295,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ComponentRepresentation(); // ComponentRepresentation | ComponentRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostComponents(realm, body);
+                apiInstance.PostComponents(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -311,6 +321,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ComponentRepresentation**](ComponentRepresentation.md)| ComponentRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -329,7 +340,7 @@ void (empty response body)
 
 <a name="putcomponent"></a>
 # **PutComponent**
-> void PutComponent (string realm, string id, ComponentRepresentation body)
+> void PutComponent (string realm, string id, ComponentRepresentation body, CancellationToken ct)
 
 
 
@@ -347,16 +358,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ComponentApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ComponentRepresentation(); // ComponentRepresentation | ComponentRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutComponent(realm, id, body);
+                apiInstance.PutComponent(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -374,6 +386,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ComponentRepresentation**](ComponentRepresentation.md)| ComponentRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

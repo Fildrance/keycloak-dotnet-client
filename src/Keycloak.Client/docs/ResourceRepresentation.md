@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **Owner** | [**ResourceRepresentationOwner**](ResourceRepresentationOwner.md) |  | [optional] 
 **OwnerManagedAccess** | **bool?** |  | [optional] 
 **DisplayName** | **string** |  | [optional] 
-**Attributes** | **Dictionary&lt;string, List&gt;** |  | [optional] 
+**Attributes** | **Dictionary&lt;string, ArrayList&gt;** |  | [optional] 
 **Uri** | **string** |  | [optional] 
 **ScopesUma** | [**List&lt;ScopeRepresentation&gt;**](ScopeRepresentation.md) |  | [optional] 
 

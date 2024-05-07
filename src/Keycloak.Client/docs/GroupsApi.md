@@ -4,21 +4,22 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteGroupByRealmById**](GroupsApi.md#deletegroupbyrealmbyid) | **DELETE** /{realm}/groups/{id} | 
-[**GetChildren**](GroupsApi.md#getchildren) | **GET** /{realm}/groups/{id}/children | 
-[**GetGroup**](GroupsApi.md#getgroup) | **GET** /{realm}/groups/{id} | 
-[**GetGroupManagementPermissions**](GroupsApi.md#getgroupmanagementpermissions) | **GET** /{realm}/groups/{id}/management/permissions | 
-[**GetGroupsByRealm**](GroupsApi.md#getgroupsbyrealm) | **GET** /{realm}/groups | 
-[**GetGroupsCountByRealm**](GroupsApi.md#getgroupscountbyrealm) | **GET** /{realm}/groups/count | 
-[**GetMembers**](GroupsApi.md#getmembers) | **GET** /{realm}/groups/{id}/members | 
-[**PostChildren**](GroupsApi.md#postchildren) | **POST** /{realm}/groups/{id}/children | 
-[**PostGroups**](GroupsApi.md#postgroups) | **POST** /{realm}/groups | 
-[**PutGroupByRealmById**](GroupsApi.md#putgroupbyrealmbyid) | **PUT** /{realm}/groups/{id} | 
-[**PutGroupManagementPermissions**](GroupsApi.md#putgroupmanagementpermissions) | **PUT** /{realm}/groups/{id}/management/permissions | 
+[**DeleteGroupByRealmById**](GroupsApi.md#deletegroupbyrealmbyid) | **Delete** /{realm}/groups/{id} | 
+[**GetChildren**](GroupsApi.md#getchildren) | **Get** /{realm}/groups/{id}/children | 
+[**GetGroup**](GroupsApi.md#getgroup) | **Get** /{realm}/groups/{id} | 
+[**GetGroupManagementPermissions**](GroupsApi.md#getgroupmanagementpermissions) | **Get** /{realm}/groups/{id}/management/permissions | 
+[**GetGroupsByRealm**](GroupsApi.md#getgroupsbyrealm) | **Get** /{realm}/groups | 
+[**GetGroupsCountByRealm**](GroupsApi.md#getgroupscountbyrealm) | **Get** /{realm}/groups/count | 
+[**GetMembers**](GroupsApi.md#getmembers) | **Get** /{realm}/groups/{id}/members | 
+[**PostChildren**](GroupsApi.md#postchildren) | **Post** /{realm}/groups/{id}/children | 
+[**PostGroups**](GroupsApi.md#postgroups) | **Post** /{realm}/groups | 
+[**PutGroupByRealmById**](GroupsApi.md#putgroupbyrealmbyid) | **Put** /{realm}/groups/{id} | 
+[**PutGroupManagementPermissions**](GroupsApi.md#putgroupmanagementpermissions) | **Put** /{realm}/groups/{id}/management/permissions | 
+
 
 <a name="deletegroupbyrealmbyid"></a>
 # **DeleteGroupByRealmById**
-> void DeleteGroupByRealmById (string realm, string id)
+> void DeleteGroupByRealmById (string realm, string id, CancellationToken ct)
 
 
 
@@ -36,15 +37,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteGroupByRealmById(realm, id);
+                apiInstance.DeleteGroupByRealmById(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -61,6 +63,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -79,7 +82,7 @@ void (empty response body)
 
 <a name="getchildren"></a>
 # **GetChildren**
-> List<GroupRepresentation> GetChildren (string realm, string id, string briefRepresentation, string first, string max)
+> List<GroupRepresentation> GetChildren (string realm, string id, string briefRepresentation, string first, string max, CancellationToken ct)
 
 
 
@@ -99,7 +102,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -107,10 +110,11 @@ namespace Example
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
             var first = first_example;  // string |  (optional) 
             var max = max_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;GroupRepresentation&gt; result = apiInstance.GetChildren(realm, id, briefRepresentation, first, max);
+                List&lt;GroupRepresentation&gt; result = apiInstance.GetChildren(realm, id, briefRepresentation, first, max, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -131,6 +135,7 @@ Name | Type | Description  | Notes
  **briefRepresentation** | **string**|  | [optional] 
  **first** | **string**|  | [optional] 
  **max** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -149,7 +154,7 @@ Name | Type | Description  | Notes
 
 <a name="getgroup"></a>
 # **GetGroup**
-> GroupRepresentation GetGroup (string realm, string id)
+> GroupRepresentation GetGroup (string realm, string id, CancellationToken ct)
 
 
 
@@ -167,15 +172,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GroupRepresentation result = apiInstance.GetGroup(realm, id);
+                GroupRepresentation result = apiInstance.GetGroup(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -193,6 +199,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -211,7 +218,7 @@ Name | Type | Description  | Notes
 
 <a name="getgroupmanagementpermissions"></a>
 # **GetGroupManagementPermissions**
-> ManagementPermissionReference GetGroupManagementPermissions (string realm, string id)
+> ManagementPermissionReference GetGroupManagementPermissions (string realm, string id, CancellationToken ct)
 
 
 
@@ -231,15 +238,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.GetGroupManagementPermissions(realm, id);
+                ManagementPermissionReference result = apiInstance.GetGroupManagementPermissions(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -257,6 +265,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -275,7 +284,7 @@ Name | Type | Description  | Notes
 
 <a name="getgroupsbyrealm"></a>
 # **GetGroupsByRealm**
-> List<GroupRepresentation> GetGroupsByRealm (string realm, string briefRepresentation, string exact, string first, string max, string populateHierarchy, string q, string search)
+> List<GroupRepresentation> GetGroupsByRealm (string realm, string briefRepresentation, string exact, string first, string max, string populateHierarchy, string q, string search, CancellationToken ct)
 
 
 
@@ -295,7 +304,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -306,10 +315,11 @@ namespace Example
             var populateHierarchy = populateHierarchy_example;  // string |  (optional) 
             var q = q_example;  // string |  (optional) 
             var search = search_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;GroupRepresentation&gt; result = apiInstance.GetGroupsByRealm(realm, briefRepresentation, exact, first, max, populateHierarchy, q, search);
+                List&lt;GroupRepresentation&gt; result = apiInstance.GetGroupsByRealm(realm, briefRepresentation, exact, first, max, populateHierarchy, q, search, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -333,6 +343,7 @@ Name | Type | Description  | Notes
  **populateHierarchy** | **string**|  | [optional] 
  **q** | **string**|  | [optional] 
  **search** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -351,7 +362,7 @@ Name | Type | Description  | Notes
 
 <a name="getgroupscountbyrealm"></a>
 # **GetGroupsCountByRealm**
-> Dictionary<string, long?> GetGroupsCountByRealm (string realm, string search, string top)
+> Dictionary<string, long?> GetGroupsCountByRealm (string realm, string search, string top, CancellationToken ct)
 
 
 
@@ -371,16 +382,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var search = search_example;  // string |  (optional) 
             var top = top_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, long?&gt; result = apiInstance.GetGroupsCountByRealm(realm, search, top);
+                Dictionary&lt;string, long?&gt; result = apiInstance.GetGroupsCountByRealm(realm, search, top, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -399,6 +411,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **search** | **string**|  | [optional] 
  **top** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -417,7 +430,7 @@ Name | Type | Description  | Notes
 
 <a name="getmembers"></a>
 # **GetMembers**
-> List<UserRepresentation> GetMembers (string realm, string id, string briefRepresentation, string first, string max)
+> List<UserRepresentation> GetMembers (string realm, string id, string briefRepresentation, string first, string max, CancellationToken ct)
 
 
 
@@ -437,7 +450,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -445,10 +458,11 @@ namespace Example
             var briefRepresentation = briefRepresentation_example;  // string | Only return basic information (only guaranteed to return id, username, created, first and last name, email, enabled state, email verification state, federation link, and access. Note that it means that namely user attributes, required actions, and not before are not returned.) (optional) 
             var first = first_example;  // string | Pagination offset (optional) 
             var max = max_example;  // string | Maximum results size (defaults to 100) (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserRepresentation&gt; result = apiInstance.GetMembers(realm, id, briefRepresentation, first, max);
+                List&lt;UserRepresentation&gt; result = apiInstance.GetMembers(realm, id, briefRepresentation, first, max, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -469,6 +483,7 @@ Name | Type | Description  | Notes
  **briefRepresentation** | **string**| Only return basic information (only guaranteed to return id, username, created, first and last name, email, enabled state, email verification state, federation link, and access. Note that it means that namely user attributes, required actions, and not before are not returned.) | [optional] 
  **first** | **string**| Pagination offset | [optional] 
  **max** | **string**| Maximum results size (defaults to 100) | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -487,7 +502,7 @@ Name | Type | Description  | Notes
 
 <a name="postchildren"></a>
 # **PostChildren**
-> void PostChildren (string realm, string id, GroupRepresentation body)
+> void PostChildren (string realm, string id, GroupRepresentation body, CancellationToken ct)
 
 
 
@@ -507,16 +522,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostChildren(realm, id, body);
+                apiInstance.PostChildren(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -534,6 +550,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**GroupRepresentation**](GroupRepresentation.md)| GroupRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -552,7 +569,7 @@ void (empty response body)
 
 <a name="postgroups"></a>
 # **PostGroups**
-> void PostGroups (string realm, GroupRepresentation body)
+> void PostGroups (string realm, GroupRepresentation body, CancellationToken ct)
 
 
 
@@ -572,15 +589,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostGroups(realm, body);
+                apiInstance.PostGroups(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -597,6 +615,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**GroupRepresentation**](GroupRepresentation.md)| GroupRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -615,7 +634,7 @@ void (empty response body)
 
 <a name="putgroupbyrealmbyid"></a>
 # **PutGroupByRealmById**
-> void PutGroupByRealmById (string realm, string id, GroupRepresentation body)
+> void PutGroupByRealmById (string realm, string id, GroupRepresentation body, CancellationToken ct)
 
 
 
@@ -635,16 +654,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutGroupByRealmById(realm, id, body);
+                apiInstance.PutGroupByRealmById(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -662,6 +682,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**GroupRepresentation**](GroupRepresentation.md)| GroupRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -680,7 +701,7 @@ void (empty response body)
 
 <a name="putgroupmanagementpermissions"></a>
 # **PutGroupManagementPermissions**
-> ManagementPermissionReference PutGroupManagementPermissions (string realm, string id, ManagementPermissionReference body)
+> ManagementPermissionReference PutGroupManagementPermissions (string realm, string id, ManagementPermissionReference body, CancellationToken ct)
 
 
 
@@ -700,16 +721,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new GroupsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.PutGroupManagementPermissions(realm, id, body);
+                ManagementPermissionReference result = apiInstance.PutGroupManagementPermissions(realm, id, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -728,6 +750,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ManagementPermissionReference**](ManagementPermissionReference.md)| ManagementPermissionReference | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

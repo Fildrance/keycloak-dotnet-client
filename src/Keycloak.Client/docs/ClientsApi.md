@@ -4,44 +4,45 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteClientByRealmById**](ClientsApi.md#deleteclientbyrealmbyid) | **DELETE** /{realm}/clients/{id} | 
-[**DeleteDefaultClientScope**](ClientsApi.md#deletedefaultclientscope) | **DELETE** /{realm}/clients/{id}/default-client-scopes/{clientScopeId} | 
-[**DeleteNode**](ClientsApi.md#deletenode) | **DELETE** /{realm}/clients/{id}/nodes/{node} | 
-[**DeleteOptionalClientScope**](ClientsApi.md#deleteoptionalclientscope) | **DELETE** /{realm}/clients/{id}/optional-client-scopes/{clientScopeId} | 
-[**DeleteRotated**](ClientsApi.md#deleterotated) | **DELETE** /{realm}/clients/{id}/client-secret/rotated | 
-[**GetClientByRealmById**](ClientsApi.md#getclientbyrealmbyid) | **GET** /{realm}/clients/{id} | 
-[**GetClientManagementPermissions**](ClientsApi.md#getclientmanagementpermissions) | **GET** /{realm}/clients/{id}/management/permissions | 
-[**GetClientSecret**](ClientsApi.md#getclientsecret) | **GET** /{realm}/clients/{id}/client-secret | 
-[**GetClientUserSessions**](ClientsApi.md#getclientusersessions) | **GET** /{realm}/clients/{id}/user-sessions | 
-[**GetClients**](ClientsApi.md#getclients) | **GET** /{realm}/clients | 
-[**GetDefaultClientScopes**](ClientsApi.md#getdefaultclientscopes) | **GET** /{realm}/clients/{id}/default-client-scopes | 
-[**GetGenerateExampleAccessToken**](ClientsApi.md#getgenerateexampleaccesstoken) | **GET** /{realm}/clients/{id}/evaluate-scopes/generate-example-access-token | 
-[**GetGenerateExampleIdToken**](ClientsApi.md#getgenerateexampleidtoken) | **GET** /{realm}/clients/{id}/evaluate-scopes/generate-example-id-token | 
-[**GetGenerateExampleUserinfo**](ClientsApi.md#getgenerateexampleuserinfo) | **GET** /{realm}/clients/{id}/evaluate-scopes/generate-example-userinfo | 
-[**GetGranted**](ClientsApi.md#getgranted) | **GET** /{realm}/clients/{id}/evaluate-scopes/scope-mappings/{roleContainerId}/granted | 
-[**GetInstallationProvider**](ClientsApi.md#getinstallationprovider) | **GET** /{realm}/clients/{id}/installation/providers/{providerId} | 
-[**GetNotGranted**](ClientsApi.md#getnotgranted) | **GET** /{realm}/clients/{id}/evaluate-scopes/scope-mappings/{roleContainerId}/not-granted | 
-[**GetOfflineSessionCount**](ClientsApi.md#getofflinesessioncount) | **GET** /{realm}/clients/{id}/offline-session-count | 
-[**GetOfflineSessions**](ClientsApi.md#getofflinesessions) | **GET** /{realm}/clients/{id}/offline-sessions | 
-[**GetOptionalClientScopes**](ClientsApi.md#getoptionalclientscopes) | **GET** /{realm}/clients/{id}/optional-client-scopes | 
-[**GetProtocolMappers**](ClientsApi.md#getprotocolmappers) | **GET** /{realm}/clients/{id}/evaluate-scopes/protocol-mappers | 
-[**GetRotated**](ClientsApi.md#getrotated) | **GET** /{realm}/clients/{id}/client-secret/rotated | 
-[**GetServiceAccountUser**](ClientsApi.md#getserviceaccountuser) | **GET** /{realm}/clients/{id}/service-account-user | 
-[**GetSessionCount**](ClientsApi.md#getsessioncount) | **GET** /{realm}/clients/{id}/session-count | 
-[**GetTestNodesAvailable**](ClientsApi.md#gettestnodesavailable) | **GET** /{realm}/clients/{id}/test-nodes-available | 
-[**PostClientPushRevocation**](ClientsApi.md#postclientpushrevocation) | **POST** /{realm}/clients/{id}/push-revocation | 
-[**PostClientSecret**](ClientsApi.md#postclientsecret) | **POST** /{realm}/clients/{id}/client-secret | 
-[**PostClients**](ClientsApi.md#postclients) | **POST** /{realm}/clients | 
-[**PostNodes**](ClientsApi.md#postnodes) | **POST** /{realm}/clients/{id}/nodes | 
-[**PostRegistrationAccessToken**](ClientsApi.md#postregistrationaccesstoken) | **POST** /{realm}/clients/{id}/registration-access-token | 
-[**PutClient**](ClientsApi.md#putclient) | **PUT** /{realm}/clients/{id} | 
-[**PutClientManagementPermissions**](ClientsApi.md#putclientmanagementpermissions) | **PUT** /{realm}/clients/{id}/management/permissions | 
-[**PutDefaultClientScope**](ClientsApi.md#putdefaultclientscope) | **PUT** /{realm}/clients/{id}/default-client-scopes/{clientScopeId} | 
-[**PutOptionalClientScope**](ClientsApi.md#putoptionalclientscope) | **PUT** /{realm}/clients/{id}/optional-client-scopes/{clientScopeId} | 
+[**DeleteClientByRealmById**](ClientsApi.md#deleteclientbyrealmbyid) | **Delete** /{realm}/clients/{id} | 
+[**DeleteDefaultClientScope**](ClientsApi.md#deletedefaultclientscope) | **Delete** /{realm}/clients/{id}/default-client-scopes/{clientScopeId} | 
+[**DeleteNode**](ClientsApi.md#deletenode) | **Delete** /{realm}/clients/{id}/nodes/{node} | 
+[**DeleteOptionalClientScope**](ClientsApi.md#deleteoptionalclientscope) | **Delete** /{realm}/clients/{id}/optional-client-scopes/{clientScopeId} | 
+[**DeleteRotated**](ClientsApi.md#deleterotated) | **Delete** /{realm}/clients/{id}/client-secret/rotated | 
+[**GetClientByRealmById**](ClientsApi.md#getclientbyrealmbyid) | **Get** /{realm}/clients/{id} | 
+[**GetClientManagementPermissions**](ClientsApi.md#getclientmanagementpermissions) | **Get** /{realm}/clients/{id}/management/permissions | 
+[**GetClientSecret**](ClientsApi.md#getclientsecret) | **Get** /{realm}/clients/{id}/client-secret | 
+[**GetClientUserSessions**](ClientsApi.md#getclientusersessions) | **Get** /{realm}/clients/{id}/user-sessions | 
+[**GetClients**](ClientsApi.md#getclients) | **Get** /{realm}/clients | 
+[**GetDefaultClientScopes**](ClientsApi.md#getdefaultclientscopes) | **Get** /{realm}/clients/{id}/default-client-scopes | 
+[**GetGenerateExampleAccessToken**](ClientsApi.md#getgenerateexampleaccesstoken) | **Get** /{realm}/clients/{id}/evaluate-scopes/generate-example-access-token | 
+[**GetGenerateExampleIdToken**](ClientsApi.md#getgenerateexampleidtoken) | **Get** /{realm}/clients/{id}/evaluate-scopes/generate-example-id-token | 
+[**GetGenerateExampleUserinfo**](ClientsApi.md#getgenerateexampleuserinfo) | **Get** /{realm}/clients/{id}/evaluate-scopes/generate-example-userinfo | 
+[**GetGranted**](ClientsApi.md#getgranted) | **Get** /{realm}/clients/{id}/evaluate-scopes/scope-mappings/{roleContainerId}/granted | 
+[**GetInstallationProvider**](ClientsApi.md#getinstallationprovider) | **Get** /{realm}/clients/{id}/installation/providers/{providerId} | 
+[**GetNotGranted**](ClientsApi.md#getnotgranted) | **Get** /{realm}/clients/{id}/evaluate-scopes/scope-mappings/{roleContainerId}/not-granted | 
+[**GetOfflineSessionCount**](ClientsApi.md#getofflinesessioncount) | **Get** /{realm}/clients/{id}/offline-session-count | 
+[**GetOfflineSessions**](ClientsApi.md#getofflinesessions) | **Get** /{realm}/clients/{id}/offline-sessions | 
+[**GetOptionalClientScopes**](ClientsApi.md#getoptionalclientscopes) | **Get** /{realm}/clients/{id}/optional-client-scopes | 
+[**GetProtocolMappers**](ClientsApi.md#getprotocolmappers) | **Get** /{realm}/clients/{id}/evaluate-scopes/protocol-mappers | 
+[**GetRotated**](ClientsApi.md#getrotated) | **Get** /{realm}/clients/{id}/client-secret/rotated | 
+[**GetServiceAccountUser**](ClientsApi.md#getserviceaccountuser) | **Get** /{realm}/clients/{id}/service-account-user | 
+[**GetSessionCount**](ClientsApi.md#getsessioncount) | **Get** /{realm}/clients/{id}/session-count | 
+[**GetTestNodesAvailable**](ClientsApi.md#gettestnodesavailable) | **Get** /{realm}/clients/{id}/test-nodes-available | 
+[**PostClientPushRevocation**](ClientsApi.md#postclientpushrevocation) | **Post** /{realm}/clients/{id}/push-revocation | 
+[**PostClientSecret**](ClientsApi.md#postclientsecret) | **Post** /{realm}/clients/{id}/client-secret | 
+[**PostClients**](ClientsApi.md#postclients) | **Post** /{realm}/clients | 
+[**PostNodes**](ClientsApi.md#postnodes) | **Post** /{realm}/clients/{id}/nodes | 
+[**PostRegistrationAccessToken**](ClientsApi.md#postregistrationaccesstoken) | **Post** /{realm}/clients/{id}/registration-access-token | 
+[**PutClient**](ClientsApi.md#putclient) | **Put** /{realm}/clients/{id} | 
+[**PutClientManagementPermissions**](ClientsApi.md#putclientmanagementpermissions) | **Put** /{realm}/clients/{id}/management/permissions | 
+[**PutDefaultClientScope**](ClientsApi.md#putdefaultclientscope) | **Put** /{realm}/clients/{id}/default-client-scopes/{clientScopeId} | 
+[**PutOptionalClientScope**](ClientsApi.md#putoptionalclientscope) | **Put** /{realm}/clients/{id}/optional-client-scopes/{clientScopeId} | 
+
 
 <a name="deleteclientbyrealmbyid"></a>
 # **DeleteClientByRealmById**
-> void DeleteClientByRealmById (string realm, string id)
+> void DeleteClientByRealmById (string realm, string id, CancellationToken ct)
 
 
 
@@ -61,15 +62,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientByRealmById(realm, id);
+                apiInstance.DeleteClientByRealmById(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -86,6 +88,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -104,7 +107,7 @@ void (empty response body)
 
 <a name="deletedefaultclientscope"></a>
 # **DeleteDefaultClientScope**
-> void DeleteDefaultClientScope (string realm, string id, string clientScopeId)
+> void DeleteDefaultClientScope (string realm, string id, string clientScopeId, CancellationToken ct)
 
 
 
@@ -122,16 +125,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteDefaultClientScope(realm, id, clientScopeId);
+                apiInstance.DeleteDefaultClientScope(realm, id, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -149,6 +153,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -167,7 +172,7 @@ void (empty response body)
 
 <a name="deletenode"></a>
 # **DeleteNode**
-> void DeleteNode (string realm, string id, string node)
+> void DeleteNode (string realm, string id, string node, CancellationToken ct)
 
 
 
@@ -187,16 +192,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var node = node_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteNode(realm, id, node);
+                apiInstance.DeleteNode(realm, id, node, ct);
             }
             catch (Exception e)
             {
@@ -214,6 +220,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **node** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -232,7 +239,7 @@ void (empty response body)
 
 <a name="deleteoptionalclientscope"></a>
 # **DeleteOptionalClientScope**
-> void DeleteOptionalClientScope (string realm, string id, string clientScopeId)
+> void DeleteOptionalClientScope (string realm, string id, string clientScopeId, CancellationToken ct)
 
 
 
@@ -250,16 +257,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteOptionalClientScope(realm, id, clientScopeId);
+                apiInstance.DeleteOptionalClientScope(realm, id, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -277,6 +285,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -295,7 +304,7 @@ void (empty response body)
 
 <a name="deleterotated"></a>
 # **DeleteRotated**
-> void DeleteRotated (string realm, string id)
+> void DeleteRotated (string realm, string id, CancellationToken ct)
 
 
 
@@ -315,15 +324,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteRotated(realm, id);
+                apiInstance.DeleteRotated(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -340,6 +350,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -358,7 +369,7 @@ void (empty response body)
 
 <a name="getclientbyrealmbyid"></a>
 # **GetClientByRealmById**
-> ClientRepresentation GetClientByRealmById (string realm, string id)
+> ClientRepresentation GetClientByRealmById (string realm, string id, CancellationToken ct)
 
 
 
@@ -378,15 +389,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientRepresentation result = apiInstance.GetClientByRealmById(realm, id);
+                ClientRepresentation result = apiInstance.GetClientByRealmById(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -404,6 +416,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -422,7 +435,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientmanagementpermissions"></a>
 # **GetClientManagementPermissions**
-> ManagementPermissionReference GetClientManagementPermissions (string realm, string id)
+> ManagementPermissionReference GetClientManagementPermissions (string realm, string id, CancellationToken ct)
 
 
 
@@ -442,15 +455,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.GetClientManagementPermissions(realm, id);
+                ManagementPermissionReference result = apiInstance.GetClientManagementPermissions(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -468,6 +482,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -486,7 +501,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientsecret"></a>
 # **GetClientSecret**
-> CredentialRepresentation GetClientSecret (string realm, string id)
+> CredentialRepresentation GetClientSecret (string realm, string id, CancellationToken ct)
 
 
 
@@ -506,15 +521,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CredentialRepresentation result = apiInstance.GetClientSecret(realm, id);
+                CredentialRepresentation result = apiInstance.GetClientSecret(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -532,6 +548,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -550,7 +567,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientusersessions"></a>
 # **GetClientUserSessions**
-> List<UserSessionRepresentation> GetClientUserSessions (string realm, string id, string first, string max)
+> List<UserSessionRepresentation> GetClientUserSessions (string realm, string id, string first, string max, CancellationToken ct)
 
 
 
@@ -570,17 +587,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var first = first_example;  // string | Paging offset (optional) 
             var max = max_example;  // string | Maximum results size (defaults to 100) (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetClientUserSessions(realm, id, first, max);
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetClientUserSessions(realm, id, first, max, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -600,6 +618,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **first** | **string**| Paging offset | [optional] 
  **max** | **string**| Maximum results size (defaults to 100) | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -618,7 +637,7 @@ Name | Type | Description  | Notes
 
 <a name="getclients"></a>
 # **GetClients**
-> List<ClientRepresentation> GetClients (string realm, string clientId, string first, string max, string q, string search, string viewableOnly)
+> List<ClientRepresentation> GetClients (string realm, string clientId, string first, string max, string q, string search, string viewableOnly, CancellationToken ct)
 
 
 
@@ -638,7 +657,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -648,10 +667,11 @@ namespace Example
             var q = q_example;  // string |  (optional) 
             var search = search_example;  // string | whether this is a search query or a getClientById query (optional) 
             var viewableOnly = viewableOnly_example;  // string | filter clients that cannot be viewed in full by admin (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientRepresentation&gt; result = apiInstance.GetClients(realm, clientId, first, max, q, search, viewableOnly);
+                List&lt;ClientRepresentation&gt; result = apiInstance.GetClients(realm, clientId, first, max, q, search, viewableOnly, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -674,6 +694,7 @@ Name | Type | Description  | Notes
  **q** | **string**|  | [optional] 
  **search** | **string**| whether this is a search query or a getClientById query | [optional] 
  **viewableOnly** | **string**| filter clients that cannot be viewed in full by admin | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -692,7 +713,7 @@ Name | Type | Description  | Notes
 
 <a name="getdefaultclientscopes"></a>
 # **GetDefaultClientScopes**
-> List<ClientScopeRepresentation> GetDefaultClientScopes (string realm, string id)
+> List<ClientScopeRepresentation> GetDefaultClientScopes (string realm, string id, CancellationToken ct)
 
 
 
@@ -712,15 +733,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultClientScopes(realm, id);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultClientScopes(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -738,6 +760,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -756,7 +779,7 @@ Name | Type | Description  | Notes
 
 <a name="getgenerateexampleaccesstoken"></a>
 # **GetGenerateExampleAccessToken**
-> AccessToken GetGenerateExampleAccessToken (string realm, string id, string scope, string userId)
+> AccessToken GetGenerateExampleAccessToken (string realm, string id, string scope, string userId, CancellationToken ct)
 
 
 
@@ -776,17 +799,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var scope = scope_example;  // string |  (optional) 
             var userId = userId_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                AccessToken result = apiInstance.GetGenerateExampleAccessToken(realm, id, scope, userId);
+                AccessToken result = apiInstance.GetGenerateExampleAccessToken(realm, id, scope, userId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -806,6 +830,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **scope** | **string**|  | [optional] 
  **userId** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -824,7 +849,7 @@ Name | Type | Description  | Notes
 
 <a name="getgenerateexampleidtoken"></a>
 # **GetGenerateExampleIdToken**
-> IDToken GetGenerateExampleIdToken (string realm, string id, string scope, string userId)
+> IDToken GetGenerateExampleIdToken (string realm, string id, string scope, string userId, CancellationToken ct)
 
 
 
@@ -844,17 +869,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var scope = scope_example;  // string |  (optional) 
             var userId = userId_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                IDToken result = apiInstance.GetGenerateExampleIdToken(realm, id, scope, userId);
+                IDToken result = apiInstance.GetGenerateExampleIdToken(realm, id, scope, userId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -874,6 +900,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **scope** | **string**|  | [optional] 
  **userId** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -892,7 +919,7 @@ Name | Type | Description  | Notes
 
 <a name="getgenerateexampleuserinfo"></a>
 # **GetGenerateExampleUserinfo**
-> Dictionary<string, Object> GetGenerateExampleUserinfo (string realm, string id, string scope, string userId)
+> Dictionary<string, Object> GetGenerateExampleUserinfo (string realm, string id, string scope, string userId, CancellationToken ct)
 
 
 
@@ -912,17 +939,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var scope = scope_example;  // string |  (optional) 
             var userId = userId_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, Object&gt; result = apiInstance.GetGenerateExampleUserinfo(realm, id, scope, userId);
+                Dictionary&lt;string, Object&gt; result = apiInstance.GetGenerateExampleUserinfo(realm, id, scope, userId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -942,6 +970,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **scope** | **string**|  | [optional] 
  **userId** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -960,7 +989,7 @@ Name | Type | Description  | Notes
 
 <a name="getgranted"></a>
 # **GetGranted**
-> List<RoleRepresentation> GetGranted (string realm, string id, string roleContainerId, string scope)
+> List<RoleRepresentation> GetGranted (string realm, string id, string roleContainerId, string scope, CancellationToken ct)
 
 
 
@@ -980,17 +1009,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleContainerId = roleContainerId_example;  // string | either realm name OR client UUID
             var scope = scope_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetGranted(realm, id, roleContainerId, scope);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetGranted(realm, id, roleContainerId, scope, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1010,6 +1040,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **roleContainerId** | **string**| either realm name OR client UUID | 
  **scope** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1028,7 +1059,7 @@ Name | Type | Description  | Notes
 
 <a name="getinstallationprovider"></a>
 # **GetInstallationProvider**
-> void GetInstallationProvider (string realm, string id, string providerId)
+> void GetInstallationProvider (string realm, string id, string providerId, CancellationToken ct)
 
 
 
@@ -1046,16 +1077,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var providerId = providerId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.GetInstallationProvider(realm, id, providerId);
+                apiInstance.GetInstallationProvider(realm, id, providerId, ct);
             }
             catch (Exception e)
             {
@@ -1073,6 +1105,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **providerId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1091,7 +1124,7 @@ void (empty response body)
 
 <a name="getnotgranted"></a>
 # **GetNotGranted**
-> List<RoleRepresentation> GetNotGranted (string realm, string id, string roleContainerId, string scope)
+> List<RoleRepresentation> GetNotGranted (string realm, string id, string roleContainerId, string scope, CancellationToken ct)
 
 
 
@@ -1111,17 +1144,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleContainerId = roleContainerId_example;  // string | either realm name OR client UUID
             var scope = scope_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetNotGranted(realm, id, roleContainerId, scope);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetNotGranted(realm, id, roleContainerId, scope, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1141,6 +1175,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **roleContainerId** | **string**| either realm name OR client UUID | 
  **scope** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1159,7 +1194,7 @@ Name | Type | Description  | Notes
 
 <a name="getofflinesessioncount"></a>
 # **GetOfflineSessionCount**
-> Dictionary<string, long?> GetOfflineSessionCount (string realm, string id)
+> Dictionary<string, long?> GetOfflineSessionCount (string realm, string id, CancellationToken ct)
 
 
 
@@ -1179,15 +1214,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, long?&gt; result = apiInstance.GetOfflineSessionCount(realm, id);
+                Dictionary&lt;string, long?&gt; result = apiInstance.GetOfflineSessionCount(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1205,6 +1241,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1223,7 +1260,7 @@ Name | Type | Description  | Notes
 
 <a name="getofflinesessions"></a>
 # **GetOfflineSessions**
-> List<UserSessionRepresentation> GetOfflineSessions (string realm, string id, string first, string max)
+> List<UserSessionRepresentation> GetOfflineSessions (string realm, string id, string first, string max, CancellationToken ct)
 
 
 
@@ -1243,17 +1280,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var first = first_example;  // string | Paging offset (optional) 
             var max = max_example;  // string | Maximum results size (defaults to 100) (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetOfflineSessions(realm, id, first, max);
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetOfflineSessions(realm, id, first, max, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1273,6 +1311,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **first** | **string**| Paging offset | [optional] 
  **max** | **string**| Maximum results size (defaults to 100) | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1291,7 +1330,7 @@ Name | Type | Description  | Notes
 
 <a name="getoptionalclientscopes"></a>
 # **GetOptionalClientScopes**
-> List<ClientScopeRepresentation> GetOptionalClientScopes (string realm, string id)
+> List<ClientScopeRepresentation> GetOptionalClientScopes (string realm, string id, CancellationToken ct)
 
 
 
@@ -1311,15 +1350,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetOptionalClientScopes(realm, id);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetOptionalClientScopes(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1337,6 +1377,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1355,7 +1396,7 @@ Name | Type | Description  | Notes
 
 <a name="getprotocolmappers"></a>
 # **GetProtocolMappers**
-> List<ProtocolMapperEvaluationRepresentation> GetProtocolMappers (string realm, string id, string scope)
+> List<ProtocolMapperEvaluationRepresentation> GetProtocolMappers (string realm, string id, string scope, CancellationToken ct)
 
 
 
@@ -1375,16 +1416,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var scope = scope_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ProtocolMapperEvaluationRepresentation&gt; result = apiInstance.GetProtocolMappers(realm, id, scope);
+                List&lt;ProtocolMapperEvaluationRepresentation&gt; result = apiInstance.GetProtocolMappers(realm, id, scope, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1403,6 +1445,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **scope** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1421,7 +1464,7 @@ Name | Type | Description  | Notes
 
 <a name="getrotated"></a>
 # **GetRotated**
-> CredentialRepresentation GetRotated (string realm, string id)
+> CredentialRepresentation GetRotated (string realm, string id, CancellationToken ct)
 
 
 
@@ -1441,15 +1484,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CredentialRepresentation result = apiInstance.GetRotated(realm, id);
+                CredentialRepresentation result = apiInstance.GetRotated(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1467,6 +1511,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1485,7 +1530,7 @@ Name | Type | Description  | Notes
 
 <a name="getserviceaccountuser"></a>
 # **GetServiceAccountUser**
-> UserRepresentation GetServiceAccountUser (string realm, string id)
+> UserRepresentation GetServiceAccountUser (string realm, string id, CancellationToken ct)
 
 
 
@@ -1505,15 +1550,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                UserRepresentation result = apiInstance.GetServiceAccountUser(realm, id);
+                UserRepresentation result = apiInstance.GetServiceAccountUser(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1531,6 +1577,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1549,7 +1596,7 @@ Name | Type | Description  | Notes
 
 <a name="getsessioncount"></a>
 # **GetSessionCount**
-> Dictionary<string, long?> GetSessionCount (string realm, string id)
+> Dictionary<string, long?> GetSessionCount (string realm, string id, CancellationToken ct)
 
 
 
@@ -1569,15 +1616,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, long?&gt; result = apiInstance.GetSessionCount(realm, id);
+                Dictionary&lt;string, long?&gt; result = apiInstance.GetSessionCount(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1595,6 +1643,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1613,7 +1662,7 @@ Name | Type | Description  | Notes
 
 <a name="gettestnodesavailable"></a>
 # **GetTestNodesAvailable**
-> GlobalRequestResult GetTestNodesAvailable (string realm, string id)
+> GlobalRequestResult GetTestNodesAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -1633,15 +1682,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GlobalRequestResult result = apiInstance.GetTestNodesAvailable(realm, id);
+                GlobalRequestResult result = apiInstance.GetTestNodesAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1659,6 +1709,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1677,7 +1728,7 @@ Name | Type | Description  | Notes
 
 <a name="postclientpushrevocation"></a>
 # **PostClientPushRevocation**
-> GlobalRequestResult PostClientPushRevocation (string realm, string id)
+> GlobalRequestResult PostClientPushRevocation (string realm, string id, CancellationToken ct)
 
 
 
@@ -1697,15 +1748,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GlobalRequestResult result = apiInstance.PostClientPushRevocation(realm, id);
+                GlobalRequestResult result = apiInstance.PostClientPushRevocation(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1723,6 +1775,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1741,7 +1794,7 @@ Name | Type | Description  | Notes
 
 <a name="postclientsecret"></a>
 # **PostClientSecret**
-> CredentialRepresentation PostClientSecret (string realm, string id)
+> CredentialRepresentation PostClientSecret (string realm, string id, CancellationToken ct)
 
 
 
@@ -1761,15 +1814,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CredentialRepresentation result = apiInstance.PostClientSecret(realm, id);
+                CredentialRepresentation result = apiInstance.PostClientSecret(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1787,6 +1841,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1805,7 +1860,7 @@ Name | Type | Description  | Notes
 
 <a name="postclients"></a>
 # **PostClients**
-> void PostClients (string realm, ClientRepresentation body)
+> void PostClients (string realm, ClientRepresentation body, CancellationToken ct)
 
 
 
@@ -1825,15 +1880,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientRepresentation(); // ClientRepresentation | ClientRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClients(realm, body);
+                apiInstance.PostClients(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1850,6 +1906,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ClientRepresentation**](ClientRepresentation.md)| ClientRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1868,7 +1925,7 @@ void (empty response body)
 
 <a name="postnodes"></a>
 # **PostNodes**
-> void PostNodes (string realm, string id, string body)
+> void PostNodes (string realm, string id, string body, CancellationToken ct)
 
 
 
@@ -1888,16 +1945,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostNodes(realm, id, body);
+                apiInstance.PostNodes(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1915,6 +1973,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1933,7 +1992,7 @@ void (empty response body)
 
 <a name="postregistrationaccesstoken"></a>
 # **PostRegistrationAccessToken**
-> ClientRepresentation PostRegistrationAccessToken (string realm, string id)
+> ClientRepresentation PostRegistrationAccessToken (string realm, string id, CancellationToken ct)
 
 
 
@@ -1953,15 +2012,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientRepresentation result = apiInstance.PostRegistrationAccessToken(realm, id);
+                ClientRepresentation result = apiInstance.PostRegistrationAccessToken(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1979,6 +2039,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1997,7 +2058,7 @@ Name | Type | Description  | Notes
 
 <a name="putclient"></a>
 # **PutClient**
-> void PutClient (string realm, string id, ClientRepresentation body)
+> void PutClient (string realm, string id, ClientRepresentation body, CancellationToken ct)
 
 
 
@@ -2017,16 +2078,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ClientRepresentation(); // ClientRepresentation | ClientRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClient(realm, id, body);
+                apiInstance.PutClient(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2044,6 +2106,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ClientRepresentation**](ClientRepresentation.md)| ClientRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2062,7 +2125,7 @@ void (empty response body)
 
 <a name="putclientmanagementpermissions"></a>
 # **PutClientManagementPermissions**
-> ManagementPermissionReference PutClientManagementPermissions (string realm, string id, ManagementPermissionReference body)
+> ManagementPermissionReference PutClientManagementPermissions (string realm, string id, ManagementPermissionReference body, CancellationToken ct)
 
 
 
@@ -2082,16 +2145,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.PutClientManagementPermissions(realm, id, body);
+                ManagementPermissionReference result = apiInstance.PutClientManagementPermissions(realm, id, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2110,6 +2174,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ManagementPermissionReference**](ManagementPermissionReference.md)| ManagementPermissionReference | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2128,7 +2193,7 @@ Name | Type | Description  | Notes
 
 <a name="putdefaultclientscope"></a>
 # **PutDefaultClientScope**
-> void PutDefaultClientScope (string realm, string id, string clientScopeId)
+> void PutDefaultClientScope (string realm, string id, string clientScopeId, CancellationToken ct)
 
 
 
@@ -2146,16 +2211,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutDefaultClientScope(realm, id, clientScopeId);
+                apiInstance.PutDefaultClientScope(realm, id, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -2173,6 +2239,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2191,7 +2258,7 @@ void (empty response body)
 
 <a name="putoptionalclientscope"></a>
 # **PutOptionalClientScope**
-> void PutOptionalClientScope (string realm, string id, string clientScopeId)
+> void PutOptionalClientScope (string realm, string id, string clientScopeId, CancellationToken ct)
 
 
 
@@ -2209,16 +2276,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutOptionalClientScope(realm, id, clientScopeId);
+                apiInstance.PutOptionalClientScope(realm, id, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -2236,6 +2304,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

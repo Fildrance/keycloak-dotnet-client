@@ -4,22 +4,23 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteGroupRoleMappingsRealm**](RoleMapperApi.md#deletegrouprolemappingsrealm) | **DELETE** /{realm}/groups/{id}/role-mappings/realm | 
-[**DeleteUserRoleMappingsRealm**](RoleMapperApi.md#deleteuserrolemappingsrealm) | **DELETE** /{realm}/users/{id}/role-mappings/realm | 
-[**GetGroupRoleMappings**](RoleMapperApi.md#getgrouprolemappings) | **GET** /{realm}/groups/{id}/role-mappings | 
-[**GetGroupRoleMappingsRealm**](RoleMapperApi.md#getgrouprolemappingsrealm) | **GET** /{realm}/groups/{id}/role-mappings/realm | 
-[**GetGroupRoleMappingsRealmAvailable**](RoleMapperApi.md#getgrouprolemappingsrealmavailable) | **GET** /{realm}/groups/{id}/role-mappings/realm/available | 
-[**GetGroupRoleMappingsRealmComposite**](RoleMapperApi.md#getgrouprolemappingsrealmcomposite) | **GET** /{realm}/groups/{id}/role-mappings/realm/composite | 
-[**GetUserRoleMappings**](RoleMapperApi.md#getuserrolemappings) | **GET** /{realm}/users/{id}/role-mappings | 
-[**GetUserRoleMappingsRealm**](RoleMapperApi.md#getuserrolemappingsrealm) | **GET** /{realm}/users/{id}/role-mappings/realm | 
-[**GetUserRoleMappingsRealmAvailable**](RoleMapperApi.md#getuserrolemappingsrealmavailable) | **GET** /{realm}/users/{id}/role-mappings/realm/available | 
-[**GetUserRoleMappingsRealmComposite**](RoleMapperApi.md#getuserrolemappingsrealmcomposite) | **GET** /{realm}/users/{id}/role-mappings/realm/composite | 
-[**PostGroupRoleMappingsRealm**](RoleMapperApi.md#postgrouprolemappingsrealm) | **POST** /{realm}/groups/{id}/role-mappings/realm | 
-[**PostUserRoleMappingsRealm**](RoleMapperApi.md#postuserrolemappingsrealm) | **POST** /{realm}/users/{id}/role-mappings/realm | 
+[**DeleteGroupRoleMappingsRealm**](RoleMapperApi.md#deletegrouprolemappingsrealm) | **Delete** /{realm}/groups/{id}/role-mappings/realm | 
+[**DeleteUserRoleMappingsRealm**](RoleMapperApi.md#deleteuserrolemappingsrealm) | **Delete** /{realm}/users/{id}/role-mappings/realm | 
+[**GetGroupRoleMappings**](RoleMapperApi.md#getgrouprolemappings) | **Get** /{realm}/groups/{id}/role-mappings | 
+[**GetGroupRoleMappingsRealm**](RoleMapperApi.md#getgrouprolemappingsrealm) | **Get** /{realm}/groups/{id}/role-mappings/realm | 
+[**GetGroupRoleMappingsRealmAvailable**](RoleMapperApi.md#getgrouprolemappingsrealmavailable) | **Get** /{realm}/groups/{id}/role-mappings/realm/available | 
+[**GetGroupRoleMappingsRealmComposite**](RoleMapperApi.md#getgrouprolemappingsrealmcomposite) | **Get** /{realm}/groups/{id}/role-mappings/realm/composite | 
+[**GetUserRoleMappings**](RoleMapperApi.md#getuserrolemappings) | **Get** /{realm}/users/{id}/role-mappings | 
+[**GetUserRoleMappingsRealm**](RoleMapperApi.md#getuserrolemappingsrealm) | **Get** /{realm}/users/{id}/role-mappings/realm | 
+[**GetUserRoleMappingsRealmAvailable**](RoleMapperApi.md#getuserrolemappingsrealmavailable) | **Get** /{realm}/users/{id}/role-mappings/realm/available | 
+[**GetUserRoleMappingsRealmComposite**](RoleMapperApi.md#getuserrolemappingsrealmcomposite) | **Get** /{realm}/users/{id}/role-mappings/realm/composite | 
+[**PostGroupRoleMappingsRealm**](RoleMapperApi.md#postgrouprolemappingsrealm) | **Post** /{realm}/groups/{id}/role-mappings/realm | 
+[**PostUserRoleMappingsRealm**](RoleMapperApi.md#postuserrolemappingsrealm) | **Post** /{realm}/users/{id}/role-mappings/realm | 
+
 
 <a name="deletegrouprolemappingsrealm"></a>
 # **DeleteGroupRoleMappingsRealm**
-> void DeleteGroupRoleMappingsRealm (string realm, string id, RoleRepresentation body)
+> void DeleteGroupRoleMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -39,16 +40,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteGroupRoleMappingsRealm(realm, id, body);
+                apiInstance.DeleteGroupRoleMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -66,6 +68,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -84,7 +87,7 @@ void (empty response body)
 
 <a name="deleteuserrolemappingsrealm"></a>
 # **DeleteUserRoleMappingsRealm**
-> void DeleteUserRoleMappingsRealm (string realm, string id, RoleRepresentation body)
+> void DeleteUserRoleMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -104,16 +107,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteUserRoleMappingsRealm(realm, id, body);
+                apiInstance.DeleteUserRoleMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -131,6 +135,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -149,7 +154,7 @@ void (empty response body)
 
 <a name="getgrouprolemappings"></a>
 # **GetGroupRoleMappings**
-> MappingsRepresentation GetGroupRoleMappings (string realm, string id)
+> MappingsRepresentation GetGroupRoleMappings (string realm, string id, CancellationToken ct)
 
 
 
@@ -169,15 +174,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                MappingsRepresentation result = apiInstance.GetGroupRoleMappings(realm, id);
+                MappingsRepresentation result = apiInstance.GetGroupRoleMappings(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -195,6 +201,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -213,7 +220,7 @@ Name | Type | Description  | Notes
 
 <a name="getgrouprolemappingsrealm"></a>
 # **GetGroupRoleMappingsRealm**
-> List<RoleRepresentation> GetGroupRoleMappingsRealm (string realm, string id)
+> List<RoleRepresentation> GetGroupRoleMappingsRealm (string realm, string id, CancellationToken ct)
 
 
 
@@ -233,15 +240,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealm(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealm(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -259,6 +267,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -277,7 +286,7 @@ Name | Type | Description  | Notes
 
 <a name="getgrouprolemappingsrealmavailable"></a>
 # **GetGroupRoleMappingsRealmAvailable**
-> List<RoleRepresentation> GetGroupRoleMappingsRealmAvailable (string realm, string id)
+> List<RoleRepresentation> GetGroupRoleMappingsRealmAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -297,15 +306,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealmAvailable(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealmAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -323,6 +333,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -341,7 +352,7 @@ Name | Type | Description  | Notes
 
 <a name="getgrouprolemappingsrealmcomposite"></a>
 # **GetGroupRoleMappingsRealmComposite**
-> List<RoleRepresentation> GetGroupRoleMappingsRealmComposite (string realm, string id, string briefRepresentation)
+> List<RoleRepresentation> GetGroupRoleMappingsRealmComposite (string realm, string id, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -361,16 +372,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealmComposite(realm, id, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetGroupRoleMappingsRealmComposite(realm, id, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -389,6 +401,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -407,7 +420,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserrolemappings"></a>
 # **GetUserRoleMappings**
-> MappingsRepresentation GetUserRoleMappings (string realm, string id)
+> MappingsRepresentation GetUserRoleMappings (string realm, string id, CancellationToken ct)
 
 
 
@@ -427,15 +440,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                MappingsRepresentation result = apiInstance.GetUserRoleMappings(realm, id);
+                MappingsRepresentation result = apiInstance.GetUserRoleMappings(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -453,6 +467,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -471,7 +486,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserrolemappingsrealm"></a>
 # **GetUserRoleMappingsRealm**
-> List<RoleRepresentation> GetUserRoleMappingsRealm (string realm, string id)
+> List<RoleRepresentation> GetUserRoleMappingsRealm (string realm, string id, CancellationToken ct)
 
 
 
@@ -491,15 +506,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealm(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealm(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -517,6 +533,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -535,7 +552,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserrolemappingsrealmavailable"></a>
 # **GetUserRoleMappingsRealmAvailable**
-> List<RoleRepresentation> GetUserRoleMappingsRealmAvailable (string realm, string id)
+> List<RoleRepresentation> GetUserRoleMappingsRealmAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -555,15 +572,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealmAvailable(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealmAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -581,6 +599,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -599,7 +618,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserrolemappingsrealmcomposite"></a>
 # **GetUserRoleMappingsRealmComposite**
-> List<RoleRepresentation> GetUserRoleMappingsRealmComposite (string realm, string id, string briefRepresentation)
+> List<RoleRepresentation> GetUserRoleMappingsRealmComposite (string realm, string id, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -619,16 +638,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealmComposite(realm, id, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetUserRoleMappingsRealmComposite(realm, id, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -647,6 +667,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -665,7 +686,7 @@ Name | Type | Description  | Notes
 
 <a name="postgrouprolemappingsrealm"></a>
 # **PostGroupRoleMappingsRealm**
-> void PostGroupRoleMappingsRealm (string realm, string id, RoleRepresentation body)
+> void PostGroupRoleMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -685,16 +706,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostGroupRoleMappingsRealm(realm, id, body);
+                apiInstance.PostGroupRoleMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -712,6 +734,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -730,7 +753,7 @@ void (empty response body)
 
 <a name="postuserrolemappingsrealm"></a>
 # **PostUserRoleMappingsRealm**
-> void PostUserRoleMappingsRealm (string realm, string id, RoleRepresentation body)
+> void PostUserRoleMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -750,16 +773,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RoleMapperApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostUserRoleMappingsRealm(realm, id, body);
+                apiInstance.PostUserRoleMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -777,6 +801,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

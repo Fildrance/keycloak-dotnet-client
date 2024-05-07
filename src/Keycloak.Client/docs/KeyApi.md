@@ -4,11 +4,12 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetKeys**](KeyApi.md#getkeys) | **GET** /{realm}/keys | 
+[**GetKeys**](KeyApi.md#getkeys) | **Get** /{realm}/keys | 
+
 
 <a name="getkeys"></a>
 # **GetKeys**
-> KeysMetadataRepresentation GetKeys (string realm)
+> KeysMetadataRepresentation GetKeys (string realm, CancellationToken ct)
 
 
 
@@ -26,14 +27,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new KeyApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                KeysMetadataRepresentation result = apiInstance.GetKeys(realm);
+                KeysMetadataRepresentation result = apiInstance.GetKeys(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -50,6 +52,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
