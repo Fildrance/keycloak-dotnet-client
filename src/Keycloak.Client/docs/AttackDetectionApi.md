@@ -4,13 +4,14 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteBruteForceUser**](AttackDetectionApi.md#deletebruteforceuser) | **DELETE** /{realm}/attack-detection/brute-force/users/{userId} | 
-[**DeleteUsers**](AttackDetectionApi.md#deleteusers) | **DELETE** /{realm}/attack-detection/brute-force/users | 
-[**GetBruteForceUser**](AttackDetectionApi.md#getbruteforceuser) | **GET** /{realm}/attack-detection/brute-force/users/{userId} | 
+[**DeleteBruteForceUser**](AttackDetectionApi.md#deletebruteforceuser) | **Delete** /{realm}/attack-detection/brute-force/users/{userId} | 
+[**DeleteUsers**](AttackDetectionApi.md#deleteusers) | **Delete** /{realm}/attack-detection/brute-force/users | 
+[**GetBruteForceUser**](AttackDetectionApi.md#getbruteforceuser) | **Get** /{realm}/attack-detection/brute-force/users/{userId} | 
+
 
 <a name="deletebruteforceuser"></a>
 # **DeleteBruteForceUser**
-> void DeleteBruteForceUser (string realm, string userId)
+> void DeleteBruteForceUser (string realm, string userId, CancellationToken ct)
 
 
 
@@ -30,15 +31,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AttackDetectionApi();
             var realm = realm_example;  // string | realm name (not id!)
             var userId = userId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteBruteForceUser(realm, userId);
+                apiInstance.DeleteBruteForceUser(realm, userId, ct);
             }
             catch (Exception e)
             {
@@ -55,6 +57,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **userId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -73,7 +76,7 @@ void (empty response body)
 
 <a name="deleteusers"></a>
 # **DeleteUsers**
-> void DeleteUsers (string realm)
+> void DeleteUsers (string realm, CancellationToken ct)
 
 
 
@@ -93,14 +96,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AttackDetectionApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteUsers(realm);
+                apiInstance.DeleteUsers(realm, ct);
             }
             catch (Exception e)
             {
@@ -116,6 +120,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -134,7 +139,7 @@ void (empty response body)
 
 <a name="getbruteforceuser"></a>
 # **GetBruteForceUser**
-> Dictionary<string, Object> GetBruteForceUser (string realm, string userId)
+> Dictionary<string, Object> GetBruteForceUser (string realm, string userId, CancellationToken ct)
 
 
 
@@ -154,15 +159,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new AttackDetectionApi();
             var realm = realm_example;  // string | realm name (not id!)
             var userId = userId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, Object&gt; result = apiInstance.GetBruteForceUser(realm, userId);
+                Dictionary&lt;string, Object&gt; result = apiInstance.GetBruteForceUser(realm, userId, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -180,6 +186,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **userId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

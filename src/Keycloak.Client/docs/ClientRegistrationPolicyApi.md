@@ -4,11 +4,12 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetProviders**](ClientRegistrationPolicyApi.md#getproviders) | **GET** /{realm}/client-registration-policy/providers | 
+[**GetProviders**](ClientRegistrationPolicyApi.md#getproviders) | **Get** /{realm}/client-registration-policy/providers | 
+
 
 <a name="getproviders"></a>
 # **GetProviders**
-> List<ComponentTypeRepresentation> GetProviders (string realm)
+> List<ComponentTypeRepresentation> GetProviders (string realm, CancellationToken ct)
 
 
 
@@ -28,14 +29,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientRegistrationPolicyApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetProviders(realm);
+                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -52,6 +54,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

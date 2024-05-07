@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{2BF83774-8DF6-44A0-B7CA-CFBBEBCEF636}"
 	ProjectSection(SolutionItems) = preProject
 		..\build\generate-client.bat = ..\build\generate-client.bat
+		G:\Fildrance\Downloads\swagger-codegen-cli.jar = G:\Fildrance\Downloads\swagger-codegen-cli.jar
 	EndProjectSection
 EndProject
 Global

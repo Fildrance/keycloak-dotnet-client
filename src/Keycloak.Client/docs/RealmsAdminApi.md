@@ -4,53 +4,54 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteAdminEvents**](RealmsAdminApi.md#deleteadminevents) | **DELETE** /{realm}/admin-events | 
-[**DeleteByRealm**](RealmsAdminApi.md#deletebyrealm) | **DELETE** /{realm} | 
-[**DeleteDefaultDefaultClientScope**](RealmsAdminApi.md#deletedefaultdefaultclientscope) | **DELETE** /{realm}/default-default-client-scopes/{clientScopeId} | 
-[**DeleteDefaultGroup**](RealmsAdminApi.md#deletedefaultgroup) | **DELETE** /{realm}/default-groups/{groupId} | 
-[**DeleteDefaultOptionalClientScope**](RealmsAdminApi.md#deletedefaultoptionalclientscope) | **DELETE** /{realm}/default-optional-client-scopes/{clientScopeId} | 
-[**DeleteEvents**](RealmsAdminApi.md#deleteevents) | **DELETE** /{realm}/events | 
-[**DeleteLocalizationByRealmByLocale**](RealmsAdminApi.md#deletelocalizationbyrealmbylocale) | **DELETE** /{realm}/localization/{locale} | 
-[**DeleteLocalizationByRealmByLocaleByKey**](RealmsAdminApi.md#deletelocalizationbyrealmbylocalebykey) | **DELETE** /{realm}/localization/{locale}/{key} | 
-[**DeleteSession**](RealmsAdminApi.md#deletesession) | **DELETE** /{realm}/sessions/{session} | 
-[**Get**](RealmsAdminApi.md#get) | **GET** / | 
-[**GetAdminEvents**](RealmsAdminApi.md#getadminevents) | **GET** /{realm}/admin-events | 
-[**GetByRealm**](RealmsAdminApi.md#getbyrealm) | **GET** /{realm} | 
-[**GetClientSessionStats**](RealmsAdminApi.md#getclientsessionstats) | **GET** /{realm}/client-session-stats | 
-[**GetCredentialRegistrators**](RealmsAdminApi.md#getcredentialregistrators) | **GET** /{realm}/credential-registrators | 
-[**GetDefaultDefaultClientScopes**](RealmsAdminApi.md#getdefaultdefaultclientscopes) | **GET** /{realm}/default-default-client-scopes | 
-[**GetDefaultGroups**](RealmsAdminApi.md#getdefaultgroups) | **GET** /{realm}/default-groups | 
-[**GetDefaultOptionalClientScopes**](RealmsAdminApi.md#getdefaultoptionalclientscopes) | **GET** /{realm}/default-optional-client-scopes | 
-[**GetEvents**](RealmsAdminApi.md#getevents) | **GET** /{realm}/events | 
-[**GetEventsConfig**](RealmsAdminApi.md#geteventsconfig) | **GET** /{realm}/events/config | 
-[**GetGroupByPath**](RealmsAdminApi.md#getgroupbypath) | **GET** /{realm}/group-by-path/{path} | 
-[**GetLocalizationByRealm**](RealmsAdminApi.md#getlocalizationbyrealm) | **GET** /{realm}/localization | 
-[**GetLocalizationByRealmByLocale**](RealmsAdminApi.md#getlocalizationbyrealmbylocale) | **GET** /{realm}/localization/{locale} | 
-[**GetLocalizationByRealmByLocaleByKey**](RealmsAdminApi.md#getlocalizationbyrealmbylocalebykey) | **GET** /{realm}/localization/{locale}/{key} | 
-[**GetPolicies**](RealmsAdminApi.md#getpolicies) | **GET** /{realm}/client-policies/policies | 
-[**GetProfiles**](RealmsAdminApi.md#getprofiles) | **GET** /{realm}/client-policies/profiles | 
-[**GetUsersManagementPermissions**](RealmsAdminApi.md#getusersmanagementpermissions) | **GET** /{realm}/users-management-permissions | 
-[**Post**](RealmsAdminApi.md#post) | **POST** / | 
-[**PostClientDescriptionConverter**](RealmsAdminApi.md#postclientdescriptionconverter) | **POST** /{realm}/client-description-converter | 
-[**PostLocalization**](RealmsAdminApi.md#postlocalization) | **POST** /{realm}/localization/{locale} | 
-[**PostLogoutAll**](RealmsAdminApi.md#postlogoutall) | **POST** /{realm}/logout-all | 
-[**PostPartialExport**](RealmsAdminApi.md#postpartialexport) | **POST** /{realm}/partial-export | 
-[**PostPartialImport**](RealmsAdminApi.md#postpartialimport) | **POST** /{realm}/partialImport | 
-[**PostPushRevocationByRealm**](RealmsAdminApi.md#postpushrevocationbyrealm) | **POST** /{realm}/push-revocation | 
-[**PostTestSmtpConnection**](RealmsAdminApi.md#posttestsmtpconnection) | **POST** /{realm}/testSMTPConnection | 
-[**PutByRealm**](RealmsAdminApi.md#putbyrealm) | **PUT** /{realm} | 
-[**PutDefaultDefaultClientScope**](RealmsAdminApi.md#putdefaultdefaultclientscope) | **PUT** /{realm}/default-default-client-scopes/{clientScopeId} | 
-[**PutDefaultGroup**](RealmsAdminApi.md#putdefaultgroup) | **PUT** /{realm}/default-groups/{groupId} | 
-[**PutDefaultOptionalClientScope**](RealmsAdminApi.md#putdefaultoptionalclientscope) | **PUT** /{realm}/default-optional-client-scopes/{clientScopeId} | 
-[**PutEventsConfig**](RealmsAdminApi.md#puteventsconfig) | **PUT** /{realm}/events/config | 
-[**PutLocalization**](RealmsAdminApi.md#putlocalization) | **PUT** /{realm}/localization/{locale}/{key} | 
-[**PutPolicies**](RealmsAdminApi.md#putpolicies) | **PUT** /{realm}/client-policies/policies | 
-[**PutProfiles**](RealmsAdminApi.md#putprofiles) | **PUT** /{realm}/client-policies/profiles | 
-[**PutUsersManagementPermissions**](RealmsAdminApi.md#putusersmanagementpermissions) | **PUT** /{realm}/users-management-permissions | 
+[**DeleteAdminEvents**](RealmsAdminApi.md#deleteadminevents) | **Delete** /{realm}/admin-events | 
+[**DeleteByRealm**](RealmsAdminApi.md#deletebyrealm) | **Delete** /{realm} | 
+[**DeleteDefaultDefaultClientScope**](RealmsAdminApi.md#deletedefaultdefaultclientscope) | **Delete** /{realm}/default-default-client-scopes/{clientScopeId} | 
+[**DeleteDefaultGroup**](RealmsAdminApi.md#deletedefaultgroup) | **Delete** /{realm}/default-groups/{groupId} | 
+[**DeleteDefaultOptionalClientScope**](RealmsAdminApi.md#deletedefaultoptionalclientscope) | **Delete** /{realm}/default-optional-client-scopes/{clientScopeId} | 
+[**DeleteEvents**](RealmsAdminApi.md#deleteevents) | **Delete** /{realm}/events | 
+[**DeleteLocalizationByRealmByLocale**](RealmsAdminApi.md#deletelocalizationbyrealmbylocale) | **Delete** /{realm}/localization/{locale} | 
+[**DeleteLocalizationByRealmByLocaleByKey**](RealmsAdminApi.md#deletelocalizationbyrealmbylocalebykey) | **Delete** /{realm}/localization/{locale}/{key} | 
+[**DeleteSession**](RealmsAdminApi.md#deletesession) | **Delete** /{realm}/sessions/{session} | 
+[**Get**](RealmsAdminApi.md#get) | **Get** / | 
+[**GetAdminEvents**](RealmsAdminApi.md#getadminevents) | **Get** /{realm}/admin-events | 
+[**GetByRealm**](RealmsAdminApi.md#getbyrealm) | **Get** /{realm} | 
+[**GetClientSessionStats**](RealmsAdminApi.md#getclientsessionstats) | **Get** /{realm}/client-session-stats | 
+[**GetCredentialRegistrators**](RealmsAdminApi.md#getcredentialregistrators) | **Get** /{realm}/credential-registrators | 
+[**GetDefaultDefaultClientScopes**](RealmsAdminApi.md#getdefaultdefaultclientscopes) | **Get** /{realm}/default-default-client-scopes | 
+[**GetDefaultGroups**](RealmsAdminApi.md#getdefaultgroups) | **Get** /{realm}/default-groups | 
+[**GetDefaultOptionalClientScopes**](RealmsAdminApi.md#getdefaultoptionalclientscopes) | **Get** /{realm}/default-optional-client-scopes | 
+[**GetEvents**](RealmsAdminApi.md#getevents) | **Get** /{realm}/events | 
+[**GetEventsConfig**](RealmsAdminApi.md#geteventsconfig) | **Get** /{realm}/events/config | 
+[**GetGroupByPath**](RealmsAdminApi.md#getgroupbypath) | **Get** /{realm}/group-by-path/{path} | 
+[**GetLocalizationByRealm**](RealmsAdminApi.md#getlocalizationbyrealm) | **Get** /{realm}/localization | 
+[**GetLocalizationByRealmByLocale**](RealmsAdminApi.md#getlocalizationbyrealmbylocale) | **Get** /{realm}/localization/{locale} | 
+[**GetLocalizationByRealmByLocaleByKey**](RealmsAdminApi.md#getlocalizationbyrealmbylocalebykey) | **Get** /{realm}/localization/{locale}/{key} | 
+[**GetPolicies**](RealmsAdminApi.md#getpolicies) | **Get** /{realm}/client-policies/policies | 
+[**GetProfiles**](RealmsAdminApi.md#getprofiles) | **Get** /{realm}/client-policies/profiles | 
+[**GetUsersManagementPermissions**](RealmsAdminApi.md#getusersmanagementpermissions) | **Get** /{realm}/users-management-permissions | 
+[**Post**](RealmsAdminApi.md#post) | **Post** / | 
+[**PostClientDescriptionConverter**](RealmsAdminApi.md#postclientdescriptionconverter) | **Post** /{realm}/client-description-converter | 
+[**PostLocalization**](RealmsAdminApi.md#postlocalization) | **Post** /{realm}/localization/{locale} | 
+[**PostLogoutAll**](RealmsAdminApi.md#postlogoutall) | **Post** /{realm}/logout-all | 
+[**PostPartialExport**](RealmsAdminApi.md#postpartialexport) | **Post** /{realm}/partial-export | 
+[**PostPartialImport**](RealmsAdminApi.md#postpartialimport) | **Post** /{realm}/partialImport | 
+[**PostPushRevocationByRealm**](RealmsAdminApi.md#postpushrevocationbyrealm) | **Post** /{realm}/push-revocation | 
+[**PostTestSmtpConnection**](RealmsAdminApi.md#posttestsmtpconnection) | **Post** /{realm}/testSMTPConnection | 
+[**PutByRealm**](RealmsAdminApi.md#putbyrealm) | **Put** /{realm} | 
+[**PutDefaultDefaultClientScope**](RealmsAdminApi.md#putdefaultdefaultclientscope) | **Put** /{realm}/default-default-client-scopes/{clientScopeId} | 
+[**PutDefaultGroup**](RealmsAdminApi.md#putdefaultgroup) | **Put** /{realm}/default-groups/{groupId} | 
+[**PutDefaultOptionalClientScope**](RealmsAdminApi.md#putdefaultoptionalclientscope) | **Put** /{realm}/default-optional-client-scopes/{clientScopeId} | 
+[**PutEventsConfig**](RealmsAdminApi.md#puteventsconfig) | **Put** /{realm}/events/config | 
+[**PutLocalization**](RealmsAdminApi.md#putlocalization) | **Put** /{realm}/localization/{locale}/{key} | 
+[**PutPolicies**](RealmsAdminApi.md#putpolicies) | **Put** /{realm}/client-policies/policies | 
+[**PutProfiles**](RealmsAdminApi.md#putprofiles) | **Put** /{realm}/client-policies/profiles | 
+[**PutUsersManagementPermissions**](RealmsAdminApi.md#putusersmanagementpermissions) | **Put** /{realm}/users-management-permissions | 
+
 
 <a name="deleteadminevents"></a>
 # **DeleteAdminEvents**
-> void DeleteAdminEvents (string realm)
+> void DeleteAdminEvents (string realm, CancellationToken ct)
 
 
 
@@ -70,14 +71,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteAdminEvents(realm);
+                apiInstance.DeleteAdminEvents(realm, ct);
             }
             catch (Exception e)
             {
@@ -93,6 +95,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -111,7 +114,7 @@ void (empty response body)
 
 <a name="deletebyrealm"></a>
 # **DeleteByRealm**
-> void DeleteByRealm (string realm)
+> void DeleteByRealm (string realm, CancellationToken ct)
 
 
 
@@ -131,14 +134,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteByRealm(realm);
+                apiInstance.DeleteByRealm(realm, ct);
             }
             catch (Exception e)
             {
@@ -154,6 +158,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -172,7 +177,7 @@ void (empty response body)
 
 <a name="deletedefaultdefaultclientscope"></a>
 # **DeleteDefaultDefaultClientScope**
-> void DeleteDefaultDefaultClientScope (string realm, string clientScopeId)
+> void DeleteDefaultDefaultClientScope (string realm, string clientScopeId, CancellationToken ct)
 
 
 
@@ -190,15 +195,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteDefaultDefaultClientScope(realm, clientScopeId);
+                apiInstance.DeleteDefaultDefaultClientScope(realm, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -215,6 +221,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -233,7 +240,7 @@ void (empty response body)
 
 <a name="deletedefaultgroup"></a>
 # **DeleteDefaultGroup**
-> void DeleteDefaultGroup (string realm, string groupId)
+> void DeleteDefaultGroup (string realm, string groupId, CancellationToken ct)
 
 
 
@@ -251,15 +258,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var groupId = groupId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteDefaultGroup(realm, groupId);
+                apiInstance.DeleteDefaultGroup(realm, groupId, ct);
             }
             catch (Exception e)
             {
@@ -276,6 +284,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **groupId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -294,7 +303,7 @@ void (empty response body)
 
 <a name="deletedefaultoptionalclientscope"></a>
 # **DeleteDefaultOptionalClientScope**
-> void DeleteDefaultOptionalClientScope (string realm, string clientScopeId)
+> void DeleteDefaultOptionalClientScope (string realm, string clientScopeId, CancellationToken ct)
 
 
 
@@ -312,15 +321,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteDefaultOptionalClientScope(realm, clientScopeId);
+                apiInstance.DeleteDefaultOptionalClientScope(realm, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -337,6 +347,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -355,7 +366,7 @@ void (empty response body)
 
 <a name="deleteevents"></a>
 # **DeleteEvents**
-> void DeleteEvents (string realm)
+> void DeleteEvents (string realm, CancellationToken ct)
 
 
 
@@ -375,14 +386,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteEvents(realm);
+                apiInstance.DeleteEvents(realm, ct);
             }
             catch (Exception e)
             {
@@ -398,6 +410,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -416,7 +429,7 @@ void (empty response body)
 
 <a name="deletelocalizationbyrealmbylocale"></a>
 # **DeleteLocalizationByRealmByLocale**
-> void DeleteLocalizationByRealmByLocale (string realm, string locale)
+> void DeleteLocalizationByRealmByLocale (string realm, string locale, CancellationToken ct)
 
 
 
@@ -434,15 +447,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteLocalizationByRealmByLocale(realm, locale);
+                apiInstance.DeleteLocalizationByRealmByLocale(realm, locale, ct);
             }
             catch (Exception e)
             {
@@ -459,6 +473,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **locale** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -477,7 +492,7 @@ void (empty response body)
 
 <a name="deletelocalizationbyrealmbylocalebykey"></a>
 # **DeleteLocalizationByRealmByLocaleByKey**
-> void DeleteLocalizationByRealmByLocaleByKey (string realm, string locale, string key)
+> void DeleteLocalizationByRealmByLocaleByKey (string realm, string locale, string key, CancellationToken ct)
 
 
 
@@ -495,16 +510,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteLocalizationByRealmByLocaleByKey(realm, locale, key);
+                apiInstance.DeleteLocalizationByRealmByLocaleByKey(realm, locale, key, ct);
             }
             catch (Exception e)
             {
@@ -522,6 +538,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **locale** | **string**|  | 
  **key** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -540,7 +557,7 @@ void (empty response body)
 
 <a name="deletesession"></a>
 # **DeleteSession**
-> void DeleteSession (string realm, string session)
+> void DeleteSession (string realm, string session, CancellationToken ct)
 
 
 
@@ -560,15 +577,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var session = session_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteSession(realm, session);
+                apiInstance.DeleteSession(realm, session, ct);
             }
             catch (Exception e)
             {
@@ -585,6 +603,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **session** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -603,7 +622,7 @@ void (empty response body)
 
 <a name="get"></a>
 # **Get**
-> List<RealmRepresentation> Get (string briefRepresentation)
+> List<RealmRepresentation> Get (string briefRepresentation, CancellationToken ct)
 
 
 
@@ -623,14 +642,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RealmRepresentation&gt; result = apiInstance.Get(briefRepresentation);
+                List&lt;RealmRepresentation&gt; result = apiInstance.Get(briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -647,6 +667,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **briefRepresentation** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -665,7 +686,7 @@ Name | Type | Description  | Notes
 
 <a name="getadminevents"></a>
 # **GetAdminEvents**
-> List<AdminEventRepresentation> GetAdminEvents (string realm, string authClient, string authIpAddress, string authRealm, string authUser, string dateFrom, string dateTo, string first, string max, string operationTypes, string resourcePath, string resourceTypes)
+> List<AdminEventRepresentation> GetAdminEvents (string realm, string authClient, string authIpAddress, string authRealm, string authUser, string dateFrom, string dateTo, string first, string max, string operationTypes, string resourcePath, string resourceTypes, CancellationToken ct)
 
 
 
@@ -685,7 +706,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -700,10 +721,11 @@ namespace Example
             var operationTypes = operationTypes_example;  // string | [String] (optional) 
             var resourcePath = resourcePath_example;  // string |  (optional) 
             var resourceTypes = resourceTypes_example;  // string | [String] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;AdminEventRepresentation&gt; result = apiInstance.GetAdminEvents(realm, authClient, authIpAddress, authRealm, authUser, dateFrom, dateTo, first, max, operationTypes, resourcePath, resourceTypes);
+                List&lt;AdminEventRepresentation&gt; result = apiInstance.GetAdminEvents(realm, authClient, authIpAddress, authRealm, authUser, dateFrom, dateTo, first, max, operationTypes, resourcePath, resourceTypes, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -731,6 +753,7 @@ Name | Type | Description  | Notes
  **operationTypes** | **string**| [String] | [optional] 
  **resourcePath** | **string**|  | [optional] 
  **resourceTypes** | **string**| [String] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -749,7 +772,7 @@ Name | Type | Description  | Notes
 
 <a name="getbyrealm"></a>
 # **GetByRealm**
-> RealmRepresentation GetByRealm (string realm)
+> RealmRepresentation GetByRealm (string realm, CancellationToken ct)
 
 
 
@@ -769,14 +792,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                RealmRepresentation result = apiInstance.GetByRealm(realm);
+                RealmRepresentation result = apiInstance.GetByRealm(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -793,6 +817,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -811,7 +836,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientsessionstats"></a>
 # **GetClientSessionStats**
-> List<string> GetClientSessionStats (string realm)
+> List<string> GetClientSessionStats (string realm, CancellationToken ct)
 
 
 
@@ -831,14 +856,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetClientSessionStats(realm);
+                List&lt;string&gt; result = apiInstance.GetClientSessionStats(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -855,6 +881,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -873,7 +900,7 @@ Name | Type | Description  | Notes
 
 <a name="getcredentialregistrators"></a>
 # **GetCredentialRegistrators**
-> List<string> GetCredentialRegistrators (string realm)
+> List<string> GetCredentialRegistrators (string realm, CancellationToken ct)
 
 
 
@@ -891,14 +918,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetCredentialRegistrators(realm);
+                List&lt;string&gt; result = apiInstance.GetCredentialRegistrators(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -915,6 +943,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -933,7 +962,7 @@ Name | Type | Description  | Notes
 
 <a name="getdefaultdefaultclientscopes"></a>
 # **GetDefaultDefaultClientScopes**
-> List<ClientScopeRepresentation> GetDefaultDefaultClientScopes (string realm)
+> List<ClientScopeRepresentation> GetDefaultDefaultClientScopes (string realm, CancellationToken ct)
 
 
 
@@ -953,14 +982,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultDefaultClientScopes(realm);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultDefaultClientScopes(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -977,6 +1007,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -995,7 +1026,7 @@ Name | Type | Description  | Notes
 
 <a name="getdefaultgroups"></a>
 # **GetDefaultGroups**
-> List<GroupRepresentation> GetDefaultGroups (string realm)
+> List<GroupRepresentation> GetDefaultGroups (string realm, CancellationToken ct)
 
 
 
@@ -1015,14 +1046,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;GroupRepresentation&gt; result = apiInstance.GetDefaultGroups(realm);
+                List&lt;GroupRepresentation&gt; result = apiInstance.GetDefaultGroups(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1039,6 +1071,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1057,7 +1090,7 @@ Name | Type | Description  | Notes
 
 <a name="getdefaultoptionalclientscopes"></a>
 # **GetDefaultOptionalClientScopes**
-> List<ClientScopeRepresentation> GetDefaultOptionalClientScopes (string realm)
+> List<ClientScopeRepresentation> GetDefaultOptionalClientScopes (string realm, CancellationToken ct)
 
 
 
@@ -1077,14 +1110,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultOptionalClientScopes(realm);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetDefaultOptionalClientScopes(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1101,6 +1135,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1119,7 +1154,7 @@ Name | Type | Description  | Notes
 
 <a name="getevents"></a>
 # **GetEvents**
-> List<EventRepresentation> GetEvents (string realm, string _client, string dateFrom, string dateTo, string first, string ipAddress, string max, string type, string user)
+> List<EventRepresentation> GetEvents (string realm, string _client, string dateFrom, string dateTo, string first, string ipAddress, string max, string type, string user, CancellationToken ct)
 
 
 
@@ -1139,7 +1174,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -1151,10 +1186,11 @@ namespace Example
             var max = max_example;  // string | Maximum results size (defaults to 100) (optional) 
             var type = type_example;  // string | The types of events to return [String] (optional) 
             var user = user_example;  // string | User id (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;EventRepresentation&gt; result = apiInstance.GetEvents(realm, _client, dateFrom, dateTo, first, ipAddress, max, type, user);
+                List&lt;EventRepresentation&gt; result = apiInstance.GetEvents(realm, _client, dateFrom, dateTo, first, ipAddress, max, type, user, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1179,6 +1215,7 @@ Name | Type | Description  | Notes
  **max** | **string**| Maximum results size (defaults to 100) | [optional] 
  **type** | **string**| The types of events to return [String] | [optional] 
  **user** | **string**| User id | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1197,7 +1234,7 @@ Name | Type | Description  | Notes
 
 <a name="geteventsconfig"></a>
 # **GetEventsConfig**
-> RealmEventsConfigRepresentation GetEventsConfig (string realm)
+> RealmEventsConfigRepresentation GetEventsConfig (string realm, CancellationToken ct)
 
 
 
@@ -1217,14 +1254,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                RealmEventsConfigRepresentation result = apiInstance.GetEventsConfig(realm);
+                RealmEventsConfigRepresentation result = apiInstance.GetEventsConfig(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1241,6 +1279,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1259,7 +1298,7 @@ Name | Type | Description  | Notes
 
 <a name="getgroupbypath"></a>
 # **GetGroupByPath**
-> GroupRepresentation GetGroupByPath (string realm, string path)
+> GroupRepresentation GetGroupByPath (string realm, string path, CancellationToken ct)
 
 
 
@@ -1277,15 +1316,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var path = path_example;  // string | PathSegment
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GroupRepresentation result = apiInstance.GetGroupByPath(realm, path);
+                GroupRepresentation result = apiInstance.GetGroupByPath(realm, path, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1303,6 +1343,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **path** | **string**| PathSegment | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1321,7 +1362,7 @@ Name | Type | Description  | Notes
 
 <a name="getlocalizationbyrealm"></a>
 # **GetLocalizationByRealm**
-> List<string> GetLocalizationByRealm (string realm)
+> List<string> GetLocalizationByRealm (string realm, CancellationToken ct)
 
 
 
@@ -1339,14 +1380,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetLocalizationByRealm(realm);
+                List&lt;string&gt; result = apiInstance.GetLocalizationByRealm(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1363,6 +1405,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1381,7 +1424,7 @@ Name | Type | Description  | Notes
 
 <a name="getlocalizationbyrealmbylocale"></a>
 # **GetLocalizationByRealmByLocale**
-> Dictionary<string, string> GetLocalizationByRealmByLocale (string realm, string locale, string useRealmDefaultLocaleFallback)
+> Dictionary<string, string> GetLocalizationByRealmByLocale (string realm, string locale, string useRealmDefaultLocaleFallback, CancellationToken ct)
 
 
 
@@ -1399,16 +1442,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var useRealmDefaultLocaleFallback = useRealmDefaultLocaleFallback_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, string&gt; result = apiInstance.GetLocalizationByRealmByLocale(realm, locale, useRealmDefaultLocaleFallback);
+                Dictionary&lt;string, string&gt; result = apiInstance.GetLocalizationByRealmByLocale(realm, locale, useRealmDefaultLocaleFallback, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1427,6 +1471,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **locale** | **string**|  | 
  **useRealmDefaultLocaleFallback** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1445,7 +1490,7 @@ Name | Type | Description  | Notes
 
 <a name="getlocalizationbyrealmbylocalebykey"></a>
 # **GetLocalizationByRealmByLocaleByKey**
-> string GetLocalizationByRealmByLocaleByKey (string realm, string locale, string key)
+> string GetLocalizationByRealmByLocaleByKey (string realm, string locale, string key, CancellationToken ct)
 
 
 
@@ -1463,16 +1508,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                string result = apiInstance.GetLocalizationByRealmByLocaleByKey(realm, locale, key);
+                string result = apiInstance.GetLocalizationByRealmByLocaleByKey(realm, locale, key, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1491,6 +1537,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **locale** | **string**|  | 
  **key** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1509,7 +1556,7 @@ Name | Type | Description  | Notes
 
 <a name="getpolicies"></a>
 # **GetPolicies**
-> ClientPoliciesRepresentation GetPolicies (string realm)
+> ClientPoliciesRepresentation GetPolicies (string realm, CancellationToken ct)
 
 
 
@@ -1527,14 +1574,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientPoliciesRepresentation result = apiInstance.GetPolicies(realm);
+                ClientPoliciesRepresentation result = apiInstance.GetPolicies(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1551,6 +1599,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1569,7 +1618,7 @@ Name | Type | Description  | Notes
 
 <a name="getprofiles"></a>
 # **GetProfiles**
-> ClientProfilesRepresentation GetProfiles (string realm, string includeGlobalProfiles)
+> ClientProfilesRepresentation GetProfiles (string realm, string includeGlobalProfiles, CancellationToken ct)
 
 
 
@@ -1587,15 +1636,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var includeGlobalProfiles = includeGlobalProfiles_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientProfilesRepresentation result = apiInstance.GetProfiles(realm, includeGlobalProfiles);
+                ClientProfilesRepresentation result = apiInstance.GetProfiles(realm, includeGlobalProfiles, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1613,6 +1663,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **includeGlobalProfiles** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1631,7 +1682,7 @@ Name | Type | Description  | Notes
 
 <a name="getusersmanagementpermissions"></a>
 # **GetUsersManagementPermissions**
-> ManagementPermissionReference GetUsersManagementPermissions (string realm)
+> ManagementPermissionReference GetUsersManagementPermissions (string realm, CancellationToken ct)
 
 
 
@@ -1649,14 +1700,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.GetUsersManagementPermissions(realm);
+                ManagementPermissionReference result = apiInstance.GetUsersManagementPermissions(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1673,6 +1725,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1691,7 +1744,7 @@ Name | Type | Description  | Notes
 
 <a name="post"></a>
 # **Post**
-> void Post (Object body)
+> void Post (Object body, CancellationToken ct)
 
 
 
@@ -1711,14 +1764,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var body = new Object(); // Object | [file] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.Post(body);
+                apiInstance.Post(body, ct);
             }
             catch (Exception e)
             {
@@ -1733,7 +1787,8 @@ namespace Example
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **body** | **Object**| [file] | [optional] 
+ **body** | [**Object**](Object.md)| [file] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1752,7 +1807,7 @@ void (empty response body)
 
 <a name="postclientdescriptionconverter"></a>
 # **PostClientDescriptionConverter**
-> ClientRepresentation PostClientDescriptionConverter (string realm, string body)
+> ClientRepresentation PostClientDescriptionConverter (string realm, string body, CancellationToken ct)
 
 
 
@@ -1772,15 +1827,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientRepresentation result = apiInstance.PostClientDescriptionConverter(realm, body);
+                ClientRepresentation result = apiInstance.PostClientDescriptionConverter(realm, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1798,6 +1854,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1816,7 +1873,7 @@ Name | Type | Description  | Notes
 
 <a name="postlocalization"></a>
 # **PostLocalization**
-> void PostLocalization (string realm, string locale, string body)
+> void PostLocalization (string realm, string locale, string body, CancellationToken ct)
 
 
 
@@ -1836,16 +1893,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostLocalization(realm, locale, body);
+                apiInstance.PostLocalization(realm, locale, body, ct);
             }
             catch (Exception e)
             {
@@ -1863,6 +1921,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **locale** | **string**|  | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1881,7 +1940,7 @@ void (empty response body)
 
 <a name="postlogoutall"></a>
 # **PostLogoutAll**
-> GlobalRequestResult PostLogoutAll (string realm)
+> GlobalRequestResult PostLogoutAll (string realm, CancellationToken ct)
 
 
 
@@ -1901,14 +1960,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GlobalRequestResult result = apiInstance.PostLogoutAll(realm);
+                GlobalRequestResult result = apiInstance.PostLogoutAll(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1925,6 +1985,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1943,7 +2004,7 @@ Name | Type | Description  | Notes
 
 <a name="postpartialexport"></a>
 # **PostPartialExport**
-> void PostPartialExport (string realm, string exportClients, string exportGroupsAndRoles)
+> void PostPartialExport (string realm, string exportClients, string exportGroupsAndRoles, CancellationToken ct)
 
 
 
@@ -1963,16 +2024,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var exportClients = exportClients_example;  // string |  (optional) 
             var exportGroupsAndRoles = exportGroupsAndRoles_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostPartialExport(realm, exportClients, exportGroupsAndRoles);
+                apiInstance.PostPartialExport(realm, exportClients, exportGroupsAndRoles, ct);
             }
             catch (Exception e)
             {
@@ -1990,6 +2052,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **exportClients** | **string**|  | [optional] 
  **exportGroupsAndRoles** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2008,7 +2071,7 @@ void (empty response body)
 
 <a name="postpartialimport"></a>
 # **PostPartialImport**
-> void PostPartialImport (string realm, Object body)
+> void PostPartialImport (string realm, Object body, CancellationToken ct)
 
 
 
@@ -2028,15 +2091,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new Object(); // Object | [file] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostPartialImport(realm, body);
+                apiInstance.PostPartialImport(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2052,7 +2116,8 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
- **body** | **Object**| [file] | [optional] 
+ **body** | [**Object**](Object.md)| [file] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2071,7 +2136,7 @@ void (empty response body)
 
 <a name="postpushrevocationbyrealm"></a>
 # **PostPushRevocationByRealm**
-> GlobalRequestResult PostPushRevocationByRealm (string realm)
+> GlobalRequestResult PostPushRevocationByRealm (string realm, CancellationToken ct)
 
 
 
@@ -2091,14 +2156,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                GlobalRequestResult result = apiInstance.PostPushRevocationByRealm(realm);
+                GlobalRequestResult result = apiInstance.PostPushRevocationByRealm(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2115,6 +2181,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2133,7 +2200,7 @@ Name | Type | Description  | Notes
 
 <a name="posttestsmtpconnection"></a>
 # **PostTestSmtpConnection**
-> void PostTestSmtpConnection (string realm, string body)
+> void PostTestSmtpConnection (string realm, string body, CancellationToken ct)
 
 
 
@@ -2153,15 +2220,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostTestSmtpConnection(realm, body);
+                apiInstance.PostTestSmtpConnection(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2178,6 +2246,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2196,7 +2265,7 @@ void (empty response body)
 
 <a name="putbyrealm"></a>
 # **PutByRealm**
-> void PutByRealm (string realm, RealmRepresentation body)
+> void PutByRealm (string realm, RealmRepresentation body, CancellationToken ct)
 
 
 
@@ -2216,15 +2285,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new RealmRepresentation(); // RealmRepresentation | RealmRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutByRealm(realm, body);
+                apiInstance.PutByRealm(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2241,6 +2311,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**RealmRepresentation**](RealmRepresentation.md)| RealmRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2259,7 +2330,7 @@ void (empty response body)
 
 <a name="putdefaultdefaultclientscope"></a>
 # **PutDefaultDefaultClientScope**
-> void PutDefaultDefaultClientScope (string realm, string clientScopeId)
+> void PutDefaultDefaultClientScope (string realm, string clientScopeId, CancellationToken ct)
 
 
 
@@ -2277,15 +2348,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutDefaultDefaultClientScope(realm, clientScopeId);
+                apiInstance.PutDefaultDefaultClientScope(realm, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -2302,6 +2374,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2320,7 +2393,7 @@ void (empty response body)
 
 <a name="putdefaultgroup"></a>
 # **PutDefaultGroup**
-> void PutDefaultGroup (string realm, string groupId)
+> void PutDefaultGroup (string realm, string groupId, CancellationToken ct)
 
 
 
@@ -2338,15 +2411,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var groupId = groupId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutDefaultGroup(realm, groupId);
+                apiInstance.PutDefaultGroup(realm, groupId, ct);
             }
             catch (Exception e)
             {
@@ -2363,6 +2437,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **groupId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2381,7 +2456,7 @@ void (empty response body)
 
 <a name="putdefaultoptionalclientscope"></a>
 # **PutDefaultOptionalClientScope**
-> void PutDefaultOptionalClientScope (string realm, string clientScopeId)
+> void PutDefaultOptionalClientScope (string realm, string clientScopeId, CancellationToken ct)
 
 
 
@@ -2399,15 +2474,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutDefaultOptionalClientScope(realm, clientScopeId);
+                apiInstance.PutDefaultOptionalClientScope(realm, clientScopeId, ct);
             }
             catch (Exception e)
             {
@@ -2424,6 +2500,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **clientScopeId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2442,7 +2519,7 @@ void (empty response body)
 
 <a name="puteventsconfig"></a>
 # **PutEventsConfig**
-> void PutEventsConfig (string realm, RealmEventsConfigRepresentation body)
+> void PutEventsConfig (string realm, RealmEventsConfigRepresentation body, CancellationToken ct)
 
 
 
@@ -2460,15 +2537,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new RealmEventsConfigRepresentation(); // RealmEventsConfigRepresentation | RealmEventsConfigRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutEventsConfig(realm, body);
+                apiInstance.PutEventsConfig(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2485,6 +2563,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**RealmEventsConfigRepresentation**](RealmEventsConfigRepresentation.md)| RealmEventsConfigRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2503,7 +2582,7 @@ void (empty response body)
 
 <a name="putlocalization"></a>
 # **PutLocalization**
-> void PutLocalization (string realm, string locale, string key, string body)
+> void PutLocalization (string realm, string locale, string key, string body, CancellationToken ct)
 
 
 
@@ -2521,17 +2600,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutLocalization(realm, locale, key, body);
+                apiInstance.PutLocalization(realm, locale, key, body, ct);
             }
             catch (Exception e)
             {
@@ -2550,6 +2630,7 @@ Name | Type | Description  | Notes
  **locale** | **string**|  | 
  **key** | **string**|  | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2568,7 +2649,7 @@ void (empty response body)
 
 <a name="putpolicies"></a>
 # **PutPolicies**
-> void PutPolicies (string realm, ClientPoliciesRepresentation body)
+> void PutPolicies (string realm, ClientPoliciesRepresentation body, CancellationToken ct)
 
 
 
@@ -2586,15 +2667,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientPoliciesRepresentation(); // ClientPoliciesRepresentation | ClientPoliciesRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutPolicies(realm, body);
+                apiInstance.PutPolicies(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2611,6 +2693,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ClientPoliciesRepresentation**](ClientPoliciesRepresentation.md)| ClientPoliciesRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2629,7 +2712,7 @@ void (empty response body)
 
 <a name="putprofiles"></a>
 # **PutProfiles**
-> void PutProfiles (string realm, ClientProfilesRepresentation body)
+> void PutProfiles (string realm, ClientProfilesRepresentation body, CancellationToken ct)
 
 
 
@@ -2647,15 +2730,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientProfilesRepresentation(); // ClientProfilesRepresentation | ClientProfilesRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutProfiles(realm, body);
+                apiInstance.PutProfiles(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -2672,6 +2756,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ClientProfilesRepresentation**](ClientProfilesRepresentation.md)| ClientProfilesRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2690,7 +2775,7 @@ void (empty response body)
 
 <a name="putusersmanagementpermissions"></a>
 # **PutUsersManagementPermissions**
-> ManagementPermissionReference PutUsersManagementPermissions (string realm, ManagementPermissionReference body)
+> ManagementPermissionReference PutUsersManagementPermissions (string realm, ManagementPermissionReference body, CancellationToken ct)
 
 
 
@@ -2708,15 +2793,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new RealmsAdminApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ManagementPermissionReference result = apiInstance.PutUsersManagementPermissions(realm, body);
+                ManagementPermissionReference result = apiInstance.PutUsersManagementPermissions(realm, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -2734,6 +2820,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ManagementPermissionReference**](ManagementPermissionReference.md)| ManagementPermissionReference | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

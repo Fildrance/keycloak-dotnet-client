@@ -4,43 +4,44 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteClientScopeMappingsClient**](ScopeMappingsApi.md#deleteclientscopemappingsclient) | **DELETE** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
-[**DeleteClientScopeMappingsRealm**](ScopeMappingsApi.md#deleteclientscopemappingsrealm) | **DELETE** /{realm}/clients/{id}/scope-mappings/realm | 
-[**DeleteClientScopeScopeMappingsClient**](ScopeMappingsApi.md#deleteclientscopescopemappingsclient) | **DELETE** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
-[**DeleteClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#deleteclientscopescopemappingsrealm) | **DELETE** /{realm}/client-scopes/{id}/scope-mappings/realm | 
-[**DeleteClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#deleteclienttemplatescopemappingsclient) | **DELETE** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
-[**DeleteClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#deleteclienttemplatescopemappingsrealm) | **DELETE** /{realm}/client-templates/{id}/scope-mappings/realm | 
-[**GetClientScopeMappings**](ScopeMappingsApi.md#getclientscopemappings) | **GET** /{realm}/clients/{id}/scope-mappings | 
-[**GetClientScopeMappingsClient**](ScopeMappingsApi.md#getclientscopemappingsclient) | **GET** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
-[**GetClientScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclientscopemappingsclientavailable) | **GET** /{realm}/clients/{id}/scope-mappings/clients/{client}/available | 
-[**GetClientScopeMappingsClientComposite**](ScopeMappingsApi.md#getclientscopemappingsclientcomposite) | **GET** /{realm}/clients/{id}/scope-mappings/clients/{client}/composite | 
-[**GetClientScopeMappingsRealm**](ScopeMappingsApi.md#getclientscopemappingsrealm) | **GET** /{realm}/clients/{id}/scope-mappings/realm | 
-[**GetClientScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclientscopemappingsrealmavailable) | **GET** /{realm}/clients/{id}/scope-mappings/realm/available | 
-[**GetClientScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclientscopemappingsrealmcomposite) | **GET** /{realm}/clients/{id}/scope-mappings/realm/composite | 
-[**GetClientScopeScopeMappings**](ScopeMappingsApi.md#getclientscopescopemappings) | **GET** /{realm}/client-scopes/{id}/scope-mappings | 
-[**GetClientScopeScopeMappingsClient**](ScopeMappingsApi.md#getclientscopescopemappingsclient) | **GET** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
-[**GetClientScopeScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclientscopescopemappingsclientavailable) | **GET** /{realm}/client-scopes/{id}/scope-mappings/clients/{client}/available | 
-[**GetClientScopeScopeMappingsClientComposite**](ScopeMappingsApi.md#getclientscopescopemappingsclientcomposite) | **GET** /{realm}/client-scopes/{id}/scope-mappings/clients/{client}/composite | 
-[**GetClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#getclientscopescopemappingsrealm) | **GET** /{realm}/client-scopes/{id}/scope-mappings/realm | 
-[**GetClientScopeScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclientscopescopemappingsrealmavailable) | **GET** /{realm}/client-scopes/{id}/scope-mappings/realm/available | 
-[**GetClientScopeScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclientscopescopemappingsrealmcomposite) | **GET** /{realm}/client-scopes/{id}/scope-mappings/realm/composite | 
-[**GetClientTemplateScopeMappings**](ScopeMappingsApi.md#getclienttemplatescopemappings) | **GET** /{realm}/client-templates/{id}/scope-mappings | 
-[**GetClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#getclienttemplatescopemappingsclient) | **GET** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
-[**GetClientTemplateScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclienttemplatescopemappingsclientavailable) | **GET** /{realm}/client-templates/{id}/scope-mappings/clients/{client}/available | 
-[**GetClientTemplateScopeMappingsClientComposite**](ScopeMappingsApi.md#getclienttemplatescopemappingsclientcomposite) | **GET** /{realm}/client-templates/{id}/scope-mappings/clients/{client}/composite | 
-[**GetClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealm) | **GET** /{realm}/client-templates/{id}/scope-mappings/realm | 
-[**GetClientTemplateScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealmavailable) | **GET** /{realm}/client-templates/{id}/scope-mappings/realm/available | 
-[**GetClientTemplateScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealmcomposite) | **GET** /{realm}/client-templates/{id}/scope-mappings/realm/composite | 
-[**PostClientScopeMappingsClient**](ScopeMappingsApi.md#postclientscopemappingsclient) | **POST** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
-[**PostClientScopeMappingsRealm**](ScopeMappingsApi.md#postclientscopemappingsrealm) | **POST** /{realm}/clients/{id}/scope-mappings/realm | 
-[**PostClientScopeScopeMappingsClient**](ScopeMappingsApi.md#postclientscopescopemappingsclient) | **POST** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
-[**PostClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#postclientscopescopemappingsrealm) | **POST** /{realm}/client-scopes/{id}/scope-mappings/realm | 
-[**PostClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#postclienttemplatescopemappingsclient) | **POST** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
-[**PostClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#postclienttemplatescopemappingsrealm) | **POST** /{realm}/client-templates/{id}/scope-mappings/realm | 
+[**DeleteClientScopeMappingsClient**](ScopeMappingsApi.md#deleteclientscopemappingsclient) | **Delete** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
+[**DeleteClientScopeMappingsRealm**](ScopeMappingsApi.md#deleteclientscopemappingsrealm) | **Delete** /{realm}/clients/{id}/scope-mappings/realm | 
+[**DeleteClientScopeScopeMappingsClient**](ScopeMappingsApi.md#deleteclientscopescopemappingsclient) | **Delete** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
+[**DeleteClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#deleteclientscopescopemappingsrealm) | **Delete** /{realm}/client-scopes/{id}/scope-mappings/realm | 
+[**DeleteClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#deleteclienttemplatescopemappingsclient) | **Delete** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
+[**DeleteClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#deleteclienttemplatescopemappingsrealm) | **Delete** /{realm}/client-templates/{id}/scope-mappings/realm | 
+[**GetClientScopeMappings**](ScopeMappingsApi.md#getclientscopemappings) | **Get** /{realm}/clients/{id}/scope-mappings | 
+[**GetClientScopeMappingsClient**](ScopeMappingsApi.md#getclientscopemappingsclient) | **Get** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
+[**GetClientScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclientscopemappingsclientavailable) | **Get** /{realm}/clients/{id}/scope-mappings/clients/{client}/available | 
+[**GetClientScopeMappingsClientComposite**](ScopeMappingsApi.md#getclientscopemappingsclientcomposite) | **Get** /{realm}/clients/{id}/scope-mappings/clients/{client}/composite | 
+[**GetClientScopeMappingsRealm**](ScopeMappingsApi.md#getclientscopemappingsrealm) | **Get** /{realm}/clients/{id}/scope-mappings/realm | 
+[**GetClientScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclientscopemappingsrealmavailable) | **Get** /{realm}/clients/{id}/scope-mappings/realm/available | 
+[**GetClientScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclientscopemappingsrealmcomposite) | **Get** /{realm}/clients/{id}/scope-mappings/realm/composite | 
+[**GetClientScopeScopeMappings**](ScopeMappingsApi.md#getclientscopescopemappings) | **Get** /{realm}/client-scopes/{id}/scope-mappings | 
+[**GetClientScopeScopeMappingsClient**](ScopeMappingsApi.md#getclientscopescopemappingsclient) | **Get** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
+[**GetClientScopeScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclientscopescopemappingsclientavailable) | **Get** /{realm}/client-scopes/{id}/scope-mappings/clients/{client}/available | 
+[**GetClientScopeScopeMappingsClientComposite**](ScopeMappingsApi.md#getclientscopescopemappingsclientcomposite) | **Get** /{realm}/client-scopes/{id}/scope-mappings/clients/{client}/composite | 
+[**GetClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#getclientscopescopemappingsrealm) | **Get** /{realm}/client-scopes/{id}/scope-mappings/realm | 
+[**GetClientScopeScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclientscopescopemappingsrealmavailable) | **Get** /{realm}/client-scopes/{id}/scope-mappings/realm/available | 
+[**GetClientScopeScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclientscopescopemappingsrealmcomposite) | **Get** /{realm}/client-scopes/{id}/scope-mappings/realm/composite | 
+[**GetClientTemplateScopeMappings**](ScopeMappingsApi.md#getclienttemplatescopemappings) | **Get** /{realm}/client-templates/{id}/scope-mappings | 
+[**GetClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#getclienttemplatescopemappingsclient) | **Get** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
+[**GetClientTemplateScopeMappingsClientAvailable**](ScopeMappingsApi.md#getclienttemplatescopemappingsclientavailable) | **Get** /{realm}/client-templates/{id}/scope-mappings/clients/{client}/available | 
+[**GetClientTemplateScopeMappingsClientComposite**](ScopeMappingsApi.md#getclienttemplatescopemappingsclientcomposite) | **Get** /{realm}/client-templates/{id}/scope-mappings/clients/{client}/composite | 
+[**GetClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealm) | **Get** /{realm}/client-templates/{id}/scope-mappings/realm | 
+[**GetClientTemplateScopeMappingsRealmAvailable**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealmavailable) | **Get** /{realm}/client-templates/{id}/scope-mappings/realm/available | 
+[**GetClientTemplateScopeMappingsRealmComposite**](ScopeMappingsApi.md#getclienttemplatescopemappingsrealmcomposite) | **Get** /{realm}/client-templates/{id}/scope-mappings/realm/composite | 
+[**PostClientScopeMappingsClient**](ScopeMappingsApi.md#postclientscopemappingsclient) | **Post** /{realm}/clients/{id}/scope-mappings/clients/{client} | 
+[**PostClientScopeMappingsRealm**](ScopeMappingsApi.md#postclientscopemappingsrealm) | **Post** /{realm}/clients/{id}/scope-mappings/realm | 
+[**PostClientScopeScopeMappingsClient**](ScopeMappingsApi.md#postclientscopescopemappingsclient) | **Post** /{realm}/client-scopes/{id}/scope-mappings/clients/{client} | 
+[**PostClientScopeScopeMappingsRealm**](ScopeMappingsApi.md#postclientscopescopemappingsrealm) | **Post** /{realm}/client-scopes/{id}/scope-mappings/realm | 
+[**PostClientTemplateScopeMappingsClient**](ScopeMappingsApi.md#postclienttemplatescopemappingsclient) | **Post** /{realm}/client-templates/{id}/scope-mappings/clients/{client} | 
+[**PostClientTemplateScopeMappingsRealm**](ScopeMappingsApi.md#postclienttemplatescopemappingsrealm) | **Post** /{realm}/client-templates/{id}/scope-mappings/realm | 
+
 
 <a name="deleteclientscopemappingsclient"></a>
 # **DeleteClientScopeMappingsClient**
-> void DeleteClientScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void DeleteClientScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -60,17 +61,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScopeMappingsClient(realm, id, _client, body);
+                apiInstance.DeleteClientScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -89,6 +91,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -107,7 +110,7 @@ void (empty response body)
 
 <a name="deleteclientscopemappingsrealm"></a>
 # **DeleteClientScopeMappingsRealm**
-> void DeleteClientScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void DeleteClientScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -127,16 +130,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScopeMappingsRealm(realm, id, body);
+                apiInstance.DeleteClientScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -154,6 +158,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -172,7 +177,7 @@ void (empty response body)
 
 <a name="deleteclientscopescopemappingsclient"></a>
 # **DeleteClientScopeScopeMappingsClient**
-> void DeleteClientScopeScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void DeleteClientScopeScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -192,17 +197,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScopeScopeMappingsClient(realm, id, _client, body);
+                apiInstance.DeleteClientScopeScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -221,6 +227,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -239,7 +246,7 @@ void (empty response body)
 
 <a name="deleteclientscopescopemappingsrealm"></a>
 # **DeleteClientScopeScopeMappingsRealm**
-> void DeleteClientScopeScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void DeleteClientScopeScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -259,16 +266,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScopeScopeMappingsRealm(realm, id, body);
+                apiInstance.DeleteClientScopeScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -286,6 +294,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -304,7 +313,7 @@ void (empty response body)
 
 <a name="deleteclienttemplatescopemappingsclient"></a>
 # **DeleteClientTemplateScopeMappingsClient**
-> void DeleteClientTemplateScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void DeleteClientTemplateScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -324,17 +333,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientTemplateScopeMappingsClient(realm, id, _client, body);
+                apiInstance.DeleteClientTemplateScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -353,6 +363,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -371,7 +382,7 @@ void (empty response body)
 
 <a name="deleteclienttemplatescopemappingsrealm"></a>
 # **DeleteClientTemplateScopeMappingsRealm**
-> void DeleteClientTemplateScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void DeleteClientTemplateScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -391,16 +402,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientTemplateScopeMappingsRealm(realm, id, body);
+                apiInstance.DeleteClientTemplateScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -418,6 +430,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -436,7 +449,7 @@ void (empty response body)
 
 <a name="getclientscopemappings"></a>
 # **GetClientScopeMappings**
-> MappingsRepresentation GetClientScopeMappings (string realm, string id)
+> MappingsRepresentation GetClientScopeMappings (string realm, string id, CancellationToken ct)
 
 
 
@@ -456,15 +469,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                MappingsRepresentation result = apiInstance.GetClientScopeMappings(realm, id);
+                MappingsRepresentation result = apiInstance.GetClientScopeMappings(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -482,6 +496,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -500,7 +515,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsclient"></a>
 # **GetClientScopeMappingsClient**
-> List<RoleRepresentation> GetClientScopeMappingsClient (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientScopeMappingsClient (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -520,16 +535,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClient(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClient(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -548,6 +564,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -566,7 +583,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsclientavailable"></a>
 # **GetClientScopeMappingsClientAvailable**
-> List<RoleRepresentation> GetClientScopeMappingsClientAvailable (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientScopeMappingsClientAvailable (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -586,16 +603,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClientAvailable(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClientAvailable(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -614,6 +632,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -632,7 +651,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsclientcomposite"></a>
 # **GetClientScopeMappingsClientComposite**
-> List<RoleRepresentation> GetClientScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation)
+> List<RoleRepresentation> GetClientScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -652,17 +671,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClientComposite(realm, id, _client, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsClientComposite(realm, id, _client, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -682,6 +702,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -700,7 +721,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsrealm"></a>
 # **GetClientScopeMappingsRealm**
-> List<RoleRepresentation> GetClientScopeMappingsRealm (string realm, string id)
+> List<RoleRepresentation> GetClientScopeMappingsRealm (string realm, string id, CancellationToken ct)
 
 
 
@@ -720,15 +741,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealm(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealm(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -746,6 +768,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -764,7 +787,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsrealmavailable"></a>
 # **GetClientScopeMappingsRealmAvailable**
-> List<RoleRepresentation> GetClientScopeMappingsRealmAvailable (string realm, string id)
+> List<RoleRepresentation> GetClientScopeMappingsRealmAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -784,15 +807,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealmAvailable(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealmAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -810,6 +834,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -828,7 +853,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopemappingsrealmcomposite"></a>
 # **GetClientScopeMappingsRealmComposite**
-> List<RoleRepresentation> GetClientScopeMappingsRealmComposite (string realm, string id, string briefRepresentation)
+> List<RoleRepresentation> GetClientScopeMappingsRealmComposite (string realm, string id, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -848,16 +873,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealmComposite(realm, id, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeMappingsRealmComposite(realm, id, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -876,6 +902,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -894,7 +921,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappings"></a>
 # **GetClientScopeScopeMappings**
-> MappingsRepresentation GetClientScopeScopeMappings (string realm, string id)
+> MappingsRepresentation GetClientScopeScopeMappings (string realm, string id, CancellationToken ct)
 
 
 
@@ -914,15 +941,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                MappingsRepresentation result = apiInstance.GetClientScopeScopeMappings(realm, id);
+                MappingsRepresentation result = apiInstance.GetClientScopeScopeMappings(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -940,6 +968,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -958,7 +987,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsclient"></a>
 # **GetClientScopeScopeMappingsClient**
-> List<RoleRepresentation> GetClientScopeScopeMappingsClient (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientScopeScopeMappingsClient (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -978,16 +1007,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClient(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClient(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1006,6 +1036,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1024,7 +1055,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsclientavailable"></a>
 # **GetClientScopeScopeMappingsClientAvailable**
-> List<RoleRepresentation> GetClientScopeScopeMappingsClientAvailable (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientScopeScopeMappingsClientAvailable (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -1044,16 +1075,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClientAvailable(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClientAvailable(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1072,6 +1104,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1090,7 +1123,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsclientcomposite"></a>
 # **GetClientScopeScopeMappingsClientComposite**
-> List<RoleRepresentation> GetClientScopeScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation)
+> List<RoleRepresentation> GetClientScopeScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -1110,17 +1143,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClientComposite(realm, id, _client, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsClientComposite(realm, id, _client, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1140,6 +1174,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1158,7 +1193,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsrealm"></a>
 # **GetClientScopeScopeMappingsRealm**
-> List<RoleRepresentation> GetClientScopeScopeMappingsRealm (string realm, string id)
+> List<RoleRepresentation> GetClientScopeScopeMappingsRealm (string realm, string id, CancellationToken ct)
 
 
 
@@ -1178,15 +1213,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealm(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealm(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1204,6 +1240,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1222,7 +1259,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsrealmavailable"></a>
 # **GetClientScopeScopeMappingsRealmAvailable**
-> List<RoleRepresentation> GetClientScopeScopeMappingsRealmAvailable (string realm, string id)
+> List<RoleRepresentation> GetClientScopeScopeMappingsRealmAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -1242,15 +1279,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealmAvailable(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealmAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1268,6 +1306,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1286,7 +1325,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopescopemappingsrealmcomposite"></a>
 # **GetClientScopeScopeMappingsRealmComposite**
-> List<RoleRepresentation> GetClientScopeScopeMappingsRealmComposite (string realm, string id, string briefRepresentation)
+> List<RoleRepresentation> GetClientScopeScopeMappingsRealmComposite (string realm, string id, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -1306,16 +1345,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealmComposite(realm, id, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientScopeScopeMappingsRealmComposite(realm, id, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1334,6 +1374,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1352,7 +1393,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappings"></a>
 # **GetClientTemplateScopeMappings**
-> MappingsRepresentation GetClientTemplateScopeMappings (string realm, string id)
+> MappingsRepresentation GetClientTemplateScopeMappings (string realm, string id, CancellationToken ct)
 
 
 
@@ -1372,15 +1413,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                MappingsRepresentation result = apiInstance.GetClientTemplateScopeMappings(realm, id);
+                MappingsRepresentation result = apiInstance.GetClientTemplateScopeMappings(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1398,6 +1440,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1416,7 +1459,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsclient"></a>
 # **GetClientTemplateScopeMappingsClient**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsClient (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsClient (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -1436,16 +1479,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClient(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClient(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1464,6 +1508,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1482,7 +1527,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsclientavailable"></a>
 # **GetClientTemplateScopeMappingsClientAvailable**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsClientAvailable (string realm, string id, string _client)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsClientAvailable (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -1502,16 +1547,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClientAvailable(realm, id, _client);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClientAvailable(realm, id, _client, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1530,6 +1576,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1548,7 +1595,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsclientcomposite"></a>
 # **GetClientTemplateScopeMappingsClientComposite**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsClientComposite (string realm, string id, string _client, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -1568,17 +1615,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClientComposite(realm, id, _client, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsClientComposite(realm, id, _client, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1598,6 +1646,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1616,7 +1665,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsrealm"></a>
 # **GetClientTemplateScopeMappingsRealm**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsRealm (string realm, string id)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsRealm (string realm, string id, CancellationToken ct)
 
 
 
@@ -1636,15 +1685,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealm(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealm(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1662,6 +1712,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1680,7 +1731,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsrealmavailable"></a>
 # **GetClientTemplateScopeMappingsRealmAvailable**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsRealmAvailable (string realm, string id)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsRealmAvailable (string realm, string id, CancellationToken ct)
 
 
 
@@ -1700,15 +1751,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealmAvailable(realm, id);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealmAvailable(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1726,6 +1778,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1744,7 +1797,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplatescopemappingsrealmcomposite"></a>
 # **GetClientTemplateScopeMappingsRealmComposite**
-> List<RoleRepresentation> GetClientTemplateScopeMappingsRealmComposite (string realm, string id, string briefRepresentation)
+> List<RoleRepresentation> GetClientTemplateScopeMappingsRealmComposite (string realm, string id, string briefRepresentation, CancellationToken ct)
 
 
 
@@ -1764,16 +1817,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealmComposite(realm, id, briefRepresentation);
+                List&lt;RoleRepresentation&gt; result = apiInstance.GetClientTemplateScopeMappingsRealmComposite(realm, id, briefRepresentation, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1792,6 +1846,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **briefRepresentation** | **string**| if false, return roles with their attributes | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1810,7 +1865,7 @@ Name | Type | Description  | Notes
 
 <a name="postclientscopemappingsclient"></a>
 # **PostClientScopeMappingsClient**
-> void PostClientScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void PostClientScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -1830,17 +1885,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeMappingsClient(realm, id, _client, body);
+                apiInstance.PostClientScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -1859,6 +1915,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1877,7 +1934,7 @@ void (empty response body)
 
 <a name="postclientscopemappingsrealm"></a>
 # **PostClientScopeMappingsRealm**
-> void PostClientScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void PostClientScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -1897,16 +1954,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeMappingsRealm(realm, id, body);
+                apiInstance.PostClientScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1924,6 +1982,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1942,7 +2001,7 @@ void (empty response body)
 
 <a name="postclientscopescopemappingsclient"></a>
 # **PostClientScopeScopeMappingsClient**
-> void PostClientScopeScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void PostClientScopeScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -1962,17 +2021,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeScopeMappingsClient(realm, id, _client, body);
+                apiInstance.PostClientScopeScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -1991,6 +2051,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2009,7 +2070,7 @@ void (empty response body)
 
 <a name="postclientscopescopemappingsrealm"></a>
 # **PostClientScopeScopeMappingsRealm**
-> void PostClientScopeScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void PostClientScopeScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -2029,16 +2090,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopeScopeMappingsRealm(realm, id, body);
+                apiInstance.PostClientScopeScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2056,6 +2118,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2074,7 +2137,7 @@ void (empty response body)
 
 <a name="postclienttemplatescopemappingsclient"></a>
 # **PostClientTemplateScopeMappingsClient**
-> void PostClientTemplateScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body)
+> void PostClientTemplateScopeMappingsClient (string realm, string id, string _client, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -2094,17 +2157,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientTemplateScopeMappingsClient(realm, id, _client, body);
+                apiInstance.PostClientTemplateScopeMappingsClient(realm, id, _client, body, ct);
             }
             catch (Exception e)
             {
@@ -2123,6 +2187,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **_client** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2141,7 +2206,7 @@ void (empty response body)
 
 <a name="postclienttemplatescopemappingsrealm"></a>
 # **PostClientTemplateScopeMappingsRealm**
-> void PostClientTemplateScopeMappingsRealm (string realm, string id, RoleRepresentation body)
+> void PostClientTemplateScopeMappingsRealm (string realm, string id, RoleRepresentation body, CancellationToken ct)
 
 
 
@@ -2161,16 +2226,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ScopeMappingsApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientTemplateScopeMappingsRealm(realm, id, body);
+                apiInstance.PostClientTemplateScopeMappingsRealm(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2188,6 +2254,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**RoleRepresentation**](RoleRepresentation.md)| RoleRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

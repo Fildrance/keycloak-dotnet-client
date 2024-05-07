@@ -4,16 +4,17 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetCertificate**](ClientAttributeCertificateApi.md#getcertificate) | **GET** /{realm}/clients/{id}/certificates/{attr} | 
-[**PostDownload**](ClientAttributeCertificateApi.md#postdownload) | **POST** /{realm}/clients/{id}/certificates/{attr}/download | 
-[**PostGenerate**](ClientAttributeCertificateApi.md#postgenerate) | **POST** /{realm}/clients/{id}/certificates/{attr}/generate | 
-[**PostGenerateAndDownload**](ClientAttributeCertificateApi.md#postgenerateanddownload) | **POST** /{realm}/clients/{id}/certificates/{attr}/generate-and-download | 
-[**PostUpload**](ClientAttributeCertificateApi.md#postupload) | **POST** /{realm}/clients/{id}/certificates/{attr}/upload | 
-[**PostUploadCertificate**](ClientAttributeCertificateApi.md#postuploadcertificate) | **POST** /{realm}/clients/{id}/certificates/{attr}/upload-certificate | 
+[**GetCertificate**](ClientAttributeCertificateApi.md#getcertificate) | **Get** /{realm}/clients/{id}/certificates/{attr} | 
+[**PostDownload**](ClientAttributeCertificateApi.md#postdownload) | **Post** /{realm}/clients/{id}/certificates/{attr}/download | 
+[**PostGenerate**](ClientAttributeCertificateApi.md#postgenerate) | **Post** /{realm}/clients/{id}/certificates/{attr}/generate | 
+[**PostGenerateAndDownload**](ClientAttributeCertificateApi.md#postgenerateanddownload) | **Post** /{realm}/clients/{id}/certificates/{attr}/generate-and-download | 
+[**PostUpload**](ClientAttributeCertificateApi.md#postupload) | **Post** /{realm}/clients/{id}/certificates/{attr}/upload | 
+[**PostUploadCertificate**](ClientAttributeCertificateApi.md#postuploadcertificate) | **Post** /{realm}/clients/{id}/certificates/{attr}/upload-certificate | 
+
 
 <a name="getcertificate"></a>
 # **GetCertificate**
-> CertificateRepresentation GetCertificate (string realm, string id, string attr)
+> CertificateRepresentation GetCertificate (string realm, string id, string attr, CancellationToken ct)
 
 
 
@@ -33,16 +34,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CertificateRepresentation result = apiInstance.GetCertificate(realm, id, attr);
+                CertificateRepresentation result = apiInstance.GetCertificate(realm, id, attr, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -61,6 +63,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **attr** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -79,7 +82,7 @@ Name | Type | Description  | Notes
 
 <a name="postdownload"></a>
 # **PostDownload**
-> byte[] PostDownload (string realm, string id, string attr, KeyStoreConfig body)
+> byte[] PostDownload (string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct)
 
 
 
@@ -99,17 +102,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
             var body = new KeyStoreConfig(); // KeyStoreConfig | KeyStoreConfig (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                byte[] result = apiInstance.PostDownload(realm, id, attr, body);
+                byte[] result = apiInstance.PostDownload(realm, id, attr, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -129,6 +133,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **attr** | **string**|  | 
  **body** | [**KeyStoreConfig**](KeyStoreConfig.md)| KeyStoreConfig | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -147,7 +152,7 @@ Name | Type | Description  | Notes
 
 <a name="postgenerate"></a>
 # **PostGenerate**
-> CertificateRepresentation PostGenerate (string realm, string id, string attr)
+> CertificateRepresentation PostGenerate (string realm, string id, string attr, CancellationToken ct)
 
 
 
@@ -167,16 +172,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CertificateRepresentation result = apiInstance.PostGenerate(realm, id, attr);
+                CertificateRepresentation result = apiInstance.PostGenerate(realm, id, attr, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -195,6 +201,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **attr** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -213,7 +220,7 @@ Name | Type | Description  | Notes
 
 <a name="postgenerateanddownload"></a>
 # **PostGenerateAndDownload**
-> byte[] PostGenerateAndDownload (string realm, string id, string attr, KeyStoreConfig body)
+> byte[] PostGenerateAndDownload (string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct)
 
 
 
@@ -233,17 +240,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
             var body = new KeyStoreConfig(); // KeyStoreConfig | KeyStoreConfig (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                byte[] result = apiInstance.PostGenerateAndDownload(realm, id, attr, body);
+                byte[] result = apiInstance.PostGenerateAndDownload(realm, id, attr, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -263,6 +271,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **attr** | **string**|  | 
  **body** | [**KeyStoreConfig**](KeyStoreConfig.md)| KeyStoreConfig | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -281,7 +290,7 @@ Name | Type | Description  | Notes
 
 <a name="postupload"></a>
 # **PostUpload**
-> CertificateRepresentation PostUpload (string realm, string id, string attr)
+> CertificateRepresentation PostUpload (string realm, string id, string attr, CancellationToken ct)
 
 
 
@@ -301,16 +310,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CertificateRepresentation result = apiInstance.PostUpload(realm, id, attr);
+                CertificateRepresentation result = apiInstance.PostUpload(realm, id, attr, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -329,6 +339,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **attr** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -347,7 +358,7 @@ Name | Type | Description  | Notes
 
 <a name="postuploadcertificate"></a>
 # **PostUploadCertificate**
-> CertificateRepresentation PostUploadCertificate (string realm, string id, string attr)
+> CertificateRepresentation PostUploadCertificate (string realm, string id, string attr, CancellationToken ct)
 
 
 
@@ -367,16 +378,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientAttributeCertificateApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                CertificateRepresentation result = apiInstance.PostUploadCertificate(realm, id, attr);
+                CertificateRepresentation result = apiInstance.PostUploadCertificate(realm, id, attr, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -395,6 +407,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **attr** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

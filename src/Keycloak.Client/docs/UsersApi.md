@@ -4,43 +4,44 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteConsent**](UsersApi.md#deleteconsent) | **DELETE** /{realm}/users/{id}/consents/{client} | 
-[**DeleteCredential**](UsersApi.md#deletecredential) | **DELETE** /{realm}/users/{id}/credentials/{credentialId} | 
-[**DeleteFederatedIdentity**](UsersApi.md#deletefederatedidentity) | **DELETE** /{realm}/users/{id}/federated-identity/{provider} | 
-[**DeleteUserByRealmById**](UsersApi.md#deleteuserbyrealmbyid) | **DELETE** /{realm}/users/{id} | 
-[**DeleteUserGroup**](UsersApi.md#deleteusergroup) | **DELETE** /{realm}/users/{id}/groups/{groupId} | 
-[**GetConfiguredUserStorageCredentialTypes**](UsersApi.md#getconfigureduserstoragecredentialtypes) | **GET** /{realm}/users/{id}/configured-user-storage-credential-types | 
-[**GetConsents**](UsersApi.md#getconsents) | **GET** /{realm}/users/{id}/consents | 
-[**GetCredentials**](UsersApi.md#getcredentials) | **GET** /{realm}/users/{id}/credentials | 
-[**GetFederatedIdentity**](UsersApi.md#getfederatedidentity) | **GET** /{realm}/users/{id}/federated-identity | 
-[**GetMetadata**](UsersApi.md#getmetadata) | **GET** /{realm}/users/profile/metadata | 
-[**GetOfflineSession**](UsersApi.md#getofflinesession) | **GET** /{realm}/users/{id}/offline-sessions/{clientUuid} | 
-[**GetProfile**](UsersApi.md#getprofile) | **GET** /{realm}/users/profile | 
-[**GetSessions**](UsersApi.md#getsessions) | **GET** /{realm}/users/{id}/sessions | 
-[**GetUserByRealmById**](UsersApi.md#getuserbyrealmbyid) | **GET** /{realm}/users/{id} | 
-[**GetUserGroups**](UsersApi.md#getusergroups) | **GET** /{realm}/users/{id}/groups | 
-[**GetUserGroupsCount**](UsersApi.md#getusergroupscount) | **GET** /{realm}/users/{id}/groups/count | 
-[**GetUsersByRealm**](UsersApi.md#getusersbyrealm) | **GET** /{realm}/users | 
-[**GetUsersCount**](UsersApi.md#getuserscount) | **GET** /{realm}/users/count | 
-[**PostFederatedIdentity**](UsersApi.md#postfederatedidentity) | **POST** /{realm}/users/{id}/federated-identity/{provider} | 
-[**PostImpersonation**](UsersApi.md#postimpersonation) | **POST** /{realm}/users/{id}/impersonation | 
-[**PostLogout**](UsersApi.md#postlogout) | **POST** /{realm}/users/{id}/logout | 
-[**PostMoveAfter**](UsersApi.md#postmoveafter) | **POST** /{realm}/users/{id}/credentials/{credentialId}/moveAfter/{newPreviousCredentialId} | 
-[**PostMoveToFirst**](UsersApi.md#postmovetofirst) | **POST** /{realm}/users/{id}/credentials/{credentialId}/moveToFirst | 
-[**PostUsers**](UsersApi.md#postusers) | **POST** /{realm}/users | 
-[**PutDisableCredentialTypes**](UsersApi.md#putdisablecredentialtypes) | **PUT** /{realm}/users/{id}/disable-credential-types | 
-[**PutExecuteActionsEmail**](UsersApi.md#putexecuteactionsemail) | **PUT** /{realm}/users/{id}/execute-actions-email | 
-[**PutProfile**](UsersApi.md#putprofile) | **PUT** /{realm}/users/profile | 
-[**PutResetPassword**](UsersApi.md#putresetpassword) | **PUT** /{realm}/users/{id}/reset-password | 
-[**PutResetPasswordEmail**](UsersApi.md#putresetpasswordemail) | **PUT** /{realm}/users/{id}/reset-password-email | 
-[**PutSendVerifyEmail**](UsersApi.md#putsendverifyemail) | **PUT** /{realm}/users/{id}/send-verify-email | 
-[**PutUser**](UsersApi.md#putuser) | **PUT** /{realm}/users/{id} | 
-[**PutUserGroup**](UsersApi.md#putusergroup) | **PUT** /{realm}/users/{id}/groups/{groupId} | 
-[**PutUserLabel**](UsersApi.md#putuserlabel) | **PUT** /{realm}/users/{id}/credentials/{credentialId}/userLabel | 
+[**DeleteConsent**](UsersApi.md#deleteconsent) | **Delete** /{realm}/users/{id}/consents/{client} | 
+[**DeleteCredential**](UsersApi.md#deletecredential) | **Delete** /{realm}/users/{id}/credentials/{credentialId} | 
+[**DeleteFederatedIdentity**](UsersApi.md#deletefederatedidentity) | **Delete** /{realm}/users/{id}/federated-identity/{provider} | 
+[**DeleteUserByRealmById**](UsersApi.md#deleteuserbyrealmbyid) | **Delete** /{realm}/users/{id} | 
+[**DeleteUserGroup**](UsersApi.md#deleteusergroup) | **Delete** /{realm}/users/{id}/groups/{groupId} | 
+[**GetConfiguredUserStorageCredentialTypes**](UsersApi.md#getconfigureduserstoragecredentialtypes) | **Get** /{realm}/users/{id}/configured-user-storage-credential-types | 
+[**GetConsents**](UsersApi.md#getconsents) | **Get** /{realm}/users/{id}/consents | 
+[**GetCredentials**](UsersApi.md#getcredentials) | **Get** /{realm}/users/{id}/credentials | 
+[**GetFederatedIdentity**](UsersApi.md#getfederatedidentity) | **Get** /{realm}/users/{id}/federated-identity | 
+[**GetMetadata**](UsersApi.md#getmetadata) | **Get** /{realm}/users/profile/metadata | 
+[**GetOfflineSession**](UsersApi.md#getofflinesession) | **Get** /{realm}/users/{id}/offline-sessions/{clientUuid} | 
+[**GetProfile**](UsersApi.md#getprofile) | **Get** /{realm}/users/profile | 
+[**GetSessions**](UsersApi.md#getsessions) | **Get** /{realm}/users/{id}/sessions | 
+[**GetUserByRealmById**](UsersApi.md#getuserbyrealmbyid) | **Get** /{realm}/users/{id} | 
+[**GetUserGroups**](UsersApi.md#getusergroups) | **Get** /{realm}/users/{id}/groups | 
+[**GetUserGroupsCount**](UsersApi.md#getusergroupscount) | **Get** /{realm}/users/{id}/groups/count | 
+[**GetUsersByRealm**](UsersApi.md#getusersbyrealm) | **Get** /{realm}/users | 
+[**GetUsersCount**](UsersApi.md#getuserscount) | **Get** /{realm}/users/count | 
+[**PostFederatedIdentity**](UsersApi.md#postfederatedidentity) | **Post** /{realm}/users/{id}/federated-identity/{provider} | 
+[**PostImpersonation**](UsersApi.md#postimpersonation) | **Post** /{realm}/users/{id}/impersonation | 
+[**PostLogout**](UsersApi.md#postlogout) | **Post** /{realm}/users/{id}/logout | 
+[**PostMoveAfter**](UsersApi.md#postmoveafter) | **Post** /{realm}/users/{id}/credentials/{credentialId}/moveAfter/{newPreviousCredentialId} | 
+[**PostMoveToFirst**](UsersApi.md#postmovetofirst) | **Post** /{realm}/users/{id}/credentials/{credentialId}/moveToFirst | 
+[**PostUsers**](UsersApi.md#postusers) | **Post** /{realm}/users | 
+[**PutDisableCredentialTypes**](UsersApi.md#putdisablecredentialtypes) | **Put** /{realm}/users/{id}/disable-credential-types | 
+[**PutExecuteActionsEmail**](UsersApi.md#putexecuteactionsemail) | **Put** /{realm}/users/{id}/execute-actions-email | 
+[**PutProfile**](UsersApi.md#putprofile) | **Put** /{realm}/users/profile | 
+[**PutResetPassword**](UsersApi.md#putresetpassword) | **Put** /{realm}/users/{id}/reset-password | 
+[**PutResetPasswordEmail**](UsersApi.md#putresetpasswordemail) | **Put** /{realm}/users/{id}/reset-password-email | 
+[**PutSendVerifyEmail**](UsersApi.md#putsendverifyemail) | **Put** /{realm}/users/{id}/send-verify-email | 
+[**PutUser**](UsersApi.md#putuser) | **Put** /{realm}/users/{id} | 
+[**PutUserGroup**](UsersApi.md#putusergroup) | **Put** /{realm}/users/{id}/groups/{groupId} | 
+[**PutUserLabel**](UsersApi.md#putuserlabel) | **Put** /{realm}/users/{id}/credentials/{credentialId}/userLabel | 
+
 
 <a name="deleteconsent"></a>
 # **DeleteConsent**
-> void DeleteConsent (string realm, string id, string _client)
+> void DeleteConsent (string realm, string id, string _client, CancellationToken ct)
 
 
 
@@ -60,16 +61,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | Client id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteConsent(realm, id, _client);
+                apiInstance.DeleteConsent(realm, id, _client, ct);
             }
             catch (Exception e)
             {
@@ -87,6 +89,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **_client** | **string**| Client id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -105,7 +108,7 @@ void (empty response body)
 
 <a name="deletecredential"></a>
 # **DeleteCredential**
-> void DeleteCredential (string realm, string id, string credentialId)
+> void DeleteCredential (string realm, string id, string credentialId, CancellationToken ct)
 
 
 
@@ -125,16 +128,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteCredential(realm, id, credentialId);
+                apiInstance.DeleteCredential(realm, id, credentialId, ct);
             }
             catch (Exception e)
             {
@@ -152,6 +156,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **credentialId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -170,7 +175,7 @@ void (empty response body)
 
 <a name="deletefederatedidentity"></a>
 # **DeleteFederatedIdentity**
-> void DeleteFederatedIdentity (string realm, string id, string provider)
+> void DeleteFederatedIdentity (string realm, string id, string provider, CancellationToken ct)
 
 
 
@@ -190,16 +195,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var provider = provider_example;  // string | Social login provider id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteFederatedIdentity(realm, id, provider);
+                apiInstance.DeleteFederatedIdentity(realm, id, provider, ct);
             }
             catch (Exception e)
             {
@@ -217,6 +223,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **provider** | **string**| Social login provider id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -235,7 +242,7 @@ void (empty response body)
 
 <a name="deleteuserbyrealmbyid"></a>
 # **DeleteUserByRealmById**
-> void DeleteUserByRealmById (string realm, string id)
+> void DeleteUserByRealmById (string realm, string id, CancellationToken ct)
 
 
 
@@ -255,15 +262,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteUserByRealmById(realm, id);
+                apiInstance.DeleteUserByRealmById(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -280,6 +288,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -298,7 +307,7 @@ void (empty response body)
 
 <a name="deleteusergroup"></a>
 # **DeleteUserGroup**
-> void DeleteUserGroup (string realm, string id, string groupId)
+> void DeleteUserGroup (string realm, string id, string groupId, CancellationToken ct)
 
 
 
@@ -316,16 +325,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var groupId = groupId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteUserGroup(realm, id, groupId);
+                apiInstance.DeleteUserGroup(realm, id, groupId, ct);
             }
             catch (Exception e)
             {
@@ -343,6 +353,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **groupId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -361,7 +372,7 @@ void (empty response body)
 
 <a name="getconfigureduserstoragecredentialtypes"></a>
 # **GetConfiguredUserStorageCredentialTypes**
-> List<string> GetConfiguredUserStorageCredentialTypes (string realm, string id)
+> List<string> GetConfiguredUserStorageCredentialTypes (string realm, string id, CancellationToken ct)
 
 
 
@@ -381,15 +392,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;string&gt; result = apiInstance.GetConfiguredUserStorageCredentialTypes(realm, id);
+                List&lt;string&gt; result = apiInstance.GetConfiguredUserStorageCredentialTypes(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -407,6 +419,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -425,7 +438,7 @@ Name | Type | Description  | Notes
 
 <a name="getconsents"></a>
 # **GetConsents**
-> List<Object> GetConsents (string realm, string id)
+> List<Object> GetConsents (string realm, string id, CancellationToken ct)
 
 
 
@@ -445,15 +458,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;Object&gt; result = apiInstance.GetConsents(realm, id);
+                List&lt;Object&gt; result = apiInstance.GetConsents(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -471,6 +485,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -489,7 +504,7 @@ Name | Type | Description  | Notes
 
 <a name="getcredentials"></a>
 # **GetCredentials**
-> List<CredentialRepresentation> GetCredentials (string realm, string id)
+> List<CredentialRepresentation> GetCredentials (string realm, string id, CancellationToken ct)
 
 
 
@@ -507,15 +522,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;CredentialRepresentation&gt; result = apiInstance.GetCredentials(realm, id);
+                List&lt;CredentialRepresentation&gt; result = apiInstance.GetCredentials(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -533,6 +549,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -551,7 +568,7 @@ Name | Type | Description  | Notes
 
 <a name="getfederatedidentity"></a>
 # **GetFederatedIdentity**
-> List<FederatedIdentityRepresentation> GetFederatedIdentity (string realm, string id)
+> List<FederatedIdentityRepresentation> GetFederatedIdentity (string realm, string id, CancellationToken ct)
 
 
 
@@ -571,15 +588,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;FederatedIdentityRepresentation&gt; result = apiInstance.GetFederatedIdentity(realm, id);
+                List&lt;FederatedIdentityRepresentation&gt; result = apiInstance.GetFederatedIdentity(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -597,6 +615,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -615,7 +634,7 @@ Name | Type | Description  | Notes
 
 <a name="getmetadata"></a>
 # **GetMetadata**
-> UserProfileMetadata GetMetadata (string realm)
+> UserProfileMetadata GetMetadata (string realm, CancellationToken ct)
 
 
 
@@ -633,14 +652,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                UserProfileMetadata result = apiInstance.GetMetadata(realm);
+                UserProfileMetadata result = apiInstance.GetMetadata(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -657,6 +677,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -675,7 +696,7 @@ Name | Type | Description  | Notes
 
 <a name="getofflinesession"></a>
 # **GetOfflineSession**
-> List<UserSessionRepresentation> GetOfflineSession (string realm, string id, string clientUuid)
+> List<UserSessionRepresentation> GetOfflineSession (string realm, string id, string clientUuid, CancellationToken ct)
 
 
 
@@ -695,16 +716,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientUuid = clientUuid_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetOfflineSession(realm, id, clientUuid);
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetOfflineSession(realm, id, clientUuid, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -723,6 +745,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **clientUuid** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -741,7 +764,7 @@ Name | Type | Description  | Notes
 
 <a name="getprofile"></a>
 # **GetProfile**
-> UPConfig GetProfile (string realm)
+> UPConfig GetProfile (string realm, CancellationToken ct)
 
 
 
@@ -759,14 +782,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                UPConfig result = apiInstance.GetProfile(realm);
+                UPConfig result = apiInstance.GetProfile(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -783,6 +807,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -801,7 +826,7 @@ Name | Type | Description  | Notes
 
 <a name="getsessions"></a>
 # **GetSessions**
-> List<UserSessionRepresentation> GetSessions (string realm, string id)
+> List<UserSessionRepresentation> GetSessions (string realm, string id, CancellationToken ct)
 
 
 
@@ -821,15 +846,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetSessions(realm, id);
+                List&lt;UserSessionRepresentation&gt; result = apiInstance.GetSessions(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -847,6 +873,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -865,7 +892,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserbyrealmbyid"></a>
 # **GetUserByRealmById**
-> UserRepresentation GetUserByRealmById (string realm, string id, string userProfileMetadata)
+> UserRepresentation GetUserByRealmById (string realm, string id, string userProfileMetadata, CancellationToken ct)
 
 
 
@@ -885,16 +912,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var userProfileMetadata = userProfileMetadata_example;  // string | Indicates if the user profile metadata should be added to the response (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                UserRepresentation result = apiInstance.GetUserByRealmById(realm, id, userProfileMetadata);
+                UserRepresentation result = apiInstance.GetUserByRealmById(realm, id, userProfileMetadata, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -913,6 +941,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **userProfileMetadata** | **string**| Indicates if the user profile metadata should be added to the response | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -931,7 +960,7 @@ Name | Type | Description  | Notes
 
 <a name="getusergroups"></a>
 # **GetUserGroups**
-> List<GroupRepresentation> GetUserGroups (string realm, string id, string briefRepresentation, string first, string max, string search)
+> List<GroupRepresentation> GetUserGroups (string realm, string id, string briefRepresentation, string first, string max, string search, CancellationToken ct)
 
 
 
@@ -949,7 +978,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -958,10 +987,11 @@ namespace Example
             var first = first_example;  // string |  (optional) 
             var max = max_example;  // string |  (optional) 
             var search = search_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;GroupRepresentation&gt; result = apiInstance.GetUserGroups(realm, id, briefRepresentation, first, max, search);
+                List&lt;GroupRepresentation&gt; result = apiInstance.GetUserGroups(realm, id, briefRepresentation, first, max, search, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -983,6 +1013,7 @@ Name | Type | Description  | Notes
  **first** | **string**|  | [optional] 
  **max** | **string**|  | [optional] 
  **search** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1001,7 +1032,7 @@ Name | Type | Description  | Notes
 
 <a name="getusergroupscount"></a>
 # **GetUserGroupsCount**
-> Dictionary<string, long?> GetUserGroupsCount (string realm, string id, string search)
+> Dictionary<string, long?> GetUserGroupsCount (string realm, string id, string search, CancellationToken ct)
 
 
 
@@ -1019,16 +1050,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var search = search_example;  // string |  (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, long?&gt; result = apiInstance.GetUserGroupsCount(realm, id, search);
+                Dictionary&lt;string, long?&gt; result = apiInstance.GetUserGroupsCount(realm, id, search, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1047,6 +1079,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **search** | **string**|  | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1065,7 +1098,7 @@ Name | Type | Description  | Notes
 
 <a name="getusersbyrealm"></a>
 # **GetUsersByRealm**
-> List<UserRepresentation> GetUsersByRealm (string realm, string briefRepresentation, string email, string emailVerified, string enabled, string exact, string first, string firstName, string idpAlias, string idpUserId, string lastName, string max, string q, string search, string username)
+> List<UserRepresentation> GetUsersByRealm (string realm, string briefRepresentation, string email, string emailVerified, string enabled, string exact, string first, string firstName, string idpAlias, string idpUserId, string lastName, string max, string q, string search, string username, CancellationToken ct)
 
 
 
@@ -1085,7 +1118,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -1103,10 +1136,11 @@ namespace Example
             var q = q_example;  // string | A query to search for custom attributes, in the format 'key1:value2 key2:value2' (optional) 
             var search = search_example;  // string | A String contained in username, first or last name, or email. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &quot;foo&quot; for exact search. (optional) 
             var username = username_example;  // string | A String contained in username, or the complete username, if param &quot;exact&quot; is true (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;UserRepresentation&gt; result = apiInstance.GetUsersByRealm(realm, briefRepresentation, email, emailVerified, enabled, exact, first, firstName, idpAlias, idpUserId, lastName, max, q, search, username);
+                List&lt;UserRepresentation&gt; result = apiInstance.GetUsersByRealm(realm, briefRepresentation, email, emailVerified, enabled, exact, first, firstName, idpAlias, idpUserId, lastName, max, q, search, username, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1134,9 +1168,10 @@ Name | Type | Description  | Notes
  **idpUserId** | **string**| The userId at an Identity Provider linked to the user | [optional] 
  **lastName** | **string**| A String contained in lastName, or the complete lastName, if param &amp;quot;exact&amp;quot; is true | [optional] 
  **max** | **string**| Maximum results size (defaults to 100) | [optional] 
- **q** | **string**| A query to search for custom attributes, in the format &#x27;key1:value2 key2:value2&#x27; | [optional] 
+ **q** | **string**| A query to search for custom attributes, in the format &#39;key1:value2 key2:value2&#39; | [optional] 
  **search** | **string**| A String contained in username, first or last name, or email. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &amp;quot;foo&amp;quot; for exact search. | [optional] 
  **username** | **string**| A String contained in username, or the complete username, if param &amp;quot;exact&amp;quot; is true | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1155,7 +1190,7 @@ Name | Type | Description  | Notes
 
 <a name="getuserscount"></a>
 # **GetUsersCount**
-> int? GetUsersCount (string realm, string email, string emailVerified, string enabled, string firstName, string lastName, string q, string search, string username)
+> int? GetUsersCount (string realm, string email, string emailVerified, string enabled, string firstName, string lastName, string q, string search, string username, CancellationToken ct)
 
 
 
@@ -1175,7 +1210,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -1187,10 +1222,11 @@ namespace Example
             var q = q_example;  // string |  (optional) 
             var search = search_example;  // string | arbitrary search string for all the fields below. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &quot;foo&quot; for exact search. (optional) 
             var username = username_example;  // string | username filter (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                int? result = apiInstance.GetUsersCount(realm, email, emailVerified, enabled, firstName, lastName, q, search, username);
+                int? result = apiInstance.GetUsersCount(realm, email, emailVerified, enabled, firstName, lastName, q, search, username, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1215,6 +1251,7 @@ Name | Type | Description  | Notes
  **q** | **string**|  | [optional] 
  **search** | **string**| arbitrary search string for all the fields below. Default search behavior is prefix-based (e.g., foo or foo*). Use foo for infix search and &amp;quot;foo&amp;quot; for exact search. | [optional] 
  **username** | **string**| username filter | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1233,7 +1270,7 @@ Name | Type | Description  | Notes
 
 <a name="postfederatedidentity"></a>
 # **PostFederatedIdentity**
-> void PostFederatedIdentity (string realm, string id, string provider)
+> void PostFederatedIdentity (string realm, string id, string provider, CancellationToken ct)
 
 
 
@@ -1253,16 +1290,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var provider = provider_example;  // string | Social login provider id
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostFederatedIdentity(realm, id, provider);
+                apiInstance.PostFederatedIdentity(realm, id, provider, ct);
             }
             catch (Exception e)
             {
@@ -1280,6 +1318,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **provider** | **string**| Social login provider id | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1298,7 +1337,7 @@ void (empty response body)
 
 <a name="postimpersonation"></a>
 # **PostImpersonation**
-> Dictionary<string, Object> PostImpersonation (string realm, string id)
+> Dictionary<string, Object> PostImpersonation (string realm, string id, CancellationToken ct)
 
 
 
@@ -1318,15 +1357,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                Dictionary&lt;string, Object&gt; result = apiInstance.PostImpersonation(realm, id);
+                Dictionary&lt;string, Object&gt; result = apiInstance.PostImpersonation(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1344,6 +1384,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1362,7 +1403,7 @@ Name | Type | Description  | Notes
 
 <a name="postlogout"></a>
 # **PostLogout**
-> void PostLogout (string realm, string id)
+> void PostLogout (string realm, string id, CancellationToken ct)
 
 
 
@@ -1382,15 +1423,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostLogout(realm, id);
+                apiInstance.PostLogout(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -1407,6 +1449,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1425,7 +1468,7 @@ void (empty response body)
 
 <a name="postmoveafter"></a>
 # **PostMoveAfter**
-> void PostMoveAfter (string realm, string id, string credentialId, string newPreviousCredentialId)
+> void PostMoveAfter (string realm, string id, string credentialId, string newPreviousCredentialId, CancellationToken ct)
 
 
 
@@ -1445,17 +1488,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | The credential to move
             var newPreviousCredentialId = newPreviousCredentialId_example;  // string | The credential that will be the previous element in the list. If set to null, the moved credential will be the first element in the list.
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostMoveAfter(realm, id, credentialId, newPreviousCredentialId);
+                apiInstance.PostMoveAfter(realm, id, credentialId, newPreviousCredentialId, ct);
             }
             catch (Exception e)
             {
@@ -1474,6 +1518,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **credentialId** | **string**| The credential to move | 
  **newPreviousCredentialId** | **string**| The credential that will be the previous element in the list. If set to null, the moved credential will be the first element in the list. | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1492,7 +1537,7 @@ void (empty response body)
 
 <a name="postmovetofirst"></a>
 # **PostMoveToFirst**
-> void PostMoveToFirst (string realm, string id, string credentialId)
+> void PostMoveToFirst (string realm, string id, string credentialId, CancellationToken ct)
 
 
 
@@ -1512,16 +1557,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | The credential to move
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostMoveToFirst(realm, id, credentialId);
+                apiInstance.PostMoveToFirst(realm, id, credentialId, ct);
             }
             catch (Exception e)
             {
@@ -1539,6 +1585,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **credentialId** | **string**| The credential to move | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1557,7 +1604,7 @@ void (empty response body)
 
 <a name="postusers"></a>
 # **PostUsers**
-> void PostUsers (string realm, UserRepresentation body)
+> void PostUsers (string realm, UserRepresentation body, CancellationToken ct)
 
 
 
@@ -1577,15 +1624,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostUsers(realm, body);
+                apiInstance.PostUsers(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -1602,6 +1650,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**UserRepresentation**](UserRepresentation.md)| UserRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1620,7 +1669,7 @@ void (empty response body)
 
 <a name="putdisablecredentialtypes"></a>
 # **PutDisableCredentialTypes**
-> void PutDisableCredentialTypes (string realm, string id, string body)
+> void PutDisableCredentialTypes (string realm, string id, string body, CancellationToken ct)
 
 
 
@@ -1640,16 +1689,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutDisableCredentialTypes(realm, id, body);
+                apiInstance.PutDisableCredentialTypes(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1667,6 +1717,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1685,7 +1736,7 @@ void (empty response body)
 
 <a name="putexecuteactionsemail"></a>
 # **PutExecuteActionsEmail**
-> void PutExecuteActionsEmail (string realm, string id, string body, string clientId, string lifespan, string redirectUri)
+> void PutExecuteActionsEmail (string realm, string id, string body, string clientId, string lifespan, string redirectUri, CancellationToken ct)
 
 
 
@@ -1705,7 +1756,7 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
@@ -1714,10 +1765,11 @@ namespace Example
             var clientId = clientId_example;  // string | Client id (optional) 
             var lifespan = lifespan_example;  // string | Number of seconds after which the generated token expires (optional) 
             var redirectUri = redirectUri_example;  // string | Redirect uri (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutExecuteActionsEmail(realm, id, body, clientId, lifespan, redirectUri);
+                apiInstance.PutExecuteActionsEmail(realm, id, body, clientId, lifespan, redirectUri, ct);
             }
             catch (Exception e)
             {
@@ -1738,6 +1790,7 @@ Name | Type | Description  | Notes
  **clientId** | **string**| Client id | [optional] 
  **lifespan** | **string**| Number of seconds after which the generated token expires | [optional] 
  **redirectUri** | **string**| Redirect uri | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1756,7 +1809,7 @@ void (empty response body)
 
 <a name="putprofile"></a>
 # **PutProfile**
-> UPConfig PutProfile (string realm, UPConfig body)
+> UPConfig PutProfile (string realm, UPConfig body, CancellationToken ct)
 
 
 
@@ -1774,15 +1827,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new UPConfig(); // UPConfig | UPConfig (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                UPConfig result = apiInstance.PutProfile(realm, body);
+                UPConfig result = apiInstance.PutProfile(realm, body, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -1800,6 +1854,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**UPConfig**](UPConfig.md)| UPConfig | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1818,7 +1873,7 @@ Name | Type | Description  | Notes
 
 <a name="putresetpassword"></a>
 # **PutResetPassword**
-> void PutResetPassword (string realm, string id, CredentialRepresentation body)
+> void PutResetPassword (string realm, string id, CredentialRepresentation body, CancellationToken ct)
 
 
 
@@ -1838,16 +1893,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new CredentialRepresentation(); // CredentialRepresentation | CredentialRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutResetPassword(realm, id, body);
+                apiInstance.PutResetPassword(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -1865,6 +1921,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**CredentialRepresentation**](CredentialRepresentation.md)| CredentialRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1883,7 +1940,7 @@ void (empty response body)
 
 <a name="putresetpasswordemail"></a>
 # **PutResetPasswordEmail**
-> void PutResetPasswordEmail (string realm, string id, string clientId, string redirectUri)
+> void PutResetPasswordEmail (string realm, string id, string clientId, string redirectUri, CancellationToken ct)
 
 
 
@@ -1903,17 +1960,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientId = clientId_example;  // string | client id (optional) 
             var redirectUri = redirectUri_example;  // string | redirect uri (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutResetPasswordEmail(realm, id, clientId, redirectUri);
+                apiInstance.PutResetPasswordEmail(realm, id, clientId, redirectUri, ct);
             }
             catch (Exception e)
             {
@@ -1932,6 +1990,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **clientId** | **string**| client id | [optional] 
  **redirectUri** | **string**| redirect uri | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -1950,7 +2009,7 @@ void (empty response body)
 
 <a name="putsendverifyemail"></a>
 # **PutSendVerifyEmail**
-> void PutSendVerifyEmail (string realm, string id, string clientId, string redirectUri)
+> void PutSendVerifyEmail (string realm, string id, string clientId, string redirectUri, CancellationToken ct)
 
 
 
@@ -1970,17 +2029,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientId = clientId_example;  // string | Client id (optional) 
             var redirectUri = redirectUri_example;  // string | Redirect uri (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutSendVerifyEmail(realm, id, clientId, redirectUri);
+                apiInstance.PutSendVerifyEmail(realm, id, clientId, redirectUri, ct);
             }
             catch (Exception e)
             {
@@ -1999,6 +2059,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **clientId** | **string**| Client id | [optional] 
  **redirectUri** | **string**| Redirect uri | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2017,7 +2078,7 @@ void (empty response body)
 
 <a name="putuser"></a>
 # **PutUser**
-> void PutUser (string realm, string id, UserRepresentation body)
+> void PutUser (string realm, string id, UserRepresentation body, CancellationToken ct)
 
 
 
@@ -2037,16 +2098,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutUser(realm, id, body);
+                apiInstance.PutUser(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -2064,6 +2126,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**UserRepresentation**](UserRepresentation.md)| UserRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2082,7 +2145,7 @@ void (empty response body)
 
 <a name="putusergroup"></a>
 # **PutUserGroup**
-> void PutUserGroup (string realm, string id, string groupId)
+> void PutUserGroup (string realm, string id, string groupId, CancellationToken ct)
 
 
 
@@ -2100,16 +2163,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var groupId = groupId_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutUserGroup(realm, id, groupId);
+                apiInstance.PutUserGroup(realm, id, groupId, ct);
             }
             catch (Exception e)
             {
@@ -2127,6 +2191,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **groupId** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -2145,7 +2210,7 @@ void (empty response body)
 
 <a name="putuserlabel"></a>
 # **PutUserLabel**
-> void PutUserLabel (string realm, string id, string credentialId, string body)
+> void PutUserLabel (string realm, string id, string credentialId, string body, CancellationToken ct)
 
 
 
@@ -2165,17 +2230,18 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new UsersApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | 
             var body = new string(); // string | [string] (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutUserLabel(realm, id, credentialId, body);
+                apiInstance.PutUserLabel(realm, id, credentialId, body, ct);
             }
             catch (Exception e)
             {
@@ -2194,6 +2260,7 @@ Name | Type | Description  | Notes
  **id** | **string**|  | 
  **credentialId** | **string**|  | 
  **body** | [**string**](string.md)| [string] | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 

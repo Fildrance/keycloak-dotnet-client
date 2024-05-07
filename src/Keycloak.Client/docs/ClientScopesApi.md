@@ -4,20 +4,21 @@ All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteClientScope**](ClientScopesApi.md#deleteclientscope) | **DELETE** /{realm}/client-scopes/{id} | 
-[**DeleteClientTemplate**](ClientScopesApi.md#deleteclienttemplate) | **DELETE** /{realm}/client-templates/{id} | 
-[**GetClientScope**](ClientScopesApi.md#getclientscope) | **GET** /{realm}/client-scopes/{id} | 
-[**GetClientScopes**](ClientScopesApi.md#getclientscopes) | **GET** /{realm}/client-scopes | 
-[**GetClientTemplate**](ClientScopesApi.md#getclienttemplate) | **GET** /{realm}/client-templates/{id} | 
-[**GetClientTemplates**](ClientScopesApi.md#getclienttemplates) | **GET** /{realm}/client-templates | 
-[**PostClientScopes**](ClientScopesApi.md#postclientscopes) | **POST** /{realm}/client-scopes | 
-[**PostClientTemplates**](ClientScopesApi.md#postclienttemplates) | **POST** /{realm}/client-templates | 
-[**PutClientScope**](ClientScopesApi.md#putclientscope) | **PUT** /{realm}/client-scopes/{id} | 
-[**PutClientTemplate**](ClientScopesApi.md#putclienttemplate) | **PUT** /{realm}/client-templates/{id} | 
+[**DeleteClientScope**](ClientScopesApi.md#deleteclientscope) | **Delete** /{realm}/client-scopes/{id} | 
+[**DeleteClientTemplate**](ClientScopesApi.md#deleteclienttemplate) | **Delete** /{realm}/client-templates/{id} | 
+[**GetClientScope**](ClientScopesApi.md#getclientscope) | **Get** /{realm}/client-scopes/{id} | 
+[**GetClientScopes**](ClientScopesApi.md#getclientscopes) | **Get** /{realm}/client-scopes | 
+[**GetClientTemplate**](ClientScopesApi.md#getclienttemplate) | **Get** /{realm}/client-templates/{id} | 
+[**GetClientTemplates**](ClientScopesApi.md#getclienttemplates) | **Get** /{realm}/client-templates | 
+[**PostClientScopes**](ClientScopesApi.md#postclientscopes) | **Post** /{realm}/client-scopes | 
+[**PostClientTemplates**](ClientScopesApi.md#postclienttemplates) | **Post** /{realm}/client-templates | 
+[**PutClientScope**](ClientScopesApi.md#putclientscope) | **Put** /{realm}/client-scopes/{id} | 
+[**PutClientTemplate**](ClientScopesApi.md#putclienttemplate) | **Put** /{realm}/client-templates/{id} | 
+
 
 <a name="deleteclientscope"></a>
 # **DeleteClientScope**
-> void DeleteClientScope (string realm, string id)
+> void DeleteClientScope (string realm, string id, CancellationToken ct)
 
 
 
@@ -37,15 +38,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientScope(realm, id);
+                apiInstance.DeleteClientScope(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -62,6 +64,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -80,7 +83,7 @@ void (empty response body)
 
 <a name="deleteclienttemplate"></a>
 # **DeleteClientTemplate**
-> void DeleteClientTemplate (string realm, string id)
+> void DeleteClientTemplate (string realm, string id, CancellationToken ct)
 
 
 
@@ -100,15 +103,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteClientTemplate(realm, id);
+                apiInstance.DeleteClientTemplate(realm, id, ct);
             }
             catch (Exception e)
             {
@@ -125,6 +129,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -143,7 +148,7 @@ void (empty response body)
 
 <a name="getclientscope"></a>
 # **GetClientScope**
-> ClientScopeRepresentation GetClientScope (string realm, string id)
+> ClientScopeRepresentation GetClientScope (string realm, string id, CancellationToken ct)
 
 
 
@@ -163,15 +168,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientScopeRepresentation result = apiInstance.GetClientScope(realm, id);
+                ClientScopeRepresentation result = apiInstance.GetClientScope(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -189,6 +195,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -207,7 +214,7 @@ Name | Type | Description  | Notes
 
 <a name="getclientscopes"></a>
 # **GetClientScopes**
-> List<ClientScopeRepresentation> GetClientScopes (string realm)
+> List<ClientScopeRepresentation> GetClientScopes (string realm, CancellationToken ct)
 
 
 
@@ -227,14 +234,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetClientScopes(realm);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetClientScopes(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -251,6 +259,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -269,7 +278,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplate"></a>
 # **GetClientTemplate**
-> ClientScopeRepresentation GetClientTemplate (string realm, string id)
+> ClientScopeRepresentation GetClientTemplate (string realm, string id, CancellationToken ct)
 
 
 
@@ -289,15 +298,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                ClientScopeRepresentation result = apiInstance.GetClientTemplate(realm, id);
+                ClientScopeRepresentation result = apiInstance.GetClientTemplate(realm, id, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -315,6 +325,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -333,7 +344,7 @@ Name | Type | Description  | Notes
 
 <a name="getclienttemplates"></a>
 # **GetClientTemplates**
-> List<ClientScopeRepresentation> GetClientTemplates (string realm)
+> List<ClientScopeRepresentation> GetClientTemplates (string realm, CancellationToken ct)
 
 
 
@@ -353,14 +364,15 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetClientTemplates(realm);
+                List&lt;ClientScopeRepresentation&gt; result = apiInstance.GetClientTemplates(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
@@ -377,6 +389,7 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -395,7 +408,7 @@ Name | Type | Description  | Notes
 
 <a name="postclientscopes"></a>
 # **PostClientScopes**
-> void PostClientScopes (string realm, ClientScopeRepresentation body)
+> void PostClientScopes (string realm, ClientScopeRepresentation body, CancellationToken ct)
 
 
 
@@ -415,15 +428,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientScopeRepresentation(); // ClientScopeRepresentation | ClientScopeRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientScopes(realm, body);
+                apiInstance.PostClientScopes(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -440,6 +454,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ClientScopeRepresentation**](ClientScopeRepresentation.md)| ClientScopeRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -458,7 +473,7 @@ void (empty response body)
 
 <a name="postclienttemplates"></a>
 # **PostClientTemplates**
-> void PostClientTemplates (string realm, ClientScopeRepresentation body)
+> void PostClientTemplates (string realm, ClientScopeRepresentation body, CancellationToken ct)
 
 
 
@@ -478,15 +493,16 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientScopeRepresentation(); // ClientScopeRepresentation | ClientScopeRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PostClientTemplates(realm, body);
+                apiInstance.PostClientTemplates(realm, body, ct);
             }
             catch (Exception e)
             {
@@ -503,6 +519,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
  **body** | [**ClientScopeRepresentation**](ClientScopeRepresentation.md)| ClientScopeRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -521,7 +538,7 @@ void (empty response body)
 
 <a name="putclientscope"></a>
 # **PutClientScope**
-> void PutClientScope (string realm, string id, ClientScopeRepresentation body)
+> void PutClientScope (string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
 
 
 
@@ -541,16 +558,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ClientScopeRepresentation(); // ClientScopeRepresentation | ClientScopeRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClientScope(realm, id, body);
+                apiInstance.PutClientScope(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -568,6 +586,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ClientScopeRepresentation**](ClientScopeRepresentation.md)| ClientScopeRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
@@ -586,7 +605,7 @@ void (empty response body)
 
 <a name="putclienttemplate"></a>
 # **PutClientTemplate**
-> void PutClientTemplate (string realm, string id, ClientScopeRepresentation body)
+> void PutClientTemplate (string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
 
 
 
@@ -606,16 +625,17 @@ namespace Example
     {
         public void main()
         {
-
+            
 
             var apiInstance = new ClientScopesApi();
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ClientScopeRepresentation(); // ClientScopeRepresentation | ClientScopeRepresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.PutClientTemplate(realm, id, body);
+                apiInstance.PutClientTemplate(realm, id, body, ct);
             }
             catch (Exception e)
             {
@@ -633,6 +653,7 @@ Name | Type | Description  | Notes
  **realm** | **string**| realm name (not id!) | 
  **id** | **string**|  | 
  **body** | [**ClientScopeRepresentation**](ClientScopeRepresentation.md)| ClientScopeRepresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
