@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PolicyEnforcementMode
+# .PolicyEnforcementMode
 ## Properties
 
 Name | Type | Description | Notes

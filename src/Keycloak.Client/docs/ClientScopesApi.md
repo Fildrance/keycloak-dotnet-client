@@ -1,4 +1,4 @@
-# IO.Swagger.Api.ClientScopesApi
+# .ClientScopesApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -28,9 +28,9 @@ Delete the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -93,9 +93,9 @@ Delete the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -158,9 +158,9 @@ Get representation of the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -224,9 +224,9 @@ Get client scopes belonging to the realm Returns a list of client scopes belongi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -288,9 +288,9 @@ Get representation of the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -354,9 +354,9 @@ Get client scopes belonging to the realm Returns a list of client scopes belongi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -418,9 +418,9 @@ Create a new client scope Client Scope’s name must be unique!
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -483,9 +483,9 @@ Create a new client scope Client Scope’s name must be unique!
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -548,9 +548,9 @@ Update the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -615,9 +615,9 @@ Update the client scope
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

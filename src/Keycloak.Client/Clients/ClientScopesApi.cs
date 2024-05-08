@@ -5,10 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using PetShop.Models;
 
-namespace IO.Swagger.Api;
+namespace PetShop.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -22,7 +21,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="id"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task DeleteClientScope (string realm, string id, CancellationToken ct);
     /// <summary>
@@ -31,7 +29,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="id"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task DeleteClientTemplate (string realm, string id, CancellationToken ct);
     /// <summary>
@@ -40,7 +37,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="id"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>ClientScopeRepresentation</returns>
     Task<ClientScopeRepresentation> GetClientScope (string realm, string id, CancellationToken ct);
     /// <summary>
@@ -48,7 +44,6 @@ public partial interface IClientScopesApi
     /// </summary>
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>List&lt;ClientScopeRepresentation&gt;</returns>
     Task<List<ClientScopeRepresentation>> GetClientScopes (string realm, CancellationToken ct);
     /// <summary>
@@ -57,7 +52,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="id"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>ClientScopeRepresentation</returns>
     Task<ClientScopeRepresentation> GetClientTemplate (string realm, string id, CancellationToken ct);
     /// <summary>
@@ -65,7 +59,6 @@ public partial interface IClientScopesApi
     /// </summary>
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>List&lt;ClientScopeRepresentation&gt;</returns>
     Task<List<ClientScopeRepresentation>> GetClientTemplates (string realm, CancellationToken ct);
     /// <summary>
@@ -74,7 +67,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="body">ClientScopeRepresentation</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task PostClientScopes (string realm, ClientScopeRepresentation body, CancellationToken ct);
     /// <summary>
@@ -83,7 +75,6 @@ public partial interface IClientScopesApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="body">ClientScopeRepresentation</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task PostClientTemplates (string realm, ClientScopeRepresentation body, CancellationToken ct);
     /// <summary>
@@ -93,7 +84,6 @@ public partial interface IClientScopesApi
     /// <param name="id"></param>
     /// <param name="body">ClientScopeRepresentation</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task PutClientScope (string realm, string id, ClientScopeRepresentation body, CancellationToken ct);
     /// <summary>
@@ -103,7 +93,6 @@ public partial interface IClientScopesApi
     /// <param name="id"></param>
     /// <param name="body">ClientScopeRepresentation</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task PutClientTemplate (string realm, string id, ClientScopeRepresentation body, CancellationToken ct);
 }
@@ -112,7 +101,7 @@ public partial interface IClientScopesApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientScopesApi : IOSwaggerClientApiClientBase, IClientScopesApi
+public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientScopesApi"/> class.
@@ -126,247 +115,207 @@ public partial class ClientScopesApi : IOSwaggerClientApiClientBase, IClientScop
     /// <inheritdoc />     
     public async Task DeleteClientScope(string realm, string id, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientScope");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling DeleteClientScope");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientScope");
         
-
-        var path_ = new StringBuilder("/{realm}/client-scopes/{id}");
+        var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
         
-        await CallApi(path_.ToString(), HttpMethod.Delete, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Delete,  
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task DeleteClientTemplate(string realm, string id, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientTemplate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling DeleteClientTemplate");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientTemplate");
         
-
-        var path_ = new StringBuilder("/{realm}/client-templates/{id}");
+        var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
         
-        await CallApi(path_.ToString(), HttpMethod.Delete, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Delete,  
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task<ClientScopeRepresentation> GetClientScope(string realm, string id, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetClientScope");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling GetClientScope");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetClientScope");
         
-
-        var path_ = new StringBuilder("/{realm}/client-scopes/{id}");
+        var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
         
-        var response = await CallApi<ClientScopeRepresentation>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<ClientScopeRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<List<ClientScopeRepresentation>> GetClientScopes(string realm, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetClientScopes");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientScopes");
         
-
-        var path_ = new StringBuilder("/{realm}/client-scopes");
+        var path_ = new StringBuilder("/{realm}/client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
         
-        var response = await CallApi<List<ClientScopeRepresentation>>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<List<ClientScopeRepresentation>>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<ClientScopeRepresentation> GetClientTemplate(string realm, string id, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetClientTemplate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling GetClientTemplate");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetClientTemplate");
         
-
-        var path_ = new StringBuilder("/{realm}/client-templates/{id}");
+        var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
         
-        var response = await CallApi<ClientScopeRepresentation>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<ClientScopeRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<List<ClientScopeRepresentation>> GetClientTemplates(string realm, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetClientTemplates");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientTemplates");
         
-
-        var path_ = new StringBuilder("/{realm}/client-templates");
+        var path_ = new StringBuilder("/{realm}/client-templates"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
         
-        var response = await CallApi<List<ClientScopeRepresentation>>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<List<ClientScopeRepresentation>>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task PostClientScopes(string realm, ClientScopeRepresentation body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostClientScopes");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientScopes");
         
-
-        var path_ = new StringBuilder("/{realm}/client-scopes");
+        var path_ = new StringBuilder("/{realm}/client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        await CallApi(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Post,
+                    body: body,   
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task PostClientTemplates(string realm, ClientScopeRepresentation body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostClientTemplates");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientTemplates");
         
-
-        var path_ = new StringBuilder("/{realm}/client-templates");
+        var path_ = new StringBuilder("/{realm}/client-templates"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        await CallApi(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Post,
+                    body: body,   
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task PutClientScope(string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PutClientScope");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PutClientScope");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutClientScope");
         
-
-        var path_ = new StringBuilder("/{realm}/client-scopes/{id}");
+        var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        await CallApi(path_.ToString(), HttpMethod.Put, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Put,
+                    body: body,   
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task PutClientTemplate(string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PutClientTemplate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PutClientTemplate");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutClientTemplate");
         
-
-        var path_ = new StringBuilder("/{realm}/client-templates/{id}");
+        var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        await CallApi(path_.ToString(), HttpMethod.Put, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Put,
+                    body: body,   
+                    ct: ct
+        );
     }
 
 }

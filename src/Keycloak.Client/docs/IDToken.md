@@ -1,4 +1,4 @@
-# IO.Swagger.Model.IDToken
+# .IDToken
 ## Properties
 
 Name | Type | Description | Notes

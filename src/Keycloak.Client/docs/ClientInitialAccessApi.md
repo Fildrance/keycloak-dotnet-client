@@ -1,4 +1,4 @@
-# IO.Swagger.Api.ClientInitialAccessApi
+# .ClientInitialAccessApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -19,9 +19,9 @@ Method | HTTP request | Description
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -82,9 +82,9 @@ void (empty response body)
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -146,9 +146,9 @@ Create a new initial access token.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

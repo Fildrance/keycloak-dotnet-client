@@ -1,12 +1,12 @@
 using System;
 using System.Collections.Generic;
 
-namespace IO.Swagger.Client;
+namespace PetShop;
 
 /// <summary>
 /// API Exception
 /// </summary>
-public class IOSwaggerClientApiException : Exception {
+public class PetShopApiException : Exception {
     /// <summary>
     /// Gets or sets the error code (HTTP status code)
     /// </summary>
@@ -22,26 +22,26 @@ public class IOSwaggerClientApiException : Exception {
     public IReadOnlyDictionary<string, IEnumerable<string>> Headers{get; private set;}  
     
     /// <summary>
-    /// Initializes a new instance of the <see cref="IOSwaggerClientApiException"/> class.
+    /// Initializes a new instance of the <see cref="PetShopApiException"/> class.
     /// </summary>
-    public IOSwaggerClientApiException() {}
+    public PetShopApiException() {}
     
     /// <summary>
-    /// Initializes a new instance of the <see cref="IOSwaggerClientApiException"/> class.
+    /// Initializes a new instance of the <see cref="PetShopApiException"/> class.
     /// </summary>
     /// <param name="errorCode">HTTP status code.</param>
     /// <param name="message">Error message.</param>
-    public IOSwaggerClientApiException(int errorCode, string message) : this(errorCode, message, null, null)
+    public PetShopApiException(int errorCode, string message) : this(errorCode, message, null, null)
     {
     }
     
     /// <summary>
-    /// Initializes a new instance of the <see cref="IOSwaggerClientApiException"/> class.
+    /// Initializes a new instance of the <see cref="PetShopApiException"/> class.
     /// </summary>
     /// <param name="errorCode">HTTP status code.</param>
     /// <param name="message">Error message.</param>
     /// <param name="errorContent">Error content.</param>
-    public IOSwaggerClientApiException(int errorCode, string message, Object errorContent = null, IReadOnlyDictionary<string,  IEnumerable<string>> headers = null, Exception original = null) : base(message, original) 
+    public PetShopApiException(int errorCode, string message, Object errorContent = null, IReadOnlyDictionary<string,  IEnumerable<string>> headers = null, Exception original = null) : base(message, original) 
     {
         ErrorCode = errorCode;
         ErrorContent = errorContent;

@@ -1,4 +1,4 @@
-# IO.Swagger.Api.ClientsApi
+# .ClientsApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -52,9 +52,9 @@ Delete the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -115,9 +115,9 @@ void (empty response body)
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -182,9 +182,9 @@ Unregister a cluster node from the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -247,9 +247,9 @@ void (empty response body)
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -314,9 +314,9 @@ Invalidate the rotated secret for the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -379,9 +379,9 @@ Get representation of the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -445,9 +445,9 @@ Return object stating whether client Authorization permissions have been initial
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -511,9 +511,9 @@ Get the client secret
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -577,9 +577,9 @@ Get user sessions for client Returns a list of user sessions associated with thi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -647,9 +647,9 @@ Get clients belonging to the realm.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -723,9 +723,9 @@ Get default client scopes.  Only name and ids are returned.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -789,9 +789,9 @@ Create JSON with payload of example access token
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -859,9 +859,9 @@ Create JSON with payload of example id token
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -929,9 +929,9 @@ Create JSON with payload of example user info
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -999,9 +999,9 @@ Get effective scope mapping of all roles of particular role container, which thi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1067,9 +1067,9 @@ Name | Type | Description  | Notes
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1134,9 +1134,9 @@ Get roles, which this client doesn’t have scope for and can’t have them in t
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1204,9 +1204,9 @@ Get application offline session count Returns a number of offline user sessions 
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1270,9 +1270,9 @@ Get offline sessions for client Returns a list of offline user sessions associat
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1340,9 +1340,9 @@ Get optional client scopes.  Only name and ids are returned.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1406,9 +1406,9 @@ Return list of all protocol mappers, which will be used when generating tokens i
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1474,9 +1474,9 @@ Get the rotated client secret
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1540,9 +1540,9 @@ Get a user dedicated to the service account
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1606,9 +1606,9 @@ Get application session count Returns a number of user sessions associated with 
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1672,9 +1672,9 @@ Test if registered cluster nodes are available Tests availability by sending 'pi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1738,9 +1738,9 @@ Push the client’s revocation policy to its admin URL If the client has an admi
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1804,9 +1804,9 @@ Generate a new secret for the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1870,9 +1870,9 @@ Create a new client Client’s client_id must be unique!
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1935,9 +1935,9 @@ Register a cluster node with the client Manually register cluster node to this c
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -2002,9 +2002,9 @@ Generate a new registration access token for the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -2068,9 +2068,9 @@ Update the client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -2135,9 +2135,9 @@ Return object stating whether client Authorization permissions have been initial
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -2201,9 +2201,9 @@ Name | Type | Description  | Notes
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -2266,9 +2266,9 @@ void (empty response body)
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

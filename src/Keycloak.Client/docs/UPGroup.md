@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UPGroup
+# .UPGroup
 ## Properties
 
 Name | Type | Description | Notes

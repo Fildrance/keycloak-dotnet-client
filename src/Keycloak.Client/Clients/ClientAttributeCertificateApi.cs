@@ -5,10 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using PetShop.Models;
 
-namespace IO.Swagger.Api;
+namespace PetShop.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -23,7 +22,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="id"></param>
     /// <param name="attr"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>CertificateRepresentation</returns>
     Task<CertificateRepresentation> GetCertificate (string realm, string id, string attr, CancellationToken ct);
     /// <summary>
@@ -34,7 +32,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="attr"></param>
     /// <param name="body">KeyStoreConfig</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>byte[]</returns>
     Task<byte[]> PostDownload (string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct);
     /// <summary>
@@ -44,7 +41,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="id"></param>
     /// <param name="attr"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>CertificateRepresentation</returns>
     Task<CertificateRepresentation> PostGenerate (string realm, string id, string attr, CancellationToken ct);
     /// <summary>
@@ -55,7 +51,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="attr"></param>
     /// <param name="body">KeyStoreConfig</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>byte[]</returns>
     Task<byte[]> PostGenerateAndDownload (string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct);
     /// <summary>
@@ -65,7 +60,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="id"></param>
     /// <param name="attr"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>CertificateRepresentation</returns>
     Task<CertificateRepresentation> PostUpload (string realm, string id, string attr, CancellationToken ct);
     /// <summary>
@@ -75,7 +69,6 @@ public partial interface IClientAttributeCertificateApi
     /// <param name="id"></param>
     /// <param name="attr"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>CertificateRepresentation</returns>
     Task<CertificateRepresentation> PostUploadCertificate (string realm, string id, string attr, CancellationToken ct);
 }
@@ -84,7 +77,7 @@ public partial interface IClientAttributeCertificateApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientAttributeCertificateApi : IOSwaggerClientApiClientBase, IClientAttributeCertificateApi
+public partial class ClientAttributeCertificateApi : PetShopApiClientBase, IClientAttributeCertificateApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientAttributeCertificateApi"/> class.
@@ -98,188 +91,152 @@ public partial class ClientAttributeCertificateApi : IOSwaggerClientApiClientBas
     /// <inheritdoc />     
     public async Task<CertificateRepresentation> GetCertificate(string realm, string id, string attr, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetCertificate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetCertificate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling GetCertificate");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetCertificate");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling GetCertificate");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling GetCertificate");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
         
-        var response = await CallApi<CertificateRepresentation>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<CertificateRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<byte[]> PostDownload(string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostDownload");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostDownload");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PostDownload");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostDownload");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling PostDownload");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling PostDownload");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/download");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/download"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        var response = await CallApi<byte[]>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        
+        var response = await CallApi<byte[]>(
+                    path_.ToString(), 
+                    HttpMethod.Post,
+                    body: body,   
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<CertificateRepresentation> PostGenerate(string realm, string id, string attr, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostGenerate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostGenerate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PostGenerate");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostGenerate");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling PostGenerate");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling PostGenerate");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/generate");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/generate"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
         
-        var response = await CallApi<CertificateRepresentation>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<CertificateRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Post,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<byte[]> PostGenerateAndDownload(string realm, string id, string attr, KeyStoreConfig body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostGenerateAndDownload");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostGenerateAndDownload");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PostGenerateAndDownload");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostGenerateAndDownload");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling PostGenerateAndDownload");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling PostGenerateAndDownload");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/generate-and-download");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/generate-and-download"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        var response = await CallApi<byte[]>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        
+        var response = await CallApi<byte[]>(
+                    path_.ToString(), 
+                    HttpMethod.Post,
+                    body: body,   
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<CertificateRepresentation> PostUpload(string realm, string id, string attr, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostUpload");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostUpload");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PostUpload");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostUpload");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling PostUpload");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling PostUpload");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/upload");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/upload"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
         
-        var response = await CallApi<CertificateRepresentation>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<CertificateRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Post,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<CertificateRepresentation> PostUploadCertificate(string realm, string id, string attr, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostUploadCertificate");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostUploadCertificate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling PostUploadCertificate");
-        
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostUploadCertificate");
         // verify the required parameter 'attr' is set
-        if (attr == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'attr' when calling PostUploadCertificate");
+        if (attr == null) throw new PetShopApiException(400, "Missing required parameter 'attr' when calling PostUploadCertificate");
         
-
-        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/upload-certificate");
+        var path_ = new StringBuilder("/{realm}/clients/{id}/certificates/{attr}/upload-certificate"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-path_ = path_.Replace("{attr}", ParameterToString(attr));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
+        path_ = path_.Replace("{attr}", ParameterToString(attr));
 
         
-        var response = await CallApi<CertificateRepresentation>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<CertificateRepresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Post,  
+                    ct: ct
+        );
         return response;
     }
 

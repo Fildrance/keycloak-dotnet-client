@@ -1,4 +1,4 @@
-# IO.Swagger.Model.OAuthClientRepresentation
+# .OAuthClientRepresentation
 ## Properties
 
 Name | Type | Description | Notes

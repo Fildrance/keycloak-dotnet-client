@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClientPolicyConditionRepresentation
+# .ClientPolicyConditionRepresentation
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Api.RolesApi
+# .RolesApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -46,9 +46,9 @@ Delete a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -113,9 +113,9 @@ Remove roles from the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -182,9 +182,9 @@ Delete a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -247,9 +247,9 @@ Remove roles from the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -314,9 +314,9 @@ Get a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -382,9 +382,9 @@ Get composites of the role
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -450,9 +450,9 @@ Get client-level roles for the client that are in the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -520,9 +520,9 @@ Get realm-level roles of the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -588,9 +588,9 @@ Returns a stream of groups that have the specified role name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -662,9 +662,9 @@ Return object stating whether role Authorization permissions have been initializ
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -730,9 +730,9 @@ Returns a stream of users that have the specified role name.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -802,9 +802,9 @@ Get all roles for the realm or client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -876,9 +876,9 @@ Get a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -942,9 +942,9 @@ Get composites of the role
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1008,9 +1008,9 @@ Get client-level roles for the client that are in the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1076,9 +1076,9 @@ Get realm-level roles of the role’s composite
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1142,9 +1142,9 @@ Returns a stream of groups that have the specified role name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1214,9 +1214,9 @@ Return object stating whether role Authorization permissions have been initializ
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1280,9 +1280,9 @@ Returns a stream of users that have the specified role name.
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1350,9 +1350,9 @@ Get all roles for the realm or client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1422,9 +1422,9 @@ Add a composite to the role
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1491,9 +1491,9 @@ Create a new role for the realm or client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1558,9 +1558,9 @@ Add a composite to the role
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1625,9 +1625,9 @@ Create a new role for the realm or client
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1690,9 +1690,9 @@ Update a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1759,9 +1759,9 @@ Return object stating whether role Authorization permissions have been initializ
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1829,9 +1829,9 @@ Update a role by name
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -1896,9 +1896,9 @@ Return object stating whether role Authorization permissions have been initializ
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

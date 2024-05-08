@@ -1,4 +1,4 @@
-# IO.Swagger.Api.ClientRegistrationPolicyApi
+# .ClientRegistrationPolicyApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -19,9 +19,9 @@ Base path for retrieve providers with the configProperties properly filled
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

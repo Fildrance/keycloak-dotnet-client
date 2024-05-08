@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PublishedRealmRepresentation
+# .PublishedRealmRepresentation
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.KeyStoreConfig
+# .KeyStoreConfig
 ## Properties
 
 Name | Type | Description | Notes

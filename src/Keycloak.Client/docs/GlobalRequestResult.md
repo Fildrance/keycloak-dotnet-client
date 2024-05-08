@@ -1,4 +1,4 @@
-# IO.Swagger.Model.GlobalRequestResult
+# .GlobalRequestResult
 ## Properties
 
 Name | Type | Description | Notes

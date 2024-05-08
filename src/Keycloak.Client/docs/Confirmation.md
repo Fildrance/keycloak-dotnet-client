@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Confirmation
+# .Confirmation
 ## Properties
 
 Name | Type | Description | Notes

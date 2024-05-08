@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Composites
+# .Composites
 ## Properties
 
 Name | Type | Description | Notes

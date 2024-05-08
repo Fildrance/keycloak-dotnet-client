@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AuthDetailsRepresentation
+# .AuthDetailsRepresentation
 ## Properties
 
 Name | Type | Description | Notes

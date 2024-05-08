@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AuthenticatorConfigRepresentation
+# .AuthenticatorConfigRepresentation
 ## Properties
 
 Name | Type | Description | Notes

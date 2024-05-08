@@ -1,4 +1,4 @@
-# IO.Swagger.Model.IdentityProviderMapperRepresentation
+# .IdentityProviderMapperRepresentation
 ## Properties
 
 Name | Type | Description | Notes

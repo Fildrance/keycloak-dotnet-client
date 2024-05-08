@@ -5,10 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using PetShop.Models;
 
-namespace IO.Swagger.Api;
+namespace PetShop.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -22,7 +21,6 @@ public partial interface IClientInitialAccessApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="id"></param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns></returns>
     Task DeleteClientsInitialAcces (string realm, string id, CancellationToken ct);
     /// <summary>
@@ -30,7 +28,6 @@ public partial interface IClientInitialAccessApi
     /// </summary>
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>List&lt;ClientInitialAccessPresentation&gt;</returns>
     Task<List<ClientInitialAccessPresentation>> GetClientsInitialAccess (string realm, CancellationToken ct);
     /// <summary>
@@ -39,7 +36,6 @@ public partial interface IClientInitialAccessApi
     /// <param name="realm">realm name (not id!)</param>
     /// <param name="body">ClientInitialAccessCreatePresentation</param>
     /// <param name="ct"></param>
-    /// <param name="ct">Operation cancellation token. </param>
     /// <returns>ClientInitialAccessPresentation</returns>
     Task<ClientInitialAccessPresentation> PostClientsInitialAccess (string realm, ClientInitialAccessCreatePresentation body, CancellationToken ct);
 }
@@ -48,7 +44,7 @@ public partial interface IClientInitialAccessApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientInitialAccessApi : IOSwaggerClientApiClientBase, IClientInitialAccessApi
+public partial class ClientInitialAccessApi : PetShopApiClientBase, IClientInitialAccessApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientInitialAccessApi"/> class.
@@ -62,72 +58,60 @@ public partial class ClientInitialAccessApi : IOSwaggerClientApiClientBase, ICli
     /// <inheritdoc />     
     public async Task DeleteClientsInitialAcces(string realm, string id, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientsInitialAcces");
-        
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientsInitialAcces");
         // verify the required parameter 'id' is set
-        if (id == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'id' when calling DeleteClientsInitialAcces");
+        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientsInitialAcces");
         
-
-        var path_ = new StringBuilder("/{realm}/clients-initial-access/{id}");
+        var path_ = new StringBuilder("/{realm}/clients-initial-access/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
-path_ = path_.Replace("{id}", ParameterToString(id));
-
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
+        path_ = path_.Replace("{id}", ParameterToString(id));
 
         
-        await CallApi(path_.ToString(), HttpMethod.Delete, queryParams, postBody, headerParams, formParams, fileParams, ct);
+        
+        await CallApi(
+                    path_.ToString(), 
+                    HttpMethod.Delete,  
+                    ct: ct
+        );
     }
 
     /// <inheritdoc />     
     public async Task<List<ClientInitialAccessPresentation>> GetClientsInitialAccess(string realm, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling GetClientsInitialAccess");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientsInitialAccess");
         
-
-        var path_ = new StringBuilder("/{realm}/clients-initial-access");
+        var path_ = new StringBuilder("/{realm}/clients-initial-access"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
         
-        var response = await CallApi<List<ClientInitialAccessPresentation>>(path_.ToString(), HttpMethod.Get, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        var response = await CallApi<List<ClientInitialAccessPresentation>>(
+                    path_.ToString(), 
+                    HttpMethod.Get,  
+                    ct: ct
+        );
         return response;
     }
 
     /// <inheritdoc />     
     public async Task<ClientInitialAccessPresentation> PostClientsInitialAccess(string realm, ClientInitialAccessCreatePresentation body, CancellationToken ct)
     {
-        
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new IOSwaggerClientApiException(400, "Missing required parameter 'realm' when calling PostClientsInitialAccess");
+        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientsInitialAccess");
         
-
-        var path_ = new StringBuilder("/{realm}/clients-initial-access");
+        var path_ = new StringBuilder("/{realm}/clients-initial-access"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
 
-        var queryParams = new Dictionary<string, string>();
-        var headerParams = new Dictionary<string, string>();
-        var formParams = new Dictionary<string, string>();
-        var fileParams = new Dictionary<string, FileParameter>();
-        object postBody = null;
-
-        postBody = body; // http body (model) parameter
-
-        var response = await CallApi<ClientInitialAccessPresentation>(path_.ToString(), HttpMethod.Post, queryParams, postBody, headerParams, formParams, fileParams, ct);
         
+        
+        var response = await CallApi<ClientInitialAccessPresentation>(
+                    path_.ToString(), 
+                    HttpMethod.Post,
+                    body: body,   
+                    ct: ct
+        );
         return response;
     }
 

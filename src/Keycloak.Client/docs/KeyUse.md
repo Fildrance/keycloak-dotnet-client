@@ -1,4 +1,4 @@
-# IO.Swagger.Model.KeyUse
+# .KeyUse
 ## Properties
 
 Name | Type | Description | Notes

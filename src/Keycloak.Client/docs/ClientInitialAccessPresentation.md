@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClientInitialAccessPresentation
+# .ClientInitialAccessPresentation
 ## Properties
 
 Name | Type | Description | Notes

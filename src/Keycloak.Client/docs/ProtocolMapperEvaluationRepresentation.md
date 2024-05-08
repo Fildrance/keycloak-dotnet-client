@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ProtocolMapperEvaluationRepresentation
+# .ProtocolMapperEvaluationRepresentation
 ## Properties
 
 Name | Type | Description | Notes

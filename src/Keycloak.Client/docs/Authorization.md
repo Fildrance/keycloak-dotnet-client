@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Authorization
+# .Authorization
 ## Properties
 
 Name | Type | Description | Notes

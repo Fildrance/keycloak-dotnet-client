@@ -1,4 +1,4 @@
-# IO.Swagger.Model.RealmRepresentation
+# .RealmRepresentation
 ## Properties
 
 Name | Type | Description | Notes

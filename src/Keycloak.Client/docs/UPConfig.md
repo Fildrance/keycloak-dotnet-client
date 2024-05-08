@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UPConfig
+# .UPConfig
 ## Properties
 
 Name | Type | Description | Notes

@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserSessionRepresentation
+# .UserSessionRepresentation
 ## Properties
 
 Name | Type | Description | Notes

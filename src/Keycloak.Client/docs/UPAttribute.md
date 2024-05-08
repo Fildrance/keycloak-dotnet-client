@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UPAttribute
+# .UPAttribute
 ## Properties
 
 Name | Type | Description | Notes

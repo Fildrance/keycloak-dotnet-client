@@ -5,7 +5,7 @@ using System.CodeDom.Compiler;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace IO.Swagger.Model;
+namespace PetShop.Models;
 
 /// <summary>
 /// 

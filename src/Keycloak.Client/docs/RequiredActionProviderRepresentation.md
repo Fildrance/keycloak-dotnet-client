@@ -1,4 +1,4 @@
-# IO.Swagger.Model.RequiredActionProviderRepresentation
+# .RequiredActionProviderRepresentation
 ## Properties
 
 Name | Type | Description | Notes

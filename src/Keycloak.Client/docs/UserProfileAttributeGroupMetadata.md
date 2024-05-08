@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserProfileAttributeGroupMetadata
+# .UserProfileAttributeGroupMetadata
 ## Properties
 
 Name | Type | Description | Notes
