@@ -1,4 +1,4 @@
-# IO.Swagger.Model.InstallationAdapterConfig
+# .InstallationAdapterConfig
 ## Properties
 
 Name | Type | Description | Notes

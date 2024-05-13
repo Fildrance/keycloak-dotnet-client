@@ -1,4 +1,4 @@
-# IO.Swagger.Api.AttackDetectionApi
+# .AttackDetectionApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
@@ -21,9 +21,9 @@ Clear any user login failures for the user This can release temporary disabled u
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -86,9 +86,9 @@ Clear any user login failures for all users This can release temporary disabled 
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {
@@ -149,9 +149,9 @@ Get status of a username in brute force detection
 ```csharp
 using System;
 using System.Diagnostics;
-using IO.Swagger.Api;
-using IO.Swagger.Client;
-using IO.Swagger.Model;
+using ;
+using PetShop;
+using PetShop.Models;
 
 namespace Example
 {

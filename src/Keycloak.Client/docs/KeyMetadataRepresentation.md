@@ -1,4 +1,4 @@
-# IO.Swagger.Model.KeyMetadataRepresentation
+# .KeyMetadataRepresentation
 ## Properties
 
 Name | Type | Description | Notes

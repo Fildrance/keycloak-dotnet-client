@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AuthenticationExecutionInfoRepresentation
+# .AuthenticationExecutionInfoRepresentation
 ## Properties
 
 Name | Type | Description | Notes

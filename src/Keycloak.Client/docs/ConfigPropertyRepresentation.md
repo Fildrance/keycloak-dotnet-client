@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ConfigPropertyRepresentation
+# .ConfigPropertyRepresentation
 ## Properties
 
 Name | Type | Description | Notes

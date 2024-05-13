@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClientPoliciesRepresentation
+# .ClientPoliciesRepresentation
 ## Properties
 
 Name | Type | Description | Notes

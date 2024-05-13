@@ -1,4 +1,4 @@
-# IO.Swagger.Model.GroupRepresentation
+# .GroupRepresentation
 ## Properties
 
 Name | Type | Description | Notes

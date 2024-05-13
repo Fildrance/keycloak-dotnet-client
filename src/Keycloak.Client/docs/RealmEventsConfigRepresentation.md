@@ -1,4 +1,4 @@
-# IO.Swagger.Model.RealmEventsConfigRepresentation
+# .RealmEventsConfigRepresentation
 ## Properties
 
 Name | Type | Description | Notes

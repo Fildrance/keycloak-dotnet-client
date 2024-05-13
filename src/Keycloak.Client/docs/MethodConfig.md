@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MethodConfig
+# .MethodConfig
 ## Properties
 
 Name | Type | Description | Notes

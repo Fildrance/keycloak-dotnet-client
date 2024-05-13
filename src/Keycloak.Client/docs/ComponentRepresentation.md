@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ComponentRepresentation
+# .ComponentRepresentation
 ## Properties
 
 Name | Type | Description | Notes

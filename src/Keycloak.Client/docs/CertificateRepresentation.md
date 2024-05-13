@@ -1,4 +1,4 @@
-# IO.Swagger.Model.CertificateRepresentation
+# .CertificateRepresentation
 ## Properties
 
 Name | Type | Description | Notes

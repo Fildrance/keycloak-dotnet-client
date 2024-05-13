@@ -1,4 +1,4 @@
-# IO.Swagger.Model.RoleRepresentation
+# .RoleRepresentation
 ## Properties
 
 Name | Type | Description | Notes

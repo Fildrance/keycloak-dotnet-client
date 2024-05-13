@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ScopeRepresentation
+# .ScopeRepresentation
 ## Properties
 
 Name | Type | Description | Notes

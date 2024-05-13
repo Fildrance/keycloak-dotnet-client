@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Logic
+# .Logic
 ## Properties
 
 Name | Type | Description | Notes

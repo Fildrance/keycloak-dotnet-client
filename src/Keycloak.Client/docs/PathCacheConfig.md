@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PathCacheConfig
+# .PathCacheConfig
 ## Properties
 
 Name | Type | Description | Notes

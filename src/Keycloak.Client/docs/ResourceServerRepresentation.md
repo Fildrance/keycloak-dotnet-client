@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ResourceServerRepresentation
+# .ResourceServerRepresentation
 ## Properties
 
 Name | Type | Description | Notes

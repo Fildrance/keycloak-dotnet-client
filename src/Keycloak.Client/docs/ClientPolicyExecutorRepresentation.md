@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClientPolicyExecutorRepresentation
+# .ClientPolicyExecutorRepresentation
 ## Properties
 
 Name | Type | Description | Notes

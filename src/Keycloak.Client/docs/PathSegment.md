@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PathSegment
+# .PathSegment
 ## Properties
 
 Name | Type | Description | Notes

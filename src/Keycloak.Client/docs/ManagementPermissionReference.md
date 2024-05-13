@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ManagementPermissionReference
+# .ManagementPermissionReference
 ## Properties
 
 Name | Type | Description | Notes

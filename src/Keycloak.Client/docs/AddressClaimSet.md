@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AddressClaimSet
+# .AddressClaimSet
 ## Properties
 
 Name | Type | Description | Notes

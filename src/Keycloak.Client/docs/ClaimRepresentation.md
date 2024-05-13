@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClaimRepresentation
+# .ClaimRepresentation
 ## Properties
 
 Name | Type | Description | Notes

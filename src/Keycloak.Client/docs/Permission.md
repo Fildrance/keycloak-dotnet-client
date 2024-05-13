@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Permission
+# .Permission
 ## Properties
 
 Name | Type | Description | Notes

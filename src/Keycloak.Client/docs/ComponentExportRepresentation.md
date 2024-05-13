@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ComponentExportRepresentation
+# .ComponentExportRepresentation
 ## Properties
 
 Name | Type | Description | Notes

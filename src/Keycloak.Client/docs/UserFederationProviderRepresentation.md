@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserFederationProviderRepresentation
+# .UserFederationProviderRepresentation
 ## Properties
 
 Name | Type | Description | Notes

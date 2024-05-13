@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PathConfig
+# .PathConfig
 ## Properties
 
 Name | Type | Description | Notes

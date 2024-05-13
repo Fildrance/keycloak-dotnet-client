@@ -1,4 +1,4 @@
-# IO.Swagger.Model.CredentialRepresentation
+# .CredentialRepresentation
 ## Properties
 
 Name | Type | Description | Notes

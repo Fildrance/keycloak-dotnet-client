@@ -1,4 +1,4 @@
-# IO.Swagger.Model.PolicyRepresentation
+# .PolicyRepresentation
 ## Properties
 
 Name | Type | Description | Notes

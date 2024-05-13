@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AdminEventRepresentation
+# .AdminEventRepresentation
 ## Properties
 
 Name | Type | Description | Notes

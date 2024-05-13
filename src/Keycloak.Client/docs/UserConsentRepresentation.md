@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserConsentRepresentation
+# .UserConsentRepresentation
 ## Properties
 
 Name | Type | Description | Notes

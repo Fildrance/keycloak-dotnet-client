@@ -12,25 +12,25 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace IO.Swagger.Client;
+namespace PetShop;
 
 /// <summary>
 /// Base type for API client is mainly responsible for making the HTTP call to the API.
 /// </summary>
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public abstract class IOSwaggerClientApiClientBase
+public abstract class PetShopApiClientBase
 {
     protected readonly HttpClient _httpClient;
     protected readonly string _basePath;
     protected readonly JsonSerializerOptions _options;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="IOSwaggerClientApiClientBase" /> class.
+    /// Initializes a new instance of the <see cref="PetShopApiClientBase" /> class.
     /// </summary>
     /// <param name="httpClient">Client for making http calls.</param>
     /// <param name="basePath">The base path.</param>
     /// <param name="options">Serialization settings.</param>
-    protected IOSwaggerClientApiClientBase(HttpClient httpClient, string basePath, JsonSerializerOptions options = null)
+    protected PetShopApiClientBase(HttpClient httpClient, string basePath, JsonSerializerOptions options = null)
     {
         _httpClient = httpClient;
         _basePath = basePath;
@@ -56,12 +56,12 @@ public abstract class IOSwaggerClientApiClientBase
     protected virtual async Task<T> CallApi<T>(
         string path, 
         HttpMethod method, 
-        Dictionary<string, string> queryParams, 
-        object body,
-        Dictionary<string, string> headerParams, 
-        Dictionary<string, string> formParams, 
-        Dictionary<string, FileParameter> fileParams, 
-        CancellationToken ct
+        Dictionary<string, string> queryParams = null, 
+        object body = null,
+        Dictionary<string, string> headerParams = null, 
+        Dictionary<string, string> formParams = null, 
+        Dictionary<string, FileParameter> fileParams = null, 
+        CancellationToken ct = default
     )
     {
         using (var request = new HttpRequestMessage())
@@ -82,11 +82,18 @@ public abstract class IOSwaggerClientApiClientBase
                 else
                 {
                     var responseData = await response.Content.ReadAsStringAsync(ct).ConfigureAwait(false);
-                    throw new IOSwaggerClientApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
+                    throw new PetShopApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
                 }
             }
             finally
             {
+                if(fileParams != null)
+                {
+                    foreach(var fileParam in fileParams)
+                    {
+                        fileParam.Value.FileData?.Dispose();
+                    }
+                }
                 response?.Dispose();
             }
         }
@@ -106,13 +113,13 @@ public abstract class IOSwaggerClientApiClientBase
     /// <returns>Result of request.</returns>
     protected virtual async Task CallApi(
         string path, 
-        HttpMethod method, 
-        Dictionary<string, string> queryParams, 
-        object body,
-        Dictionary<string, string> headerParams, 
-        Dictionary<string, string> formParams, 
-        Dictionary<string, FileParameter> fileParams, 
-        CancellationToken ct
+        HttpMethod method,
+        Dictionary<string, string> queryParams = null,
+        object body = null,
+        Dictionary<string, string> headerParams = null,
+        Dictionary<string, string> formParams = null,
+        Dictionary<string, FileParameter> fileParams = null,
+        CancellationToken ct = default
     )
     {
         using (var request = new HttpRequestMessage())
@@ -130,11 +137,18 @@ public abstract class IOSwaggerClientApiClientBase
                 if (status is < 200 or >= 300)
                 {
                     var responseData = await response.Content.ReadAsStringAsync(ct).ConfigureAwait(false);
-                    throw new IOSwaggerClientApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
+                    throw new PetShopApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
                 }
             }
             finally
             {
+                if(fileParams != null)
+                {
+                    foreach(var fileParam in fileParams)
+                    {
+                        fileParam.Value.FileData?.Dispose();
+                    }
+                }
                 response?.Dispose();
             }
         }
@@ -249,7 +263,7 @@ public abstract class IOSwaggerClientApiClientBase
             catch (JsonException exception)
             {
                 var message = "Could not deserialize the response body string as " + typeof(T).FullName + ".";
-                throw new IOSwaggerClientApiException((int)response.StatusCode, message, responseText, headers, exception);
+                throw new PetShopApiException((int)response.StatusCode, message, responseText, headers, exception);
             }
         }
         try
@@ -262,7 +276,7 @@ public abstract class IOSwaggerClientApiClientBase
         catch (JsonException exception)
         {
             var message = "Could not deserialize the response body stream as " + typeof(T).FullName + ".";
-            throw new IOSwaggerClientApiException((int)response.StatusCode, message, string.Empty, headers, exception);
+            throw new PetShopApiException((int)response.StatusCode, message, string.Empty, headers, exception);
         }
     }
 

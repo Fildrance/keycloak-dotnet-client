@@ -1,4 +1,4 @@
-# IO.Swagger.Model.DecisionStrategy
+# .DecisionStrategy
 ## Properties
 
 Name | Type | Description | Notes

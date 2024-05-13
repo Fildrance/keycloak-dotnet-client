@@ -1,4 +1,4 @@
-# IO.Swagger.Model.FederatedIdentityRepresentation
+# .FederatedIdentityRepresentation
 ## Properties
 
 Name | Type | Description | Notes

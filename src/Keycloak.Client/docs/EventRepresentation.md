@@ -1,4 +1,4 @@
-# IO.Swagger.Model.EventRepresentation
+# .EventRepresentation
 ## Properties
 
 Name | Type | Description | Notes

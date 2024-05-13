@@ -1,4 +1,4 @@
-# IO.Swagger.Model.UserFederationMapperRepresentation
+# .UserFederationMapperRepresentation
 ## Properties
 
 Name | Type | Description | Notes

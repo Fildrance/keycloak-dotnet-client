@@ -1,4 +1,4 @@
-# IO.Swagger.Model.Access
+# .Access
 ## Properties
 
 Name | Type | Description | Notes

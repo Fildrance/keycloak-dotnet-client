@@ -1,4 +1,4 @@
-# IO.Swagger.Model.MappingsRepresentation
+# .MappingsRepresentation
 ## Properties
 
 Name | Type | Description | Notes

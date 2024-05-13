@@ -1,4 +1,4 @@
-# IO.Swagger.Model.AuthenticationFlowRepresentation
+# .AuthenticationFlowRepresentation
 ## Properties
 
 Name | Type | Description | Notes

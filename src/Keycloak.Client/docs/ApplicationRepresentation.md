@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ApplicationRepresentation
+# .ApplicationRepresentation
 ## Properties
 
 Name | Type | Description | Notes

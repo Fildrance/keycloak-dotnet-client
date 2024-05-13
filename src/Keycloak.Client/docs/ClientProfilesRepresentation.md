@@ -1,4 +1,4 @@
-# IO.Swagger.Model.ClientProfilesRepresentation
+# .ClientProfilesRepresentation
 ## Properties
 
 Name | Type | Description | Notes
