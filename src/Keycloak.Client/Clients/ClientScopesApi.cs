@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -101,7 +101,7 @@ public partial interface IClientScopesApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
+public partial class ClientScopesApi : KeycloakClientApiClientBase, IClientScopesApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientScopesApi"/> class.
@@ -116,9 +116,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task DeleteClientScope(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientScope");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteClientScope");
         
         var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -137,9 +137,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task DeleteClientTemplate(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientTemplate");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientTemplate");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteClientTemplate");
         
         var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -158,9 +158,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task<ClientScopeRepresentation> GetClientScope(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetClientScope");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetClientScope");
         
         var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -180,7 +180,7 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task<List<ClientScopeRepresentation>> GetClientScopes(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientScopes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientScopes");
         
         var path_ = new StringBuilder("/{realm}/client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -199,9 +199,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task<ClientScopeRepresentation> GetClientTemplate(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientTemplate");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetClientTemplate");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetClientTemplate");
         
         var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -221,7 +221,7 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task<List<ClientScopeRepresentation>> GetClientTemplates(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientTemplates");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientTemplates");
         
         var path_ = new StringBuilder("/{realm}/client-templates"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -240,7 +240,7 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task PostClientScopes(string realm, ClientScopeRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientScopes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostClientScopes");
         
         var path_ = new StringBuilder("/{realm}/client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -259,7 +259,7 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task PostClientTemplates(string realm, ClientScopeRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientTemplates");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostClientTemplates");
         
         var path_ = new StringBuilder("/{realm}/client-templates"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -278,9 +278,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task PutClientScope(string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutClientScope");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutClientScope");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutClientScope");
         
         var path_ = new StringBuilder("/{realm}/client-scopes/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -300,9 +300,9 @@ public partial class ClientScopesApi : PetShopApiClientBase, IClientScopesApi
     public async Task PutClientTemplate(string realm, string id, ClientScopeRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutClientTemplate");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutClientTemplate");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutClientTemplate");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutClientTemplate");
         
         var path_ = new StringBuilder("/{realm}/client-templates/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

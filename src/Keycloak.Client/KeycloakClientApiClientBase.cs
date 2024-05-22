@@ -12,25 +12,25 @@ using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace PetShop;
+namespace Keycloak.Client;
 
 /// <summary>
 /// Base type for API client is mainly responsible for making the HTTP call to the API.
 /// </summary>
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public abstract class PetShopApiClientBase
+public abstract class KeycloakClientApiClientBase
 {
     protected readonly HttpClient _httpClient;
     protected readonly string _basePath;
     protected readonly JsonSerializerOptions _options;
 
     /// <summary>
-    /// Initializes a new instance of the <see cref="PetShopApiClientBase" /> class.
+    /// Initializes a new instance of the <see cref="KeycloakClientApiClientBase" /> class.
     /// </summary>
     /// <param name="httpClient">Client for making http calls.</param>
     /// <param name="basePath">The base path.</param>
     /// <param name="options">Serialization settings.</param>
-    protected PetShopApiClientBase(HttpClient httpClient, string basePath, JsonSerializerOptions options = null)
+    protected KeycloakClientApiClientBase(HttpClient httpClient, string basePath, JsonSerializerOptions options = null)
     {
         _httpClient = httpClient;
         _basePath = basePath;
@@ -82,7 +82,7 @@ public abstract class PetShopApiClientBase
                 else
                 {
                     var responseData = await response.Content.ReadAsStringAsync(ct).ConfigureAwait(false);
-                    throw new PetShopApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
+                    throw new KeycloakClientApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
                 }
             }
             finally
@@ -137,7 +137,7 @@ public abstract class PetShopApiClientBase
                 if (status is < 200 or >= 300)
                 {
                     var responseData = await response.Content.ReadAsStringAsync(ct).ConfigureAwait(false);
-                    throw new PetShopApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
+                    throw new KeycloakClientApiException(status, "The HTTP status code of the response was not expected (" + status + ").", responseData, headers, null);
                 }
             }
             finally
@@ -263,7 +263,7 @@ public abstract class PetShopApiClientBase
             catch (JsonException exception)
             {
                 var message = "Could not deserialize the response body string as " + typeof(T).FullName + ".";
-                throw new PetShopApiException((int)response.StatusCode, message, responseText, headers, exception);
+                throw new KeycloakClientApiException((int)response.StatusCode, message, responseText, headers, exception);
             }
         }
         try
@@ -276,7 +276,7 @@ public abstract class PetShopApiClientBase
         catch (JsonException exception)
         {
             var message = "Could not deserialize the response body stream as " + typeof(T).FullName + ".";
-            throw new PetShopApiException((int)response.StatusCode, message, string.Empty, headers, exception);
+            throw new KeycloakClientApiException((int)response.StatusCode, message, string.Empty, headers, exception);
         }
     }
 

@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -28,7 +28,7 @@ public partial interface IKeyApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class KeyApi : PetShopApiClientBase, IKeyApi
+public partial class KeyApi : KeycloakClientApiClientBase, IKeyApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="KeyApi"/> class.
@@ -43,7 +43,7 @@ public partial class KeyApi : PetShopApiClientBase, IKeyApi
     public async Task<KeysMetadataRepresentation> GetKeys(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetKeys");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetKeys");
         
         var path_ = new StringBuilder("/{realm}/keys"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

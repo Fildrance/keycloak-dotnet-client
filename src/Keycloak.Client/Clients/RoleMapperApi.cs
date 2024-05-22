@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -123,7 +123,7 @@ public partial interface IRoleMapperApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
+public partial class RoleMapperApi : KeycloakClientApiClientBase, IRoleMapperApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="RoleMapperApi"/> class.
@@ -138,9 +138,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task DeleteGroupRoleMappingsRealm(string realm, string id, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteGroupRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteGroupRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteGroupRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteGroupRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -160,9 +160,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task DeleteUserRoleMappingsRealm(string realm, string id, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteUserRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteUserRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteUserRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteUserRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -182,9 +182,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<MappingsRepresentation> GetGroupRoleMappings(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappings");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappings");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappings");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappings");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -204,9 +204,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetGroupRoleMappingsRealm(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -226,9 +226,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetGroupRoleMappingsRealmAvailable(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealmAvailable");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealmAvailable");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealmAvailable");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealmAvailable");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings/realm/available"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -248,9 +248,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetGroupRoleMappingsRealmComposite(string realm, string id, string briefRepresentation, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealmComposite");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupRoleMappingsRealmComposite");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealmComposite");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroupRoleMappingsRealmComposite");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings/realm/composite"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -273,9 +273,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<MappingsRepresentation> GetUserRoleMappings(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappings");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappings");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappings");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappings");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -295,9 +295,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetUserRoleMappingsRealm(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -317,9 +317,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetUserRoleMappingsRealmAvailable(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealmAvailable");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealmAvailable");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealmAvailable");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealmAvailable");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings/realm/available"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -339,9 +339,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task<List<RoleRepresentation>> GetUserRoleMappingsRealmComposite(string realm, string id, string briefRepresentation, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealmComposite");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUserRoleMappingsRealmComposite");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealmComposite");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetUserRoleMappingsRealmComposite");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings/realm/composite"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -364,9 +364,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task PostGroupRoleMappingsRealm(string realm, string id, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostGroupRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostGroupRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostGroupRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PostGroupRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -386,9 +386,9 @@ public partial class RoleMapperApi : PetShopApiClientBase, IRoleMapperApi
     public async Task PostUserRoleMappingsRealm(string realm, string id, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostUserRoleMappingsRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostUserRoleMappingsRealm");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostUserRoleMappingsRealm");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PostUserRoleMappingsRealm");
         
         var path_ = new StringBuilder("/{realm}/users/{id}/role-mappings/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

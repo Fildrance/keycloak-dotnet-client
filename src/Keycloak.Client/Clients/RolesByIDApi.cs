@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -109,7 +109,7 @@ public partial interface IRolesByIDApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
+public partial class RolesByIDApi : KeycloakClientApiClientBase, IRolesByIDApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="RolesByIDApi"/> class.
@@ -124,9 +124,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task DeleteRolesById(string realm, string roleId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteRolesById");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteRolesById");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling DeleteRolesById");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling DeleteRolesById");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -145,9 +145,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task DeleteRolesByIdComposites(string realm, string roleId, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteRolesByIdComposites");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteRolesByIdComposites");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling DeleteRolesByIdComposites");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling DeleteRolesByIdComposites");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/composites"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -167,9 +167,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<RoleRepresentation> GetRolesById(string realm, string roleId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRolesById");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRolesById");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling GetRolesById");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling GetRolesById");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -189,9 +189,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<List<RoleRepresentation>> GetRolesByIdComposites(string realm, string roleId, string first, string max, string search, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdComposites");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdComposites");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdComposites");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdComposites");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/composites"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -216,11 +216,11 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<List<RoleRepresentation>> GetRolesByIdCompositesClient(string realm, string roleId, string clientUuid, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdCompositesClient");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdCompositesClient");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdCompositesClient");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdCompositesClient");
         // verify the required parameter 'clientUuid' is set
-        if (clientUuid == null) throw new PetShopApiException(400, "Missing required parameter 'clientUuid' when calling GetRolesByIdCompositesClient");
+        if (clientUuid == null) throw new KeycloakClientApiException(400, "Missing required parameter 'clientUuid' when calling GetRolesByIdCompositesClient");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/composites/clients/{clientUuid}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -241,9 +241,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<List<RoleRepresentation>> GetRolesByIdCompositesRealm(string realm, string roleId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdCompositesRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdCompositesRealm");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdCompositesRealm");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdCompositesRealm");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/composites/realm"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -263,9 +263,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<ManagementPermissionReference> GetRolesByIdManagementPermissions(string realm, string roleId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRolesByIdManagementPermissions");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdManagementPermissions");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling GetRolesByIdManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -285,9 +285,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task PostRolesByIdComposites(string realm, string roleId, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostRolesByIdComposites");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostRolesByIdComposites");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling PostRolesByIdComposites");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling PostRolesByIdComposites");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/composites"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -307,9 +307,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task PutRolesById(string realm, string roleId, RoleRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutRolesById");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutRolesById");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling PutRolesById");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling PutRolesById");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -329,9 +329,9 @@ public partial class RolesByIDApi : PetShopApiClientBase, IRolesByIDApi
     public async Task<ManagementPermissionReference> PutRolesByIdManagementPermissions(string realm, string roleId, ManagementPermissionReference body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutRolesByIdManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutRolesByIdManagementPermissions");
         // verify the required parameter 'roleId' is set
-        if (roleId == null) throw new PetShopApiException(400, "Missing required parameter 'roleId' when calling PutRolesByIdManagementPermissions");
+        if (roleId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'roleId' when calling PutRolesByIdManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/roles-by-id/{role-id}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
