@@ -28,8 +28,8 @@ Method | HTTP request | Description
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -93,8 +93,8 @@ Return a paginated list of subgroups that have a parent group corresponding to t
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -163,8 +163,8 @@ Name | Type | Description  | Notes
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -229,8 +229,8 @@ Return object stating whether client Authorization permissions have been initial
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -295,8 +295,8 @@ Get group hierarchy.  Only name and ids are returned.
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -373,8 +373,8 @@ Returns the groups counts.
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -441,8 +441,8 @@ Get users Returns a stream of users, filtered according to query parameters
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -513,8 +513,8 @@ Set or create child.
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -580,8 +580,8 @@ create or add a top level realm groupSet or create child.
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -645,8 +645,8 @@ Update group, ignores subgroups.
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -712,8 +712,8 @@ Return object stating whether client Authorization permissions have been initial
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {

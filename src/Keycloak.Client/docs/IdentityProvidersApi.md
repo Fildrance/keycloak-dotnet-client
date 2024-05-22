@@ -35,8 +35,8 @@ Delete the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -100,8 +100,8 @@ Delete a mapper for the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -167,8 +167,8 @@ Export public broker configuration for identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -234,8 +234,8 @@ Get the identity provider factory for that provider id
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -300,8 +300,8 @@ Get the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -366,8 +366,8 @@ Return object stating whether client Authorization permissions have been initial
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -432,8 +432,8 @@ List identity providers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -504,8 +504,8 @@ Get mapper by id for the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -572,8 +572,8 @@ Get mapper types for identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -638,8 +638,8 @@ Get mappers for identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -704,8 +704,8 @@ Import identity provider from JSON body
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -770,8 +770,8 @@ Create a new identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -835,8 +835,8 @@ Add a mapper to identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -902,8 +902,8 @@ Update the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -969,8 +969,8 @@ Return object stating whether client Authorization permissions have been initial
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1037,8 +1037,8 @@ Update a mapper for the identity provider
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {

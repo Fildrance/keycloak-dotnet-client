@@ -40,8 +40,8 @@ Delete the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -107,8 +107,8 @@ Delete the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -174,8 +174,8 @@ Delete the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -241,8 +241,8 @@ Get mapper by id
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -309,8 +309,8 @@ Get mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -375,8 +375,8 @@ Get mappers by name for a specific protocol
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -443,8 +443,8 @@ Get mapper by id
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -511,8 +511,8 @@ Get mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -577,8 +577,8 @@ Get mappers by name for a specific protocol
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -645,8 +645,8 @@ Get mapper by id
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -713,8 +713,8 @@ Get mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -779,8 +779,8 @@ Get mappers by name for a specific protocol
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -847,8 +847,8 @@ Create multiple mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -914,8 +914,8 @@ Create a mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -981,8 +981,8 @@ Create multiple mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1048,8 +1048,8 @@ Create a mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1115,8 +1115,8 @@ Create multiple mappers
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1182,8 +1182,8 @@ Create a mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1249,8 +1249,8 @@ Update the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1318,8 +1318,8 @@ Update the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -1387,8 +1387,8 @@ Update the mapper
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {

@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -73,7 +73,7 @@ public partial interface IComponentApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ComponentApi : PetShopApiClientBase, IComponentApi
+public partial class ComponentApi : KeycloakClientApiClientBase, IComponentApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ComponentApi"/> class.
@@ -88,9 +88,9 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task DeleteComponent(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteComponent");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteComponent");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteComponent");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteComponent");
         
         var path_ = new StringBuilder("/{realm}/components/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -109,9 +109,9 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task<ComponentRepresentation> GetComponent(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetComponent");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetComponent");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetComponent");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetComponent");
         
         var path_ = new StringBuilder("/{realm}/components/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -131,7 +131,7 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task<List<ComponentRepresentation>> GetComponents(string realm, string name, string parent, string type, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetComponents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetComponents");
         
         var path_ = new StringBuilder("/{realm}/components"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -155,9 +155,9 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task<List<ComponentTypeRepresentation>> GetSubComponentTypes(string realm, string id, string type, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetSubComponentTypes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetSubComponentTypes");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetSubComponentTypes");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetSubComponentTypes");
         
         var path_ = new StringBuilder("/{realm}/components/{id}/sub-component-types"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -180,7 +180,7 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task PostComponents(string realm, ComponentRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostComponents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostComponents");
         
         var path_ = new StringBuilder("/{realm}/components"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -199,9 +199,9 @@ public partial class ComponentApi : PetShopApiClientBase, IComponentApi
     public async Task PutComponent(string realm, string id, ComponentRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutComponent");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutComponent");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutComponent");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutComponent");
         
         var path_ = new StringBuilder("/{realm}/components/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

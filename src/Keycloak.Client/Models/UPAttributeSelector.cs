@@ -5,7 +5,7 @@ using System.CodeDom.Compiler;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace PetShop.Models;
+namespace Keycloak.Client.Models;
 
 /// <summary>
 /// 

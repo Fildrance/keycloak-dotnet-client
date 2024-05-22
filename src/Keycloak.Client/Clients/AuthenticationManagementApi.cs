@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -302,7 +302,7 @@ public partial interface IAuthenticationManagementApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthenticationManagementApi
+public partial class AuthenticationManagementApi : KeycloakClientApiClientBase, IAuthenticationManagementApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="AuthenticationManagementApi"/> class.
@@ -317,9 +317,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task DeleteConfig(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteConfig");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteConfig");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/config/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -338,9 +338,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task DeleteExecution(string realm, string executionId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteExecution");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteExecution");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling DeleteExecution");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling DeleteExecution");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -359,9 +359,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task DeleteFlow(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteFlow");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteFlow");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteFlow");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteFlow");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -380,9 +380,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task DeleteRequiredAction(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteRequiredAction");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteRequiredAction");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling DeleteRequiredAction");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling DeleteRequiredAction");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -401,9 +401,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<AuthenticatorConfigRepresentation> GetAuthenticationConfig(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetAuthenticationConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetAuthenticationConfig");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetAuthenticationConfig");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetAuthenticationConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/config/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -423,7 +423,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<Object>> GetAuthenticatorProviders(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetAuthenticatorProviders");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetAuthenticatorProviders");
         
         var path_ = new StringBuilder("/{realm}/authentication/authenticator-providers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -442,7 +442,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<Object>> GetClientAuthenticatorProviders(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientAuthenticatorProviders");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientAuthenticatorProviders");
         
         var path_ = new StringBuilder("/{realm}/authentication/client-authenticator-providers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -461,9 +461,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<AuthenticatorConfigInfoRepresentation> GetConfigDescription(string realm, string providerId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetConfigDescription");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetConfigDescription");
         // verify the required parameter 'providerId' is set
-        if (providerId == null) throw new PetShopApiException(400, "Missing required parameter 'providerId' when calling GetConfigDescription");
+        if (providerId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'providerId' when calling GetConfigDescription");
         
         var path_ = new StringBuilder("/{realm}/authentication/config-description/{providerId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -483,9 +483,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task GetExecution(string realm, string executionId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetExecution");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetExecution");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling GetExecution");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling GetExecution");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -504,11 +504,11 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<AuthenticatorConfigRepresentation> GetExecutionConfig(string realm, string executionId, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetExecutionConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetExecutionConfig");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling GetExecutionConfig");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling GetExecutionConfig");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetExecutionConfig");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetExecutionConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}/config/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -529,9 +529,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task GetExecutions(string realm, string flowAlias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetExecutions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetExecutions");
         // verify the required parameter 'flowAlias' is set
-        if (flowAlias == null) throw new PetShopApiException(400, "Missing required parameter 'flowAlias' when calling GetExecutions");
+        if (flowAlias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'flowAlias' when calling GetExecutions");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{flowAlias}/executions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -550,9 +550,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<AuthenticationFlowRepresentation> GetFlow(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetFlow");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetFlow");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetFlow");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetFlow");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -572,7 +572,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<AuthenticationFlowRepresentation>> GetFlows(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetFlows");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetFlows");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -591,7 +591,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<Object>> GetFormActionProviders(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetFormActionProviders");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetFormActionProviders");
         
         var path_ = new StringBuilder("/{realm}/authentication/form-action-providers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -610,7 +610,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<Object>> GetFormProviders(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetFormProviders");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetFormProviders");
         
         var path_ = new StringBuilder("/{realm}/authentication/form-providers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -629,7 +629,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<Dictionary<string, ConfigPropertyRepresentation>> GetPerClientConfigDescription(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetPerClientConfigDescription");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetPerClientConfigDescription");
         
         var path_ = new StringBuilder("/{realm}/authentication/per-client-config-description"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -648,9 +648,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<RequiredActionProviderRepresentation> GetRequiredAction(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRequiredAction");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRequiredAction");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetRequiredAction");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetRequiredAction");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -670,7 +670,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<RequiredActionProviderRepresentation>> GetRequiredActions(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetRequiredActions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetRequiredActions");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -689,7 +689,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task<List<string>> GetUnregisteredRequiredActions(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUnregisteredRequiredActions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUnregisteredRequiredActions");
         
         var path_ = new StringBuilder("/{realm}/authentication/unregistered-required-actions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -708,7 +708,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostAuthenticationConfig(string realm, AuthenticatorConfigRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostAuthenticationConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostAuthenticationConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/config"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -727,9 +727,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostCopy(string realm, string flowAlias, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostCopy");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostCopy");
         // verify the required parameter 'flowAlias' is set
-        if (flowAlias == null) throw new PetShopApiException(400, "Missing required parameter 'flowAlias' when calling PostCopy");
+        if (flowAlias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'flowAlias' when calling PostCopy");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{flowAlias}/copy"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -749,9 +749,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostExecution(string realm, string flowAlias, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostExecution");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostExecution");
         // verify the required parameter 'flowAlias' is set
-        if (flowAlias == null) throw new PetShopApiException(400, "Missing required parameter 'flowAlias' when calling PostExecution");
+        if (flowAlias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'flowAlias' when calling PostExecution");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{flowAlias}/executions/execution"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -771,9 +771,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostExecutionConfig(string realm, string executionId, AuthenticatorConfigRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostExecutionConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostExecutionConfig");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling PostExecutionConfig");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling PostExecutionConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}/config"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -793,9 +793,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostExecutionLowerPriority(string realm, string executionId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostExecutionLowerPriority");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostExecutionLowerPriority");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling PostExecutionLowerPriority");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling PostExecutionLowerPriority");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}/lower-priority"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -814,9 +814,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostExecutionRaisePriority(string realm, string executionId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostExecutionRaisePriority");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostExecutionRaisePriority");
         // verify the required parameter 'executionId' is set
-        if (executionId == null) throw new PetShopApiException(400, "Missing required parameter 'executionId' when calling PostExecutionRaisePriority");
+        if (executionId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'executionId' when calling PostExecutionRaisePriority");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions/{executionId}/raise-priority"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -835,7 +835,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostExecutions(string realm, AuthenticationExecutionRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostExecutions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostExecutions");
         
         var path_ = new StringBuilder("/{realm}/authentication/executions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -854,9 +854,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostFlow(string realm, string flowAlias, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostFlow");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostFlow");
         // verify the required parameter 'flowAlias' is set
-        if (flowAlias == null) throw new PetShopApiException(400, "Missing required parameter 'flowAlias' when calling PostFlow");
+        if (flowAlias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'flowAlias' when calling PostFlow");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{flowAlias}/executions/flow"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -876,7 +876,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostFlows(string realm, AuthenticationFlowRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostFlows");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostFlows");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -895,7 +895,7 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostRegisterRequiredAction(string realm, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostRegisterRequiredAction");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostRegisterRequiredAction");
         
         var path_ = new StringBuilder("/{realm}/authentication/register-required-action"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -914,9 +914,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostRequiredActionLowerPriority(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostRequiredActionLowerPriority");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostRequiredActionLowerPriority");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PostRequiredActionLowerPriority");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PostRequiredActionLowerPriority");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions/{alias}/lower-priority"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -935,9 +935,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PostRequiredActionRaisePriority(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostRequiredActionRaisePriority");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostRequiredActionRaisePriority");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PostRequiredActionRaisePriority");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PostRequiredActionRaisePriority");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions/{alias}/raise-priority"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -956,9 +956,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PutAuthenticationConfig(string realm, string id, AuthenticatorConfigRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutAuthenticationConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutAuthenticationConfig");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutAuthenticationConfig");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutAuthenticationConfig");
         
         var path_ = new StringBuilder("/{realm}/authentication/config/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -978,9 +978,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PutExecutions(string realm, string flowAlias, AuthenticationExecutionInfoRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutExecutions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutExecutions");
         // verify the required parameter 'flowAlias' is set
-        if (flowAlias == null) throw new PetShopApiException(400, "Missing required parameter 'flowAlias' when calling PutExecutions");
+        if (flowAlias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'flowAlias' when calling PutExecutions");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{flowAlias}/executions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1000,9 +1000,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PutFlow(string realm, string id, AuthenticationFlowRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutFlow");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutFlow");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutFlow");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutFlow");
         
         var path_ = new StringBuilder("/{realm}/authentication/flows/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1022,9 +1022,9 @@ public partial class AuthenticationManagementApi : PetShopApiClientBase, IAuthen
     public async Task PutRequiredAction(string realm, string alias, RequiredActionProviderRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutRequiredAction");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutRequiredAction");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PutRequiredAction");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PutRequiredAction");
         
         var path_ = new StringBuilder("/{realm}/authentication/required-actions/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

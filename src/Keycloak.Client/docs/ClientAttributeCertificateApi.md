@@ -25,8 +25,8 @@ Get key info
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -93,8 +93,8 @@ Get a keystore file for the client, containing private key and public certificat
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -163,8 +163,8 @@ Generate a new certificate with new key pair
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -231,8 +231,8 @@ Generate a new keypair and certificate, and get the private key file  Generates 
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -301,8 +301,8 @@ Upload certificate and eventually private key
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {
@@ -369,8 +369,8 @@ Upload only certificate, not private key
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -43,7 +43,7 @@ public partial interface IAttackDetectionApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class AttackDetectionApi : PetShopApiClientBase, IAttackDetectionApi
+public partial class AttackDetectionApi : KeycloakClientApiClientBase, IAttackDetectionApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="AttackDetectionApi"/> class.
@@ -58,9 +58,9 @@ public partial class AttackDetectionApi : PetShopApiClientBase, IAttackDetection
     public async Task DeleteBruteForceUser(string realm, string userId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteBruteForceUser");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteBruteForceUser");
         // verify the required parameter 'userId' is set
-        if (userId == null) throw new PetShopApiException(400, "Missing required parameter 'userId' when calling DeleteBruteForceUser");
+        if (userId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'userId' when calling DeleteBruteForceUser");
         
         var path_ = new StringBuilder("/{realm}/attack-detection/brute-force/users/{userId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -79,7 +79,7 @@ public partial class AttackDetectionApi : PetShopApiClientBase, IAttackDetection
     public async Task DeleteUsers(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteUsers");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteUsers");
         
         var path_ = new StringBuilder("/{realm}/attack-detection/brute-force/users"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -97,9 +97,9 @@ public partial class AttackDetectionApi : PetShopApiClientBase, IAttackDetection
     public async Task<Dictionary<string, Object>> GetBruteForceUser(string realm, string userId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetBruteForceUser");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetBruteForceUser");
         // verify the required parameter 'userId' is set
-        if (userId == null) throw new PetShopApiException(400, "Missing required parameter 'userId' when calling GetBruteForceUser");
+        if (userId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'userId' when calling GetBruteForceUser");
         
         var path_ = new StringBuilder("/{realm}/attack-detection/brute-force/users/{userId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

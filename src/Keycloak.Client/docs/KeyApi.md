@@ -18,8 +18,8 @@ Method | HTTP request | Description
 using System;
 using System.Diagnostics;
 using ;
-using PetShop;
-using PetShop.Models;
+using Keycloak.Client;
+using Keycloak.Client.Models;
 
 namespace Example
 {

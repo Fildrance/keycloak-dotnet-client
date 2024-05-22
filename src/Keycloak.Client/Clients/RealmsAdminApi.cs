@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -372,7 +372,7 @@ public partial interface IRealmsAdminApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
+public partial class RealmsAdminApi : KeycloakClientApiClientBase, IRealmsAdminApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="RealmsAdminApi"/> class.
@@ -387,7 +387,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteAdminEvents(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteAdminEvents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteAdminEvents");
         
         var path_ = new StringBuilder("/{realm}/admin-events"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -405,7 +405,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteByRealm(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteByRealm");
         
         var path_ = new StringBuilder("/{realm}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -423,9 +423,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteDefaultDefaultClientScope(string realm, string clientScopeId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultDefaultClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultDefaultClientScope");
         // verify the required parameter 'clientScopeId' is set
-        if (clientScopeId == null) throw new PetShopApiException(400, "Missing required parameter 'clientScopeId' when calling DeleteDefaultDefaultClientScope");
+        if (clientScopeId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'clientScopeId' when calling DeleteDefaultDefaultClientScope");
         
         var path_ = new StringBuilder("/{realm}/default-default-client-scopes/{clientScopeId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -444,9 +444,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteDefaultGroup(string realm, string groupId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultGroup");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultGroup");
         // verify the required parameter 'groupId' is set
-        if (groupId == null) throw new PetShopApiException(400, "Missing required parameter 'groupId' when calling DeleteDefaultGroup");
+        if (groupId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'groupId' when calling DeleteDefaultGroup");
         
         var path_ = new StringBuilder("/{realm}/default-groups/{groupId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -465,9 +465,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteDefaultOptionalClientScope(string realm, string clientScopeId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultOptionalClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteDefaultOptionalClientScope");
         // verify the required parameter 'clientScopeId' is set
-        if (clientScopeId == null) throw new PetShopApiException(400, "Missing required parameter 'clientScopeId' when calling DeleteDefaultOptionalClientScope");
+        if (clientScopeId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'clientScopeId' when calling DeleteDefaultOptionalClientScope");
         
         var path_ = new StringBuilder("/{realm}/default-optional-client-scopes/{clientScopeId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -486,7 +486,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteEvents(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteEvents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteEvents");
         
         var path_ = new StringBuilder("/{realm}/events"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -504,9 +504,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteLocalizationByRealmByLocale(string realm, string locale, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteLocalizationByRealmByLocale");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteLocalizationByRealmByLocale");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling DeleteLocalizationByRealmByLocale");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling DeleteLocalizationByRealmByLocale");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -525,11 +525,11 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteLocalizationByRealmByLocaleByKey(string realm, string locale, string key, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteLocalizationByRealmByLocaleByKey");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteLocalizationByRealmByLocaleByKey");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling DeleteLocalizationByRealmByLocaleByKey");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling DeleteLocalizationByRealmByLocaleByKey");
         // verify the required parameter 'key' is set
-        if (key == null) throw new PetShopApiException(400, "Missing required parameter 'key' when calling DeleteLocalizationByRealmByLocaleByKey");
+        if (key == null) throw new KeycloakClientApiException(400, "Missing required parameter 'key' when calling DeleteLocalizationByRealmByLocaleByKey");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}/{key}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -549,9 +549,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task DeleteSession(string realm, string session, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteSession");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteSession");
         // verify the required parameter 'session' is set
-        if (session == null) throw new PetShopApiException(400, "Missing required parameter 'session' when calling DeleteSession");
+        if (session == null) throw new KeycloakClientApiException(400, "Missing required parameter 'session' when calling DeleteSession");
         
         var path_ = new StringBuilder("/{realm}/sessions/{session}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -589,7 +589,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<AdminEventRepresentation>> GetAdminEvents(string realm, string authClient, string authIpAddress, string authRealm, string authUser, string dateFrom, string dateTo, string first, string max, string operationTypes, string resourcePath, string resourceTypes, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetAdminEvents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetAdminEvents");
         
         var path_ = new StringBuilder("/{realm}/admin-events"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -621,7 +621,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<RealmRepresentation> GetByRealm(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetByRealm");
         
         var path_ = new StringBuilder("/{realm}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -640,7 +640,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<string>> GetClientSessionStats(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientSessionStats");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientSessionStats");
         
         var path_ = new StringBuilder("/{realm}/client-session-stats"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -659,7 +659,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<string>> GetCredentialRegistrators(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetCredentialRegistrators");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetCredentialRegistrators");
         
         var path_ = new StringBuilder("/{realm}/credential-registrators"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -678,7 +678,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<ClientScopeRepresentation>> GetDefaultDefaultClientScopes(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetDefaultDefaultClientScopes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetDefaultDefaultClientScopes");
         
         var path_ = new StringBuilder("/{realm}/default-default-client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -697,7 +697,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<GroupRepresentation>> GetDefaultGroups(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetDefaultGroups");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetDefaultGroups");
         
         var path_ = new StringBuilder("/{realm}/default-groups"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -716,7 +716,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<ClientScopeRepresentation>> GetDefaultOptionalClientScopes(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetDefaultOptionalClientScopes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetDefaultOptionalClientScopes");
         
         var path_ = new StringBuilder("/{realm}/default-optional-client-scopes"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -735,7 +735,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<EventRepresentation>> GetEvents(string realm, string _client, string dateFrom, string dateTo, string first, string ipAddress, string max, string type, string user, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetEvents");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetEvents");
         
         var path_ = new StringBuilder("/{realm}/events"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -764,7 +764,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<RealmEventsConfigRepresentation> GetEventsConfig(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetEventsConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetEventsConfig");
         
         var path_ = new StringBuilder("/{realm}/events/config"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -783,9 +783,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<GroupRepresentation> GetGroupByPath(string realm, string path, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupByPath");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupByPath");
         // verify the required parameter 'path' is set
-        if (path == null) throw new PetShopApiException(400, "Missing required parameter 'path' when calling GetGroupByPath");
+        if (path == null) throw new KeycloakClientApiException(400, "Missing required parameter 'path' when calling GetGroupByPath");
         
         var path_ = new StringBuilder("/{realm}/group-by-path/{path}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -805,7 +805,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<List<string>> GetLocalizationByRealm(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealm");
         
         var path_ = new StringBuilder("/{realm}/localization"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -824,9 +824,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<Dictionary<string, string>> GetLocalizationByRealmByLocale(string realm, string locale, string useRealmDefaultLocaleFallback, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealmByLocale");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealmByLocale");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling GetLocalizationByRealmByLocale");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling GetLocalizationByRealmByLocale");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -849,11 +849,11 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<string> GetLocalizationByRealmByLocaleByKey(string realm, string locale, string key, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealmByLocaleByKey");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetLocalizationByRealmByLocaleByKey");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling GetLocalizationByRealmByLocaleByKey");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling GetLocalizationByRealmByLocaleByKey");
         // verify the required parameter 'key' is set
-        if (key == null) throw new PetShopApiException(400, "Missing required parameter 'key' when calling GetLocalizationByRealmByLocaleByKey");
+        if (key == null) throw new KeycloakClientApiException(400, "Missing required parameter 'key' when calling GetLocalizationByRealmByLocaleByKey");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}/{key}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -874,7 +874,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<ClientPoliciesRepresentation> GetPolicies(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetPolicies");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetPolicies");
         
         var path_ = new StringBuilder("/{realm}/client-policies/policies"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -893,7 +893,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<ClientProfilesRepresentation> GetProfiles(string realm, string includeGlobalProfiles, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetProfiles");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetProfiles");
         
         var path_ = new StringBuilder("/{realm}/client-policies/profiles"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -915,7 +915,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<ManagementPermissionReference> GetUsersManagementPermissions(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetUsersManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetUsersManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/users-management-permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -950,7 +950,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<ClientRepresentation> PostClientDescriptionConverter(string realm, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientDescriptionConverter");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostClientDescriptionConverter");
         
         var path_ = new StringBuilder("/{realm}/client-description-converter"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -970,9 +970,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PostLocalization(string realm, string locale, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostLocalization");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostLocalization");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling PostLocalization");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling PostLocalization");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -992,7 +992,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<GlobalRequestResult> PostLogoutAll(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostLogoutAll");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostLogoutAll");
         
         var path_ = new StringBuilder("/{realm}/logout-all"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1011,7 +1011,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PostPartialExport(string realm, string exportClients, string exportGroupsAndRoles, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostPartialExport");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostPartialExport");
         
         var path_ = new StringBuilder("/{realm}/partial-export"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1033,7 +1033,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PostPartialImport(string realm, Object body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostPartialImport");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostPartialImport");
         
         var path_ = new StringBuilder("/{realm}/partialImport"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1052,7 +1052,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<GlobalRequestResult> PostPushRevocationByRealm(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostPushRevocationByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostPushRevocationByRealm");
         
         var path_ = new StringBuilder("/{realm}/push-revocation"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1071,7 +1071,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PostTestSmtpConnection(string realm, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostTestSmtpConnection");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostTestSmtpConnection");
         
         var path_ = new StringBuilder("/{realm}/testSMTPConnection"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1090,7 +1090,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutByRealm(string realm, RealmRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutByRealm");
         
         var path_ = new StringBuilder("/{realm}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1109,9 +1109,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutDefaultDefaultClientScope(string realm, string clientScopeId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutDefaultDefaultClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutDefaultDefaultClientScope");
         // verify the required parameter 'clientScopeId' is set
-        if (clientScopeId == null) throw new PetShopApiException(400, "Missing required parameter 'clientScopeId' when calling PutDefaultDefaultClientScope");
+        if (clientScopeId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'clientScopeId' when calling PutDefaultDefaultClientScope");
         
         var path_ = new StringBuilder("/{realm}/default-default-client-scopes/{clientScopeId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1130,9 +1130,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutDefaultGroup(string realm, string groupId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutDefaultGroup");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutDefaultGroup");
         // verify the required parameter 'groupId' is set
-        if (groupId == null) throw new PetShopApiException(400, "Missing required parameter 'groupId' when calling PutDefaultGroup");
+        if (groupId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'groupId' when calling PutDefaultGroup");
         
         var path_ = new StringBuilder("/{realm}/default-groups/{groupId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1151,9 +1151,9 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutDefaultOptionalClientScope(string realm, string clientScopeId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutDefaultOptionalClientScope");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutDefaultOptionalClientScope");
         // verify the required parameter 'clientScopeId' is set
-        if (clientScopeId == null) throw new PetShopApiException(400, "Missing required parameter 'clientScopeId' when calling PutDefaultOptionalClientScope");
+        if (clientScopeId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'clientScopeId' when calling PutDefaultOptionalClientScope");
         
         var path_ = new StringBuilder("/{realm}/default-optional-client-scopes/{clientScopeId}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1172,7 +1172,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutEventsConfig(string realm, RealmEventsConfigRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutEventsConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutEventsConfig");
         
         var path_ = new StringBuilder("/{realm}/events/config"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1191,11 +1191,11 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutLocalization(string realm, string locale, string key, string body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutLocalization");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutLocalization");
         // verify the required parameter 'locale' is set
-        if (locale == null) throw new PetShopApiException(400, "Missing required parameter 'locale' when calling PutLocalization");
+        if (locale == null) throw new KeycloakClientApiException(400, "Missing required parameter 'locale' when calling PutLocalization");
         // verify the required parameter 'key' is set
-        if (key == null) throw new PetShopApiException(400, "Missing required parameter 'key' when calling PutLocalization");
+        if (key == null) throw new KeycloakClientApiException(400, "Missing required parameter 'key' when calling PutLocalization");
         
         var path_ = new StringBuilder("/{realm}/localization/{locale}/{key}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1216,7 +1216,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutPolicies(string realm, ClientPoliciesRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutPolicies");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutPolicies");
         
         var path_ = new StringBuilder("/{realm}/client-policies/policies"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1235,7 +1235,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task PutProfiles(string realm, ClientProfilesRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutProfiles");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutProfiles");
         
         var path_ = new StringBuilder("/{realm}/client-policies/profiles"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -1254,7 +1254,7 @@ public partial class RealmsAdminApi : PetShopApiClientBase, IRealmsAdminApi
     public async Task<ManagementPermissionReference> PutUsersManagementPermissions(string realm, ManagementPermissionReference body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutUsersManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutUsersManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/users-management-permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

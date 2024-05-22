@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -44,7 +44,7 @@ public partial interface IClientInitialAccessApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientInitialAccessApi : PetShopApiClientBase, IClientInitialAccessApi
+public partial class ClientInitialAccessApi : KeycloakClientApiClientBase, IClientInitialAccessApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientInitialAccessApi"/> class.
@@ -59,9 +59,9 @@ public partial class ClientInitialAccessApi : PetShopApiClientBase, IClientIniti
     public async Task DeleteClientsInitialAcces(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteClientsInitialAcces");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteClientsInitialAcces");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteClientsInitialAcces");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteClientsInitialAcces");
         
         var path_ = new StringBuilder("/{realm}/clients-initial-access/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -80,7 +80,7 @@ public partial class ClientInitialAccessApi : PetShopApiClientBase, IClientIniti
     public async Task<List<ClientInitialAccessPresentation>> GetClientsInitialAccess(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetClientsInitialAccess");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetClientsInitialAccess");
         
         var path_ = new StringBuilder("/{realm}/clients-initial-access"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -99,7 +99,7 @@ public partial class ClientInitialAccessApi : PetShopApiClientBase, IClientIniti
     public async Task<ClientInitialAccessPresentation> PostClientsInitialAccess(string realm, ClientInitialAccessCreatePresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostClientsInitialAccess");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostClientsInitialAccess");
         
         var path_ = new StringBuilder("/{realm}/clients-initial-access"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

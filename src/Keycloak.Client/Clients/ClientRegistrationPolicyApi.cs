@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -28,7 +28,7 @@ public partial interface IClientRegistrationPolicyApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class ClientRegistrationPolicyApi : PetShopApiClientBase, IClientRegistrationPolicyApi
+public partial class ClientRegistrationPolicyApi : KeycloakClientApiClientBase, IClientRegistrationPolicyApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="ClientRegistrationPolicyApi"/> class.
@@ -43,7 +43,7 @@ public partial class ClientRegistrationPolicyApi : PetShopApiClientBase, IClient
     public async Task<List<ComponentTypeRepresentation>> GetProviders(string realm, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetProviders");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetProviders");
         
         var path_ = new StringBuilder("/{realm}/client-registration-policy/providers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

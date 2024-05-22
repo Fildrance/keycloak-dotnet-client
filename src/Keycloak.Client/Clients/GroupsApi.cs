@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -125,7 +125,7 @@ public partial interface IGroupsApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
+public partial class GroupsApi : KeycloakClientApiClientBase, IGroupsApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="GroupsApi"/> class.
@@ -140,9 +140,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task DeleteGroupByRealmById(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteGroupByRealmById");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteGroupByRealmById");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteGroupByRealmById");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteGroupByRealmById");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -161,9 +161,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<List<GroupRepresentation>> GetChildren(string realm, string id, string briefRepresentation, string first, string max, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetChildren");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetChildren");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetChildren");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetChildren");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/children"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -188,9 +188,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<GroupRepresentation> GetGroup(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroup");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroup");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroup");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroup");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -210,9 +210,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<ManagementPermissionReference> GetGroupManagementPermissions(string realm, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupManagementPermissions");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetGroupManagementPermissions");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetGroupManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -232,7 +232,7 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<List<GroupRepresentation>> GetGroupsByRealm(string realm, string briefRepresentation, string exact, string first, string max, string populateHierarchy, string q, string search, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupsByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupsByRealm");
         
         var path_ = new StringBuilder("/{realm}/groups"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -260,7 +260,7 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<Dictionary<string, long?>> GetGroupsCountByRealm(string realm, string search, string top, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetGroupsCountByRealm");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetGroupsCountByRealm");
         
         var path_ = new StringBuilder("/{realm}/groups/count"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -283,9 +283,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<List<UserRepresentation>> GetMembers(string realm, string id, string briefRepresentation, string first, string max, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetMembers");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetMembers");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetMembers");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetMembers");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/members"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -310,9 +310,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task PostChildren(string realm, string id, GroupRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostChildren");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostChildren");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PostChildren");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PostChildren");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/children"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -332,7 +332,7 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task PostGroups(string realm, GroupRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostGroups");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostGroups");
         
         var path_ = new StringBuilder("/{realm}/groups"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -351,9 +351,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task PutGroupByRealmById(string realm, string id, GroupRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutGroupByRealmById");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutGroupByRealmById");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutGroupByRealmById");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutGroupByRealmById");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -373,9 +373,9 @@ public partial class GroupsApi : PetShopApiClientBase, IGroupsApi
     public async Task<ManagementPermissionReference> PutGroupManagementPermissions(string realm, string id, ManagementPermissionReference body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutGroupManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutGroupManagementPermissions");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutGroupManagementPermissions");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutGroupManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/groups/{id}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));

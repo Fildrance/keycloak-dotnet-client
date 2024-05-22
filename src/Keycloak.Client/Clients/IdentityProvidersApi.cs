@@ -5,9 +5,9 @@ using System.Threading;
 using System.Text;
 using System.Threading.Tasks;
 using System.CodeDom.Compiler;
-using PetShop.Models;
+using Keycloak.Client.Models;
 
-namespace PetShop.Clients;
+namespace Keycloak.Client.Clients;
 
 /// <summary>
 /// Represents a collection of functions to interact with the API endpoints
@@ -160,7 +160,7 @@ public partial interface IIdentityProvidersApi
 /// Represents a collection of functions to interact with the API endpoints
 /// </summary>  
 [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvidersApi
+public partial class IdentityProvidersApi : KeycloakClientApiClientBase, IIdentityProvidersApi
 {
     /// <summary>
     /// Initializes a new instance of the <see cref="IdentityProvidersApi"/> class.
@@ -175,9 +175,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task DeleteInstance(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteInstance");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteInstance");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling DeleteInstance");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling DeleteInstance");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -196,11 +196,11 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task DeleteMapper(string realm, string alias, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling DeleteMapper");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling DeleteMapper");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling DeleteMapper");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling DeleteMapper");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling DeleteMapper");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling DeleteMapper");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mappers/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -220,9 +220,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task GetExport(string realm, string alias, string format, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetExport");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetExport");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetExport");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetExport");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/export"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -244,9 +244,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<Object> GetIdentityProviderProvider(string realm, string providerId, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetIdentityProviderProvider");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetIdentityProviderProvider");
         // verify the required parameter 'providerId' is set
-        if (providerId == null) throw new PetShopApiException(400, "Missing required parameter 'providerId' when calling GetIdentityProviderProvider");
+        if (providerId == null) throw new KeycloakClientApiException(400, "Missing required parameter 'providerId' when calling GetIdentityProviderProvider");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/providers/{provider_id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -266,9 +266,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<IdentityProviderRepresentation> GetInstance(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetInstance");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetInstance");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetInstance");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetInstance");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -288,9 +288,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<ManagementPermissionReference> GetInstanceManagementPermissions(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetInstanceManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetInstanceManagementPermissions");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetInstanceManagementPermissions");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetInstanceManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -310,7 +310,7 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<List<IdentityProviderRepresentation>> GetInstances(string realm, string briefRepresentation, string first, string max, string search, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetInstances");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetInstances");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -335,11 +335,11 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<IdentityProviderMapperRepresentation> GetMapper(string realm, string alias, string id, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetMapper");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetMapper");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetMapper");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetMapper");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling GetMapper");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling GetMapper");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mappers/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -360,9 +360,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<Dictionary<string, IdentityProviderMapperTypeRepresentation>> GetMapperTypes(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetMapperTypes");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetMapperTypes");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetMapperTypes");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetMapperTypes");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mapper-types"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -382,9 +382,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<List<IdentityProviderMapperRepresentation>> GetMappers(string realm, string alias, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling GetMappers");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling GetMappers");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling GetMappers");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling GetMappers");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mappers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -404,7 +404,7 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<Dictionary<string, string>> PostImportConfig(string realm, Object body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostImportConfig");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostImportConfig");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/import-config"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -424,7 +424,7 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task PostInstances(string realm, IdentityProviderRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostInstances");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostInstances");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -443,9 +443,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task PostMappers(string realm, string alias, IdentityProviderMapperRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PostMappers");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PostMappers");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PostMappers");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PostMappers");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mappers"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -465,9 +465,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task PutInstance(string realm, string alias, IdentityProviderRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutInstance");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutInstance");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PutInstance");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PutInstance");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -487,9 +487,9 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task<ManagementPermissionReference> PutInstanceManagementPermissions(string realm, string alias, ManagementPermissionReference body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutInstanceManagementPermissions");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutInstanceManagementPermissions");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PutInstanceManagementPermissions");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PutInstanceManagementPermissions");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/management/permissions"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
@@ -510,11 +510,11 @@ public partial class IdentityProvidersApi : PetShopApiClientBase, IIdentityProvi
     public async Task PutMapper(string realm, string alias, string id, IdentityProviderMapperRepresentation body, CancellationToken ct)
     {
         // verify the required parameter 'realm' is set
-        if (realm == null) throw new PetShopApiException(400, "Missing required parameter 'realm' when calling PutMapper");
+        if (realm == null) throw new KeycloakClientApiException(400, "Missing required parameter 'realm' when calling PutMapper");
         // verify the required parameter 'alias' is set
-        if (alias == null) throw new PetShopApiException(400, "Missing required parameter 'alias' when calling PutMapper");
+        if (alias == null) throw new KeycloakClientApiException(400, "Missing required parameter 'alias' when calling PutMapper");
         // verify the required parameter 'id' is set
-        if (id == null) throw new PetShopApiException(400, "Missing required parameter 'id' when calling PutMapper");
+        if (id == null) throw new KeycloakClientApiException(400, "Missing required parameter 'id' when calling PutMapper");
         
         var path_ = new StringBuilder("/{realm}/identity-provider/instances/{alias}/mappers/{id}"); 
         path_ = path_.Replace("{realm}", ParameterToString(realm));
