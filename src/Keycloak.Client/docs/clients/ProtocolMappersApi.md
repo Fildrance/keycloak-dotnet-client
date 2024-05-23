@@ -49,9 +49,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -83,10 +81,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -116,9 +110,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -150,10 +142,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -183,9 +171,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -217,10 +203,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -250,9 +232,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -285,10 +265,6 @@ Name | Type | Description  | Notes
 
 [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -318,9 +294,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -351,10 +325,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -384,9 +354,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
@@ -419,10 +387,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -452,9 +416,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -487,10 +449,6 @@ Name | Type | Description  | Notes
 
 [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -520,9 +478,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -553,10 +509,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -586,9 +538,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
@@ -621,10 +571,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -654,9 +600,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -689,10 +633,6 @@ Name | Type | Description  | Notes
 
 [**ProtocolMapperRepresentation**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -722,9 +662,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -755,10 +693,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -788,9 +722,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var protocol = protocol_example;  // string | 
@@ -823,10 +755,6 @@ Name | Type | Description  | Notes
 
 [**List<ProtocolMapperRepresentation>**](ProtocolMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -856,9 +784,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -890,10 +816,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -923,9 +845,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -957,10 +877,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -990,9 +906,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -1024,10 +938,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1057,9 +967,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -1091,10 +999,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1124,9 +1028,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -1158,10 +1060,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1191,9 +1089,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ProtocolMapperRepresentation(); // ProtocolMapperRepresentation | ProtocolMapperRepresentation (optional) 
@@ -1225,10 +1121,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1258,9 +1150,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -1294,10 +1184,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1327,9 +1213,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -1363,10 +1247,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1396,9 +1276,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ProtocolMappersApi();
+            var apiInstance = new ProtocolMappersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id1 = id1_example;  // string | 
             var id2 = id2_example;  // string | 
@@ -1431,10 +1309,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

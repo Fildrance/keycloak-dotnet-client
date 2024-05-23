@@ -1,17 +1,19 @@
-# .KeyApi
+# .ClientRegistrationPolicyApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetKeys**](KeyApi.md#getkeys) | **Get** /{realm}/keys | 
+[**GetProviders**](ClientRegistrationPolicyApi.md#getproviders) | **Get** /{realm}/client-registration-policy/providers | 
 
 
-<a name="getkeys"></a>
-# **GetKeys**
-> KeysMetadataRepresentation GetKeys (string realm, CancellationToken ct)
+<a name="getproviders"></a>
+# **GetProviders**
+> List<ComponentTypeRepresentation> GetProviders (string realm, CancellationToken ct)
 
 
+
+Base path for retrieve providers with the configProperties properly filled
 
 ### Example
 ```csharp
@@ -23,24 +25,22 @@ using Keycloak.Client.Models;
 
 namespace Example
 {
-    public class GetKeysExample
+    public class GetProvidersExample
     {
         public void main()
         {
-            
-
-            var apiInstance = new KeyApi();
+            var apiInstance = new ClientRegistrationPolicyApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                KeysMetadataRepresentation result = apiInstance.GetKeys(realm, ct);
+                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetProviders(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling KeyApi.GetKeys: " + e.Message );
+                Debug.Print("Exception when calling ClientRegistrationPolicyApi.GetProviders: " + e.Message );
             }
         }
     }
@@ -56,11 +56,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**KeysMetadataRepresentation**](KeysMetadataRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
+[**List<ComponentTypeRepresentation>**](ComponentTypeRepresentation.md)
 
 ### HTTP request headers
 

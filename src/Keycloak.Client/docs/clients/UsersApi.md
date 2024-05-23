@@ -61,9 +61,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | Client id
@@ -95,10 +93,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -128,9 +122,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | 
@@ -162,10 +154,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -195,9 +183,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var provider = provider_example;  // string | Social login provider id
@@ -229,10 +215,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -262,9 +244,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -294,10 +274,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -325,9 +301,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var groupId = groupId_example;  // string | 
@@ -359,10 +333,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -392,9 +362,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -425,10 +393,6 @@ Name | Type | Description  | Notes
 
 **List<string>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -458,9 +422,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -491,10 +453,6 @@ Name | Type | Description  | Notes
 
 **List<Object>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -522,9 +480,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -555,10 +511,6 @@ Name | Type | Description  | Notes
 
 [**List<CredentialRepresentation>**](CredentialRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -588,9 +540,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -621,10 +571,6 @@ Name | Type | Description  | Notes
 
 [**List<FederatedIdentityRepresentation>**](FederatedIdentityRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -652,9 +598,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -682,10 +626,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UserProfileMetadata**](UserProfileMetadata.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -716,9 +656,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientUuid = clientUuid_example;  // string | 
@@ -751,10 +689,6 @@ Name | Type | Description  | Notes
 
 [**List<UserSessionRepresentation>**](UserSessionRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -782,9 +716,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -812,10 +744,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**UPConfig**](UPConfig.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -846,9 +774,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -879,10 +805,6 @@ Name | Type | Description  | Notes
 
 [**List<UserSessionRepresentation>**](UserSessionRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -912,9 +834,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var userProfileMetadata = userProfileMetadata_example;  // string | Indicates if the user profile metadata should be added to the response (optional) 
@@ -947,10 +867,6 @@ Name | Type | Description  | Notes
 
 [**UserRepresentation**](UserRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -978,9 +894,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
@@ -1019,10 +933,6 @@ Name | Type | Description  | Notes
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1050,9 +960,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var search = search_example;  // string |  (optional) 
@@ -1085,10 +993,6 @@ Name | Type | Description  | Notes
 
 **Dictionary<string, long?>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1118,9 +1022,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var briefRepresentation = briefRepresentation_example;  // string | Boolean which defines whether brief representations are returned (default: false) (optional) 
             var email = email_example;  // string | A String contained in email, or the complete email, if param &quot;exact&quot; is true (optional) 
@@ -1177,10 +1079,6 @@ Name | Type | Description  | Notes
 
 [**List<UserRepresentation>**](UserRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1210,9 +1108,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var email = email_example;  // string | email filter (optional) 
             var emailVerified = emailVerified_example;  // string |  (optional) 
@@ -1257,10 +1153,6 @@ Name | Type | Description  | Notes
 
 **int?**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1290,9 +1182,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var provider = provider_example;  // string | Social login provider id
@@ -1324,10 +1214,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1357,9 +1243,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1390,10 +1274,6 @@ Name | Type | Description  | Notes
 
 **Dictionary<string, Object>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1423,9 +1303,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1454,10 +1332,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1488,9 +1362,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | The credential to move
@@ -1524,10 +1396,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1557,9 +1425,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | The credential to move
@@ -1591,10 +1457,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1624,9 +1486,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1655,10 +1515,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1689,9 +1545,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new string(); // string | [string] (optional) 
@@ -1723,10 +1577,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1756,9 +1606,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new string(); // string | [string] (optional) 
@@ -1796,10 +1644,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1827,9 +1671,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new UPConfig(); // UPConfig | UPConfig (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1860,10 +1702,6 @@ Name | Type | Description  | Notes
 
 [**UPConfig**](UPConfig.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1893,9 +1731,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new CredentialRepresentation(); // CredentialRepresentation | CredentialRepresentation (optional) 
@@ -1927,10 +1763,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1960,9 +1792,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientId = clientId_example;  // string | client id (optional) 
@@ -1996,10 +1826,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2029,9 +1855,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var clientId = clientId_example;  // string | Client id (optional) 
@@ -2065,10 +1889,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2098,9 +1918,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new UserRepresentation(); // UserRepresentation | UserRepresentation (optional) 
@@ -2132,10 +1950,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2163,9 +1977,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var groupId = groupId_example;  // string | 
@@ -2197,10 +2009,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2230,9 +2038,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new UsersApi();
+            var apiInstance = new UsersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var credentialId = credentialId_example;  // string | 
@@ -2265,10 +2071,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

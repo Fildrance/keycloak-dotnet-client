@@ -34,9 +34,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -69,10 +67,6 @@ Name | Type | Description  | Notes
 
 [**CertificateRepresentation**](CertificateRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -102,9 +96,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -139,10 +131,6 @@ Name | Type | Description  | Notes
 
 **byte[]**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -172,9 +160,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -207,10 +193,6 @@ Name | Type | Description  | Notes
 
 [**CertificateRepresentation**](CertificateRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -240,9 +222,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -277,10 +257,6 @@ Name | Type | Description  | Notes
 
 **byte[]**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -310,9 +286,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -345,10 +319,6 @@ Name | Type | Description  | Notes
 
 [**CertificateRepresentation**](CertificateRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -378,9 +348,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientAttributeCertificateApi();
+            var apiInstance = new ClientAttributeCertificateApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var attr = attr_example;  // string | 
@@ -412,10 +380,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**CertificateRepresentation**](CertificateRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

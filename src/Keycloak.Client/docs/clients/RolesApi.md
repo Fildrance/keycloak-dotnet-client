@@ -56,9 +56,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -90,10 +88,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -123,9 +117,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -159,10 +151,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -192,9 +180,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -223,10 +209,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -257,9 +239,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -291,10 +271,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -324,9 +300,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -359,10 +333,6 @@ Name | Type | Description  | Notes
 
 [**RoleRepresentation**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -392,9 +362,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -427,10 +395,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -460,9 +424,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -497,10 +459,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -530,9 +488,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -565,10 +521,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -598,9 +550,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | the role name.
@@ -639,10 +589,6 @@ Name | Type | Description  | Notes
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -672,9 +618,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | 
@@ -707,10 +651,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -740,9 +680,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | the role name.
@@ -779,10 +717,6 @@ Name | Type | Description  | Notes
 
 [**List<UserRepresentation>**](UserRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -812,9 +746,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
@@ -853,10 +785,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -886,9 +814,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -919,10 +845,6 @@ Name | Type | Description  | Notes
 
 [**RoleRepresentation**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -952,9 +874,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -985,10 +905,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1018,9 +934,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var clientUuid = clientUuid_example;  // string | 
@@ -1053,10 +967,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1086,9 +996,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1119,10 +1027,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1152,9 +1056,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | the role name.
             var briefRepresentation = briefRepresentation_example;  // string | if false, return a full representation of the {@code GroupRepresentation} objects. (optional) 
@@ -1191,10 +1093,6 @@ Name | Type | Description  | Notes
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1224,9 +1122,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1257,10 +1153,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1290,9 +1182,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | the role name.
             var first = first_example;  // string | first result to return. Ignored if negative or {@code null}. (optional) 
@@ -1327,10 +1217,6 @@ Name | Type | Description  | Notes
 
 [**List<UserRepresentation>**](UserRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1360,9 +1246,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
             var first = first_example;  // string |  (optional) 
@@ -1399,10 +1283,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1432,9 +1312,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -1468,10 +1346,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1501,9 +1375,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -1535,10 +1407,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1568,9 +1436,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -1602,10 +1468,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1635,9 +1497,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1666,10 +1526,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1700,9 +1556,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | role's name (not id!)
@@ -1736,10 +1590,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1769,9 +1619,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var roleName = roleName_example;  // string | 
@@ -1806,10 +1654,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1839,9 +1683,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | role's name (not id!)
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -1873,10 +1715,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1906,9 +1744,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RolesApi();
+            var apiInstance = new RolesApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var roleName = roleName_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
@@ -1940,10 +1776,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

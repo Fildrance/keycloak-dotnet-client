@@ -38,9 +38,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -74,10 +72,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -107,9 +101,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -143,10 +135,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -176,9 +164,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -211,10 +197,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -244,9 +226,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -279,10 +259,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -312,9 +288,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -349,10 +323,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -382,9 +352,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -417,10 +385,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -450,9 +414,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -485,10 +447,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -518,9 +476,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -555,10 +511,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -588,9 +540,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -624,10 +574,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -657,9 +603,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRoleMappingsApi();
+            var apiInstance = new ClientRoleMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -692,10 +636,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
