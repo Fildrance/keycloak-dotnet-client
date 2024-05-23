@@ -1,19 +1,17 @@
-# .ClientRegistrationPolicyApi
+# .KeyApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**GetProviders**](ClientRegistrationPolicyApi.md#getproviders) | **Get** /{realm}/client-registration-policy/providers | 
+[**GetKeys**](KeyApi.md#getkeys) | **Get** /{realm}/keys | 
 
 
-<a name="getproviders"></a>
-# **GetProviders**
-> List<ComponentTypeRepresentation> GetProviders (string realm, CancellationToken ct)
+<a name="getkeys"></a>
+# **GetKeys**
+> KeysMetadataRepresentation GetKeys (string realm, CancellationToken ct)
 
 
-
-Base path for retrieve providers with the configProperties properly filled
 
 ### Example
 ```csharp
@@ -25,24 +23,22 @@ using Keycloak.Client.Models;
 
 namespace Example
 {
-    public class GetProvidersExample
+    public class GetKeysExample
     {
         public void main()
         {
-            
-
-            var apiInstance = new ClientRegistrationPolicyApi();
+            var apiInstance = new KeyApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                List&lt;ComponentTypeRepresentation&gt; result = apiInstance.GetProviders(realm, ct);
+                KeysMetadataRepresentation result = apiInstance.GetKeys(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling ClientRegistrationPolicyApi.GetProviders: " + e.Message );
+                Debug.Print("Exception when calling KeyApi.GetKeys: " + e.Message );
             }
         }
     }
@@ -58,11 +54,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**List<ComponentTypeRepresentation>**](ComponentTypeRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
+[**KeysMetadataRepresentation**](KeysMetadataRepresentation.md)
 
 ### HTTP request headers
 

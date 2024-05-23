@@ -61,9 +61,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -97,10 +95,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -130,9 +124,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -164,10 +156,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -197,9 +185,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -233,10 +219,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -266,9 +248,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -300,10 +280,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -333,9 +309,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -369,10 +343,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -402,9 +372,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -436,10 +404,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -469,9 +433,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -502,10 +464,6 @@ Name | Type | Description  | Notes
 
 [**MappingsRepresentation**](MappingsRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -535,9 +493,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -570,10 +526,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -603,9 +555,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -638,10 +588,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -671,9 +617,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -708,10 +652,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -741,9 +681,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -774,10 +712,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -807,9 +741,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -840,10 +772,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -873,9 +801,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
@@ -908,10 +834,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -941,9 +863,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -974,10 +894,6 @@ Name | Type | Description  | Notes
 
 [**MappingsRepresentation**](MappingsRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1007,9 +923,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1042,10 +956,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1075,9 +985,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1110,10 +1018,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1143,9 +1047,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1180,10 +1082,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1213,9 +1111,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1246,10 +1142,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1279,9 +1171,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1312,10 +1202,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1345,9 +1231,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
@@ -1380,10 +1264,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1413,9 +1293,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1446,10 +1324,6 @@ Name | Type | Description  | Notes
 
 [**MappingsRepresentation**](MappingsRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1479,9 +1353,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1514,10 +1386,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1547,9 +1415,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1582,10 +1448,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1615,9 +1477,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1652,10 +1512,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1685,9 +1541,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1718,10 +1572,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1751,9 +1601,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1784,10 +1632,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1817,9 +1661,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | if false, return roles with their attributes (optional) 
@@ -1852,10 +1694,6 @@ Name | Type | Description  | Notes
 
 [**List<RoleRepresentation>**](RoleRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1885,9 +1723,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -1921,10 +1757,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1954,9 +1786,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -1988,10 +1818,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2021,9 +1847,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -2057,10 +1881,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2090,9 +1910,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -2124,10 +1942,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2157,9 +1971,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var _client = _client_example;  // string | 
@@ -2193,10 +2005,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2226,9 +2034,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ScopeMappingsApi();
+            var apiInstance = new ScopeMappingsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new RoleRepresentation(); // RoleRepresentation | RoleRepresentation (optional) 
@@ -2259,10 +2065,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

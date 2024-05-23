@@ -44,9 +44,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -75,10 +73,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -109,9 +103,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var id = id_example;  // string | Mapper id
@@ -143,10 +135,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -176,9 +164,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var format = format_example;  // string | Format to use (optional) 
@@ -210,10 +196,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -243,9 +225,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var providerId = providerId_example;  // string | The provider id to get the factory
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -276,10 +256,6 @@ Name | Type | Description  | Notes
 
 **Object**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -309,9 +285,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -342,10 +316,6 @@ Name | Type | Description  | Notes
 
 [**IdentityProviderRepresentation**](IdentityProviderRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -375,9 +345,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -408,10 +376,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -441,9 +405,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var briefRepresentation = briefRepresentation_example;  // string | Boolean which defines whether brief representations are returned (default: false) (optional) 
             var first = first_example;  // string | Pagination offset (optional) 
@@ -480,10 +442,6 @@ Name | Type | Description  | Notes
 
 [**List<IdentityProviderRepresentation>**](IdentityProviderRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -513,9 +471,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var id = id_example;  // string | Mapper id
@@ -548,10 +504,6 @@ Name | Type | Description  | Notes
 
 [**IdentityProviderMapperRepresentation**](IdentityProviderMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -581,9 +533,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -614,10 +564,6 @@ Name | Type | Description  | Notes
 
 [**Dictionary<string, IdentityProviderMapperTypeRepresentation>**](IdentityProviderMapperTypeRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -647,9 +593,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -680,10 +624,6 @@ Name | Type | Description  | Notes
 
 [**List<IdentityProviderMapperRepresentation>**](IdentityProviderMapperRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -713,9 +653,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new Object(); // Object | [AnyType] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -746,10 +684,6 @@ Name | Type | Description  | Notes
 
 **Dictionary<string, string>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -779,9 +713,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new IdentityProviderRepresentation(); // IdentityProviderRepresentation | IdentityProviderRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -810,10 +742,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -844,9 +772,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var body = new IdentityProviderMapperRepresentation(); // IdentityProviderMapperRepresentation | IdentityProviderMapperRepresentation (optional) 
@@ -878,10 +804,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -911,9 +833,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var body = new IdentityProviderRepresentation(); // IdentityProviderRepresentation | IdentityProviderRepresentation (optional) 
@@ -945,10 +865,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -978,9 +894,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
@@ -1013,10 +927,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1046,9 +956,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new IdentityProvidersApi();
+            var apiInstance = new IdentityProvidersApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | 
             var id = id_example;  // string | Mapper id
@@ -1081,10 +989,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

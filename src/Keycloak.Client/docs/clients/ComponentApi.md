@@ -32,9 +32,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -64,10 +62,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -95,9 +89,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -128,10 +120,6 @@ Name | Type | Description  | Notes
 
 [**ComponentRepresentation**](ComponentRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -159,9 +147,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var name = name_example;  // string |  (optional) 
             var parent = parent_example;  // string |  (optional) 
@@ -196,10 +182,6 @@ Name | Type | Description  | Notes
 
 [**List<ComponentRepresentation>**](ComponentRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -229,9 +211,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var type = type_example;  // string |  (optional) 
@@ -264,10 +244,6 @@ Name | Type | Description  | Notes
 
 [**List<ComponentTypeRepresentation>**](ComponentTypeRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -295,9 +271,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ComponentRepresentation(); // ComponentRepresentation | ComponentRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -327,10 +301,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -358,9 +328,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new ComponentApi();
+            var apiInstance = new ComponentApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ComponentRepresentation(); // ComponentRepresentation | ComponentRepresentation (optional) 
@@ -391,10 +359,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

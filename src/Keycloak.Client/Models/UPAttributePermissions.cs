@@ -5,39 +5,40 @@ using System.CodeDom.Compiler;
 using System.Text;
 using System.Text.Json.Serialization;
 
-namespace Keycloak.Client.Models;
-
-/// <summary>
-/// 
-/// </summary>
-[GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
-public partial class UPAttributePermissions 
+namespace Keycloak.Client.Models
 {
     /// <summary>
-    /// Gets or Sets View
+    /// 
     /// </summary>
-    [JsonPropertyName("view")]
-    public List<string> View { get; set; }
-    
-    /// <summary>
-    /// Gets or Sets Edit
-    /// </summary>
-    [JsonPropertyName("edit")]
-    public List<string> Edit { get; set; }
-    
-    
-    /// <summary>
-    /// Get the string presentation of the object
-    /// </summary>
-    /// <returns>String presentation of the object</returns>
-    public override string ToString()  
+    [GeneratedCode("swagger-codegen", "3.0.56-SNAPSHOT")]
+    public partial class UPAttributePermissions 
     {
-      var sb = new StringBuilder();
-      sb.Append("class UPAttributePermissions {\n");
-      sb.Append("  View: ").Append(View).Append("\n");
-      sb.Append("  Edit: ").Append(Edit).Append("\n");
-      sb.Append("}\n");
-      return sb.ToString();
+        /// <summary>
+        /// Gets or Sets View
+        /// </summary>
+        [JsonPropertyName("view")]
+        public List<string> View { get; set; }
+        
+        /// <summary>
+        /// Gets or Sets Edit
+        /// </summary>
+        [JsonPropertyName("edit")]
+        public List<string> Edit { get; set; }
+        
+        
+        /// <summary>
+        /// Get the string presentation of the object
+        /// </summary>
+        /// <returns>String presentation of the object</returns>
+        public override string ToString()  
+        {
+          var sb = new StringBuilder();
+          sb.Append("class UPAttributePermissions {\n");
+          sb.Append("  View: ").Append(View).Append("\n");
+          sb.Append("  Edit: ").Append(Edit).Append("\n");
+          sb.Append("}\n");
+          return sb.ToString();
+        }
+        
     }
-    
 }

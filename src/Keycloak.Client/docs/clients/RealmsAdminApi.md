@@ -71,9 +71,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -100,10 +98,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -134,9 +128,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -163,10 +155,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -195,9 +183,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -227,10 +213,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -258,9 +240,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var groupId = groupId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -290,10 +270,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -321,9 +297,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -352,10 +326,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -386,9 +356,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -415,10 +383,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -447,9 +411,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -479,10 +441,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -510,9 +468,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
@@ -544,10 +500,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -577,9 +529,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var session = session_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -608,10 +558,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -642,9 +588,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -672,10 +616,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<RealmRepresentation>**](RealmRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -706,9 +646,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var authClient = authClient_example;  // string |  (optional) 
             var authIpAddress = authIpAddress_example;  // string |  (optional) 
@@ -759,10 +697,6 @@ Name | Type | Description  | Notes
 
 [**List<AdminEventRepresentation>**](AdminEventRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -792,9 +726,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -822,10 +754,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**RealmRepresentation**](RealmRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -856,9 +784,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -887,10 +813,6 @@ Name | Type | Description  | Notes
 
 **List<string>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -918,9 +840,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -948,10 +868,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<string>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -982,9 +898,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1012,10 +926,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<ClientScopeRepresentation>**](ClientScopeRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1046,9 +956,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1076,10 +984,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1110,9 +1014,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1140,10 +1042,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<ClientScopeRepresentation>**](ClientScopeRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1174,9 +1072,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var _client = _client_example;  // string | App or oauth client name (optional) 
             var dateFrom = dateFrom_example;  // string | From date (optional) 
@@ -1221,10 +1117,6 @@ Name | Type | Description  | Notes
 
 [**List<EventRepresentation>**](EventRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1254,9 +1146,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1285,10 +1175,6 @@ Name | Type | Description  | Notes
 
 [**RealmEventsConfigRepresentation**](RealmEventsConfigRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1316,9 +1202,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var path = path_example;  // string | PathSegment
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1349,10 +1233,6 @@ Name | Type | Description  | Notes
 
 [**GroupRepresentation**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1380,9 +1260,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1411,10 +1289,6 @@ Name | Type | Description  | Notes
 
 **List<string>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1442,9 +1316,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var useRealmDefaultLocaleFallback = useRealmDefaultLocaleFallback_example;  // string |  (optional) 
@@ -1477,10 +1349,6 @@ Name | Type | Description  | Notes
 
 **Dictionary<string, string>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1508,9 +1376,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
@@ -1543,10 +1409,6 @@ Name | Type | Description  | Notes
 
 **string**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1574,9 +1436,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1605,10 +1465,6 @@ Name | Type | Description  | Notes
 
 [**ClientPoliciesRepresentation**](ClientPoliciesRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1636,9 +1492,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var includeGlobalProfiles = includeGlobalProfiles_example;  // string |  (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1669,10 +1523,6 @@ Name | Type | Description  | Notes
 
 [**ClientProfilesRepresentation**](ClientProfilesRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1700,9 +1550,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1730,10 +1578,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1764,9 +1608,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var body = new Object(); // Object | [file] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1793,10 +1635,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1827,9 +1665,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1860,10 +1696,6 @@ Name | Type | Description  | Notes
 
 [**ClientRepresentation**](ClientRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1893,9 +1725,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var body = new string(); // string | [string] (optional) 
@@ -1927,10 +1757,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1960,9 +1786,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1990,10 +1814,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GlobalRequestResult**](GlobalRequestResult.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2024,9 +1844,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var exportClients = exportClients_example;  // string |  (optional) 
             var exportGroupsAndRoles = exportGroupsAndRoles_example;  // string |  (optional) 
@@ -2058,10 +1876,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2091,9 +1905,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new Object(); // Object | [file] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2122,10 +1934,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2156,9 +1964,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -2186,10 +1992,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GlobalRequestResult**](GlobalRequestResult.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2220,9 +2022,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2251,10 +2051,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2285,9 +2081,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new RealmRepresentation(); // RealmRepresentation | RealmRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2317,10 +2111,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2348,9 +2138,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2380,10 +2168,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2411,9 +2195,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var groupId = groupId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2443,10 +2225,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2474,9 +2252,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var clientScopeId = clientScopeId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2506,10 +2282,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -2537,9 +2309,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new RealmEventsConfigRepresentation(); // RealmEventsConfigRepresentation | RealmEventsConfigRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2569,10 +2339,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2600,9 +2366,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var locale = locale_example;  // string | 
             var key = key_example;  // string | 
@@ -2636,10 +2400,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2667,9 +2427,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientPoliciesRepresentation(); // ClientPoliciesRepresentation | ClientPoliciesRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2699,10 +2457,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2730,9 +2484,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ClientProfilesRepresentation(); // ClientProfilesRepresentation | ClientProfilesRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2762,10 +2514,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2793,9 +2541,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new RealmsAdminApi();
+            var apiInstance = new RealmsAdminApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2825,10 +2571,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

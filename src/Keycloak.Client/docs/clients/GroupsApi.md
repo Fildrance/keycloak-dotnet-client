@@ -37,9 +37,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -68,10 +66,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -102,9 +96,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
@@ -141,10 +133,6 @@ Name | Type | Description  | Notes
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -172,9 +160,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -205,10 +191,6 @@ Name | Type | Description  | Notes
 
 [**GroupRepresentation**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -238,9 +220,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -271,10 +251,6 @@ Name | Type | Description  | Notes
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -304,9 +280,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var briefRepresentation = briefRepresentation_example;  // string |  (optional) 
             var exact = exact_example;  // string |  (optional) 
@@ -349,10 +323,6 @@ Name | Type | Description  | Notes
 
 [**List<GroupRepresentation>**](GroupRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -382,9 +352,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var search = search_example;  // string |  (optional) 
             var top = top_example;  // string |  (optional) 
@@ -417,10 +385,6 @@ Name | Type | Description  | Notes
 
 **Dictionary<string, long?>**
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -450,9 +414,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var briefRepresentation = briefRepresentation_example;  // string | Only return basic information (only guaranteed to return id, username, created, first and last name, email, enabled state, email verification state, federation link, and access. Note that it means that namely user attributes, required actions, and not before are not returned.) (optional) 
@@ -489,10 +451,6 @@ Name | Type | Description  | Notes
 
 [**List<UserRepresentation>**](UserRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -522,9 +480,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
@@ -556,10 +512,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -589,9 +541,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -620,10 +570,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -654,9 +600,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new GroupRepresentation(); // GroupRepresentation | GroupRepresentation (optional) 
@@ -688,10 +632,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -721,9 +661,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new GroupsApi();
+            var apiInstance = new GroupsApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new ManagementPermissionReference(); // ManagementPermissionReference | ManagementPermissionReference (optional) 
@@ -755,10 +693,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ManagementPermissionReference**](ManagementPermissionReference.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

@@ -63,9 +63,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -94,10 +92,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -128,9 +122,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -159,10 +151,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -193,9 +181,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -224,10 +210,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -258,9 +240,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -289,10 +269,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -323,9 +299,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -356,10 +330,6 @@ Name | Type | Description  | Notes
 
 [**AuthenticatorConfigRepresentation**](AuthenticatorConfigRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -389,9 +359,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -419,10 +387,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<Object>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -453,9 +417,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -483,10 +445,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<Object>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -517,9 +475,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var providerId = providerId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -550,10 +506,6 @@ Name | Type | Description  | Notes
 
 [**AuthenticatorConfigInfoRepresentation**](AuthenticatorConfigInfoRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -583,9 +535,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -614,10 +564,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -648,9 +594,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var id = id_example;  // string | Configuration id
@@ -683,10 +627,6 @@ Name | Type | Description  | Notes
 
 [**AuthenticatorConfigRepresentation**](AuthenticatorConfigRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -716,9 +656,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Flow alias
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -747,10 +685,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -781,9 +715,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -814,10 +746,6 @@ Name | Type | Description  | Notes
 
 [**AuthenticationFlowRepresentation**](AuthenticationFlowRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -847,9 +775,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -877,10 +803,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<AuthenticationFlowRepresentation>**](AuthenticationFlowRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -911,9 +833,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -941,10 +861,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<Object>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -975,9 +891,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1005,10 +919,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<Object>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1039,9 +949,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1069,10 +977,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**Dictionary<string, ConfigPropertyRepresentation>**](ConfigPropertyRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1103,9 +1007,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1136,10 +1038,6 @@ Name | Type | Description  | Notes
 
 [**RequiredActionProviderRepresentation**](RequiredActionProviderRepresentation.md)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: Not defined
@@ -1169,9 +1067,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1199,10 +1095,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**List<RequiredActionProviderRepresentation>**](RequiredActionProviderRepresentation.md)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1233,9 +1125,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
@@ -1263,10 +1153,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 **List<string>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1297,9 +1183,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1328,10 +1212,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1362,9 +1242,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | name of the existing authentication flow
             var body = new string(); // string | [string] (optional) 
@@ -1396,10 +1274,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1429,9 +1303,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Alias of parent flow
             var body = new string(); // string | [string] (optional) 
@@ -1463,10 +1335,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1496,9 +1364,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
@@ -1530,10 +1396,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1563,9 +1425,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1594,10 +1454,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1628,9 +1484,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var executionId = executionId_example;  // string | Execution id
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1659,10 +1513,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1693,9 +1543,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticationExecutionRepresentation(); // AuthenticationExecutionRepresentation | AuthenticationExecutionRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1724,10 +1572,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1758,9 +1602,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Alias of parent authentication flow
             var body = new string(); // string | [string] (optional) 
@@ -1792,10 +1634,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -1825,9 +1663,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new AuthenticationFlowRepresentation(); // AuthenticationFlowRepresentation | AuthenticationFlowRepresentation (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1856,10 +1692,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1890,9 +1722,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var body = new string(); // string | [string] (optional) 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1921,10 +1751,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -1955,9 +1781,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -1986,10 +1810,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2020,9 +1840,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
@@ -2051,10 +1869,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -2085,9 +1899,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | Configuration id
             var body = new AuthenticatorConfigRepresentation(); // AuthenticatorConfigRepresentation | AuthenticatorConfigRepresentation (optional) 
@@ -2119,10 +1931,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2152,9 +1960,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var flowAlias = flowAlias_example;  // string | Flow alias
             var body = new AuthenticationExecutionInfoRepresentation(); // AuthenticationExecutionInfoRepresentation | AuthenticationExecutionInfoRepresentation (optional) 
@@ -2186,10 +1992,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2219,9 +2021,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var id = id_example;  // string | 
             var body = new AuthenticationFlowRepresentation(); // AuthenticationFlowRepresentation | AuthenticationFlowRepresentation (optional) 
@@ -2253,10 +2053,6 @@ Name | Type | Description  | Notes
 
 void (empty response body)
 
-### Authorization
-
-[access_token](../README.md#access_token)
-
 ### HTTP request headers
 
  - **Content-Type**: application/json
@@ -2286,9 +2082,7 @@ namespace Example
     {
         public void main()
         {
-            
-
-            var apiInstance = new AuthenticationManagementApi();
+            var apiInstance = new AuthenticationManagementApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var alias = alias_example;  // string | Alias of required action
             var body = new RequiredActionProviderRepresentation(); // RequiredActionProviderRepresentation | RequiredActionProviderRepresentation (optional) 
@@ -2319,10 +2113,6 @@ Name | Type | Description  | Notes
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 

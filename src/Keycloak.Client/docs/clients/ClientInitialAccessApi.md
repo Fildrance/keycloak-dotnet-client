@@ -1,21 +1,19 @@
-# .AttackDetectionApi
+# .ClientInitialAccessApi
 
 All URIs are relative to *https://keycloak.example.com/admin/realms*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**DeleteBruteForceUser**](AttackDetectionApi.md#deletebruteforceuser) | **Delete** /{realm}/attack-detection/brute-force/users/{userId} | 
-[**DeleteUsers**](AttackDetectionApi.md#deleteusers) | **Delete** /{realm}/attack-detection/brute-force/users | 
-[**GetBruteForceUser**](AttackDetectionApi.md#getbruteforceuser) | **Get** /{realm}/attack-detection/brute-force/users/{userId} | 
+[**DeleteClientsInitialAcces**](ClientInitialAccessApi.md#deleteclientsinitialacces) | **Delete** /{realm}/clients-initial-access/{id} | 
+[**GetClientsInitialAccess**](ClientInitialAccessApi.md#getclientsinitialaccess) | **Get** /{realm}/clients-initial-access | 
+[**PostClientsInitialAccess**](ClientInitialAccessApi.md#postclientsinitialaccess) | **Post** /{realm}/clients-initial-access | 
 
 
-<a name="deletebruteforceuser"></a>
-# **DeleteBruteForceUser**
-> void DeleteBruteForceUser (string realm, string userId, CancellationToken ct)
+<a name="deleteclientsinitialacces"></a>
+# **DeleteClientsInitialAcces**
+> void DeleteClientsInitialAcces (string realm, string id, CancellationToken ct)
 
 
-
-Clear any user login failures for the user This can release temporary disabled user
 
 ### Example
 ```csharp
@@ -27,24 +25,22 @@ using Keycloak.Client.Models;
 
 namespace Example
 {
-    public class DeleteBruteForceUserExample
+    public class DeleteClientsInitialAccesExample
     {
         public void main()
         {
-            
-
-            var apiInstance = new AttackDetectionApi();
+            var apiInstance = new ClientInitialAccessApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
-            var userId = userId_example;  // string | 
+            var id = id_example;  // string | 
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteBruteForceUser(realm, userId, ct);
+                apiInstance.DeleteClientsInitialAcces(realm, id, ct);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AttackDetectionApi.DeleteBruteForceUser: " + e.Message );
+                Debug.Print("Exception when calling ClientInitialAccessApi.DeleteClientsInitialAcces: " + e.Message );
             }
         }
     }
@@ -56,16 +52,12 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
- **userId** | **string**|  | 
+ **id** | **string**|  | 
  **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
 void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
 
 ### HTTP request headers
 
@@ -74,13 +66,11 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
-<a name="deleteusers"></a>
-# **DeleteUsers**
-> void DeleteUsers (string realm, CancellationToken ct)
+<a name="getclientsinitialaccess"></a>
+# **GetClientsInitialAccess**
+> List<ClientInitialAccessPresentation> GetClientsInitialAccess (string realm, CancellationToken ct)
 
 
-
-Clear any user login failures for all users This can release temporary disabled users
 
 ### Example
 ```csharp
@@ -92,88 +82,22 @@ using Keycloak.Client.Models;
 
 namespace Example
 {
-    public class DeleteUsersExample
+    public class GetClientsInitialAccessExample
     {
         public void main()
         {
-            
-
-            var apiInstance = new AttackDetectionApi();
+            var apiInstance = new ClientInitialAccessApi(new HttpClient(), "http://my-service.srv");
             var realm = realm_example;  // string | realm name (not id!)
             var ct = new CancellationToken(); // CancellationToken |  (optional) 
 
             try
             {
-                apiInstance.DeleteUsers(realm, ct);
-            }
-            catch (Exception e)
-            {
-                Debug.Print("Exception when calling AttackDetectionApi.DeleteUsers: " + e.Message );
-            }
-        }
-    }
-}
-```
-
-### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **realm** | **string**| realm name (not id!) | 
- **ct** | [**CancellationToken**](.md)|  | [optional] 
-
-### Return type
-
-void (empty response body)
-
-### Authorization
-
-[access_token](../README.md#access_token)
-
-### HTTP request headers
-
- - **Content-Type**: Not defined
- - **Accept**: Not defined
-
-[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
-
-<a name="getbruteforceuser"></a>
-# **GetBruteForceUser**
-> Dictionary<string, Object> GetBruteForceUser (string realm, string userId, CancellationToken ct)
-
-
-
-Get status of a username in brute force detection
-
-### Example
-```csharp
-using System;
-using System.Diagnostics;
-using ;
-using Keycloak.Client;
-using Keycloak.Client.Models;
-
-namespace Example
-{
-    public class GetBruteForceUserExample
-    {
-        public void main()
-        {
-            
-
-            var apiInstance = new AttackDetectionApi();
-            var realm = realm_example;  // string | realm name (not id!)
-            var userId = userId_example;  // string | 
-            var ct = new CancellationToken(); // CancellationToken |  (optional) 
-
-            try
-            {
-                Dictionary&lt;string, Object&gt; result = apiInstance.GetBruteForceUser(realm, userId, ct);
+                List&lt;ClientInitialAccessPresentation&gt; result = apiInstance.GetClientsInitialAccess(realm, ct);
                 Debug.WriteLine(result);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AttackDetectionApi.GetBruteForceUser: " + e.Message );
+                Debug.Print("Exception when calling ClientInitialAccessApi.GetClientsInitialAccess: " + e.Message );
             }
         }
     }
@@ -185,20 +109,75 @@ namespace Example
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **realm** | **string**| realm name (not id!) | 
- **userId** | **string**|  | 
  **ct** | [**CancellationToken**](.md)|  | [optional] 
 
 ### Return type
 
-**Dictionary<string, Object>**
-
-### Authorization
-
-[access_token](../README.md#access_token)
+[**List<ClientInitialAccessPresentation>**](ClientInitialAccessPresentation.md)
 
 ### HTTP request headers
 
  - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="postclientsinitialaccess"></a>
+# **PostClientsInitialAccess**
+> ClientInitialAccessPresentation PostClientsInitialAccess (string realm, ClientInitialAccessCreatePresentation body, CancellationToken ct)
+
+
+
+Create a new initial access token.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using ;
+using Keycloak.Client;
+using Keycloak.Client.Models;
+
+namespace Example
+{
+    public class PostClientsInitialAccessExample
+    {
+        public void main()
+        {
+            var apiInstance = new ClientInitialAccessApi(new HttpClient(), "http://my-service.srv");
+            var realm = realm_example;  // string | realm name (not id!)
+            var body = new ClientInitialAccessCreatePresentation(); // ClientInitialAccessCreatePresentation | ClientInitialAccessCreatePresentation (optional) 
+            var ct = new CancellationToken(); // CancellationToken |  (optional) 
+
+            try
+            {
+                ClientInitialAccessPresentation result = apiInstance.PostClientsInitialAccess(realm, body, ct);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ClientInitialAccessApi.PostClientsInitialAccess: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **realm** | **string**| realm name (not id!) | 
+ **body** | [**ClientInitialAccessCreatePresentation**](ClientInitialAccessCreatePresentation.md)| ClientInitialAccessCreatePresentation | [optional] 
+ **ct** | [**CancellationToken**](.md)|  | [optional] 
+
+### Return type
+
+[**ClientInitialAccessPresentation**](ClientInitialAccessPresentation.md)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
  - **Accept**: application/json
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
